@@ -369,95 +369,25 @@ function hideResults() {
 
 /************ SEARCH ENGINE ***************/
 
-            
-      google.load('search', '1');
-
       function loadSearchResults() {
         if (location.hash.indexOf("q=") == -1) {
           // if there's no query in the url, don't search and make sure results are hidden
           $('#searchResults').hide();
           return;
         }
-        
+
         var $results = $("#searchResults");
         if ($results.is(":hidden")) {
           $results.slideDown();
         }
-        
+
         document.getElementById("search_autocomplete").style.color = "#000";
 
-        // create search control
-        searchControl = new google.search.SearchControl();
-
-        // use our existing search form and use tabs when multiple searchers are used
-        drawOptions = new google.search.DrawOptions();
-        drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_TABBED);
-        drawOptions.setInput(document.getElementById("search_autocomplete"));
-
-        // configure search result options
-        searchOptions = new google.search.SearcherOptions();
-        searchOptions.setExpandMode(GSearchControl.EXPAND_MODE_OPEN);
-
-        // configure each of the searchers, for each tab
-        devSiteSearcher = new google.search.WebSearch();
-        devSiteSearcher.setUserDefinedLabel("All");
-        devSiteSearcher.setSiteRestriction("001482626316274216503:zu90b7s047u");
-
-        designSearcher = new google.search.WebSearch();
-        designSearcher.setUserDefinedLabel("Design");
-        designSearcher.setSiteRestriction("http://developer.android.com/design/");
-
-        trainingSearcher = new google.search.WebSearch();
-        trainingSearcher.setUserDefinedLabel("Training");
-        trainingSearcher.setSiteRestriction("http://developer.android.com/training/");
-
-        guidesSearcher = new google.search.WebSearch();
-        guidesSearcher.setUserDefinedLabel("Guides");
-        guidesSearcher.setSiteRestriction("http://developer.android.com/guide/");
-
-        referenceSearcher = new google.search.WebSearch();
-        referenceSearcher.setUserDefinedLabel("Reference");
-        referenceSearcher.setSiteRestriction("http://developer.android.com/reference/");
-
-        blogSearcher = new google.search.WebSearch();
-        blogSearcher.setUserDefinedLabel("Blog");
-        blogSearcher.setSiteRestriction("http://android-developers.blogspot.com");
- 
-        // add each searcher to the search control
-        searchControl.addSearcher(devSiteSearcher, searchOptions);
-        searchControl.addSearcher(designSearcher, searchOptions);
-        searchControl.addSearcher(trainingSearcher, searchOptions);
-        searchControl.addSearcher(guidesSearcher, searchOptions);
-        searchControl.addSearcher(referenceSearcher, searchOptions);
-        searchControl.addSearcher(blogSearcher, searchOptions);
-
-        // configure result options
-        searchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
-        searchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
-        searchControl.setTimeoutInterval(google.search.SearchControl.TIMEOUT_LONG);
-        searchControl.setNoResultsString(google.search.SearchControl.NO_RESULTS_DEFAULT_STRING);
-
-        // upon ajax search, refresh the url and search title
-        searchControl.setSearchStartingCallback(this, function(control, searcher, query) {
-          updateResultTitle(query);
-          var query = document.getElementById('search_autocomplete').value;
-          location.hash = 'q=' + query;
-          $.history.add('q=' + query);
-        });
-
-        // draw the search results box
-        searchControl.draw(document.getElementById("leftSearchControl"), drawOptions);
-
-        // get query and execute the search
-        searchControl.execute(decodeURI(getQuery(location.hash)));
 
         document.getElementById("search_autocomplete").focus();
         addTabListeners();
       }
       // End of loadSearchResults
-
-
-      google.setOnLoadCallback(loadSearchResults, true);
 
       // when an event on the browser history occurs (back, forward, load) perform a search
       $(window).history(function(e, hash) {
@@ -466,7 +396,6 @@ function hideResults() {
           hideResults(); 
           return; 
         }
-        searchControl.execute(query);
 
         updateResultTitle(query);
       });

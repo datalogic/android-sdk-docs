@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 var API_LEVEL_COOKIE = "api_level";
 var minLevel = 1;
-var maxLevel = 1;
+var maxLevel = 2;
 
 /******* SIDENAV DIMENSIONS ************/
 
@@ -89,10 +89,10 @@ function changeApiLevel() {
 
   if (selectedLevel < minLevel) {
     var thing = ($("#jd-header").html().indexOf("package") != -1) ? "package" : "class";
-    $("#naMessage").show().html("<div><p><strong>This " + thing + " is not available with API level " + selectedLevel + ".</strong></p>"
-                              + "<p>To use this " + thing + ", you must develop your app using a build target "
-                              + "that supports API level " + $("#doc-api-level").attr("class") + " or higher. To read these "
-                              + "APIs, change the value of the API level filter above.</p>"
+    $("#naMessage").show().html("<div><p><strong>This " + thing + " is not in Revision " + selectedLevel + ".</strong></p>"
+                              + "<p>To use this " + thing + ", you must develop your app using a Datalogic SDK Add-on "
+                              + "of Revision " + $("#doc-api-level").attr("class") + " or higher. To read these "
+                              + "APIs, change the value of the Revision filter above.</p>"
                               + "<p><a href='" +toRoot+ "guide/appendix/api-levels.html'>What is the API level?</a></p></div>");
   } else {
     $("#naMessage").hide();
@@ -122,7 +122,7 @@ function toggleVisisbleApis(selectedLevel, context) {
 
     // Grey things out that aren't available and give a tooltip title
     if (apiLevelNum > selectedLevelNum) {
-      obj.addClass("absent").attr("title","Requires API Level \""
+      obj.addClass("absent").attr("title","Requires Revision \""
             + apiLevel + "\" or higher");
     } 
     else obj.removeClass("absent").removeAttr("title");
