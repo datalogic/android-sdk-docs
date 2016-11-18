@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2' ];
+        var SINCE_DATA = [ '1', '2', '3' ];
         buildApiLevelSelector();
       </script>
                   
@@ -337,6 +337,7 @@ Distribution</a></li>
       <ul>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
+        <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
@@ -603,6 +604,10 @@ Distribution</a></li>
 			<td>The decode wedge capability with the keystroke mode.</td>
 		</tr>
 		<tr class="alt-color">
+			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></code></td>
+			<td>The method by which the <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></code> operates.</td>
+		</tr>
+		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></code></td>
 			<td>Contains access to serveral specific scanner functionalities.</td>
 		</tr>
@@ -828,17 +833,22 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-descrcol" width="100%"><code>IntentDeliveryMode</code> is an enumeration defining the
  method by which the intent is delivered.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-3" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></td>
+              <td class="jd-descrcol" width="100%"><code>KeyWedgeMode</code> is an enumeration defining the
+ different <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></code> input methodologies.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></td>
               <td class="jd-descrcol" width="100%"><code>LengthControlMode</code> is an enumeration defining the operating length
  control mode for each barcode family that has lengths.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></td>
               <td class="jd-descrcol" width="100%"><code>SendCodeID</code> is an enumeration defining the type of
  identifier to be transmitted with the scanned data.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></td>
               <td class="jd-descrcol" width="100%"><code>ToneNotificationMode</code> is an enumeration defining the audio notification mode, subject to Good read rules.&nbsp;</td>
           </tr>

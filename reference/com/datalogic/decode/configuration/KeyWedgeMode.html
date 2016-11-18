@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>QRCode - Datalogic SDK version 1 | Android Add-on</title>
+<title>KeyWedgeMode - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="3" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -323,7 +323,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPlanet.html">PostalUsPlanet</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPostnet.html">PostalUsPostnet</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsps4State.html">PostalUsps4State</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></li>
@@ -336,7 +336,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
-          <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
+          <li class="selected api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
@@ -408,6 +408,18 @@ Distribution</a></li>
   
   
 
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -416,18 +428,18 @@ Summary:
 
 
 
-
-
-
-  <a href="#lfields">Fields</a>
+  <a href="#enumconstants">Enums</a>
   
 
 
 
-  &#124; <a href="#pubctors">Ctors</a>
+
+
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
   
-
-
 
 
 
@@ -438,7 +450,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
   
   
 
@@ -451,10 +463,10 @@ Summary:
 <div id="jd-header">
     public
      
-     
+    final 
     
-    class
-<h1 itemprop="name">QRCode</h1>
+    enum
+<h1 itemprop="name">KeyWedgeMode</h1>
 
 
 
@@ -463,7 +475,7 @@ Summary:
   
 
   
-    extends <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a><br/>
+    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
   
   
   
@@ -477,7 +489,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-3">
 <table class="jd-inheritance-table">
 
 
@@ -491,7 +503,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">com.datalogic.device.configuration.PropertyGroup</a></td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
     </tr>
     
 
@@ -501,7 +513,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.QRCode</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.KeyWedgeMode</td>
     </tr>
     
 
@@ -517,8 +529,20 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>QRCode</code> is the class that configures the QR Code Symbology.
+<p itemprop="articleBody"><code>KeyWedgeMode</code> is an enumeration defining the
+ different <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></code> input methodologies.
  
+ The type is one of:
+ <table border=2>
+ <tr>
+ <td>TEXT_INJECTION</td>
+ <td>Inject the data, in form of text, directly in the text area</td>
+ </tr>
+ <tr>
+ <td>KEY_PRESSURE</td>
+ <td>Emulate the pressure of the keyboard keys</td>
+ </tr>
+ </table>
 </p>
 
 
@@ -557,75 +581,25 @@ Summary:
 
 
 
-
-
-
-
-
-
-
-<!-- =========== FIELD SUMMARY =========== -->
-<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
-
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-      <tr class="alt-color api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#Length1">Length1</a></td>
-          <td class="jd-descrcol" width="100%"><code>Length1</code> is one of the two configurable label lengths.</td>
-      </tr>
-      
+    <tr class="alt-color api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>&nbsp;</td>
+        <td class="jd-linkcol">KEY_PRESSURE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
     
-      <tr class=" api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#Length2">Length2</a></td>
-          <td class="jd-descrcol" width="100%"><code>Length2</code> is one of the two configurable label lengths.</td>
-      </tr>
-      
     
-      <tr class="alt-color api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#enable">enable</a></td>
-          <td class="jd-descrcol" width="100%"><code>enable</code> enables or disables the symbology.</td>
-      </tr>
-      
+    <tr class=" api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>&nbsp;</td>
+        <td class="jd-linkcol">TEXT_INJECTION&nbsp;</td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
     
-      <tr class=" api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a>&gt;</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#lengthMode">lengthMode</a></td>
-          <td class="jd-descrcol" width="100%"><code>lengthMode</code> is the <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code> selected for a label.</td>
-      </tr>
-      
-    
-      <tr class="alt-color api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#userID">userID</a></td>
-          <td class="jd-descrcol" width="100%"><code>userID</code> specifies the symbology identifier (if any).</td>
-      </tr>
-      
     
 
-</table>
 
 
 
@@ -633,35 +607,55 @@ Summary:
 
 
 
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
 
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-3" >
         <td class="jd-typecol"><nobr>
             
             
             
+            static
             
-            
-            </nobr>
+            <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#QRCode(com.datalogic.device.configuration.PropertyGetter)">QRCode</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
         
-        <div class="jd-descrdiv">This is the constructor of QRCode.</div>
-  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-3" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            static
+            
+            <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode[]</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html#values()">values</a></span>()</nobr>
+        
   </td></tr>
 
 
 
 </table>
-
-
-
-
 
 
 
@@ -677,113 +671,196 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.device.configuration.PropertyGroup" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Enum-trigger"
           src="../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From class
 
-  <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">com.datalogic.device.configuration.PropertyGroup</a>
+  java.lang.Enum
 
-<div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup">
-  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-list"
+<div id="inherited-methods-java.lang.Enum">
+  <div id="inherited-methods-java.lang.Enum-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-summary" style="display: none;">
+  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
+            final
             
             
-            
-            ArrayList&lt;<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a>&gt;</nobr>
+            Object</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getGroups()">getGroups</a></span>()</nobr>
+        <span class="sympad">clone</span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the property groups contained by this group.</div>
-  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            ArrayList&lt;<a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a>&gt;</nobr>
+            int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getProperties()">getProperties</a></span>()</nobr>
+        <span class="sympad">compareTo</span>(Object arg0)</nobr>
         
-        <div class="jd-descrdiv">Returns the properties contained by this group.</div>
-  
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
+            final
             
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">compareTo</span>(E arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
             
             
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#isSupported()">isSupported</a></span>()</nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
         
-        <div class="jd-descrdiv">Tells if this property group is supported by the underling decoding
- hardware.</div>
-  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getDeclaringClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">name</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">ordinal</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            int</nobr>
+            String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#load(com.datalogic.device.configuration.PropertyGetter)">load</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from)</nobr>
+        <span class="sympad">toString</span>()</nobr>
         
-        <div class="jd-descrdiv">Load the properties values contained by this property from the
- PropertyGetter.</div>
-  
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
             
-            
-            
-            int</nobr>
+            static
+            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
+            T</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#store(com.datalogic.device.configuration.PropertyEditor, boolean)">store</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to, boolean persist)</nobr>
+        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
         
-        <div class="jd-descrdiv">Store the properties values contained by this property into the
- PropertyEditor.</div>
-  
   </td></tr>
 
 
@@ -995,6 +1072,50 @@ From class
 </td></tr>
 
 
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Comparable-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  java.lang.Comparable
+
+<div id="inherited-methods-java.lang.Comparable">
+  <div id="inherited-methods-java.lang.Comparable-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">compareTo</span>(T arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
 </table>
 
 
@@ -1015,252 +1136,78 @@ From class
 <!-- Enum Values -->
 
 
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Enum Values</h2>
+
+
+
+
+<A NAME="KEY_PRESSURE"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>
+      </span>
+        KEY_PRESSURE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TEXT_INJECTION"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>
+      </span>
+        TEXT_INJECTION
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+
 <!-- Constants -->
 
 
 <!-- Fields -->
 
 
-<!-- ========= FIELD DETAIL ======== -->
-<h2>Fields</h2>
-
-
-
-
-<A NAME="Length1"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
-      </span>
-        Length1
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>Length1</code> is one of the two configurable label lengths. It can be used
- as a single fixed accepted length, when <code><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html#lengthMode">lengthMode</a></code> is set to <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#ONE_FIXED">ONE_FIXED</a></code>.
- When <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#TWO_FIXED">TWO_FIXED</a></code> is enabled, its value is one of the two possible accepted fixed lengths for a specific label.
- It can also represent the minor or major length value whenever <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#RANGE">RANGE</a></code> is selected.
- 
- If is set below the accepted minimum, the smallest accepted length will be used; instead it the set value exceed the maximum value, the
- biggest accepted length will be used. 
- <p>
- <b>Note:</b> <code>Length1</code> allowed range of values is somehow related to the nature of the barcode (linear vs 2D) but it's not intended to document
- in any way the scanner capabilities. An accepted minimum value and an accepted maximum value are introduced only to simplify length management in the 
- device <b>Scanner settings</b> app. The chance to read a barcode depends on it's printed quality, resolution, overall size, distance from the reader, 
- environmental light, etc...
- </p></p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
-      </ul>
-  </div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="Length2"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
-      </span>
-        Length2
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>Length2</code> is one of the two configurable label lengths.
- When <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#TWO_FIXED">TWO_FIXED</a></code> is enabled, its value is one of the two possible accepted fixed lengths for a specific label.
- It can also represent the minor or major length value whenever <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#RANGE">RANGE</a></code> is selected.
-
- If is set below the accepted minimum, the smallest accepted length will be used; instead it the set value exceed the maximum value, the
- biggest accepted length will be used.
- <p>
- <b>Note:</b> <code>Length2</code> allowed range of values is somehow related to the nature of the barcode (linear vs 2D) but it's not intended to document
- in any way the scanner capabilities. An accepted minimum value and an accepted maximum value are introduced only to simplify length management in the 
- device <b>Scanner settings</b> app. The chance to read a barcode depends on it's printed quality, resolution, overall size, distance from the reader, 
- environmental light, etc...
- </p></p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
-      </ul>
-  </div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="enable"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
-      </span>
-        enable
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> enables or disables the symbology.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="lengthMode"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a>&gt;
-      </span>
-        lengthMode
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>lengthMode</code> is the <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code> selected for a label.
- Selects the length control mode.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
-      </ul>
-  </div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="userID"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a>
-      </span>
-        userID
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>userID</code> specifies the symbology identifier (if any).<br/>
- The symbology identifier is sent with the label when the
- global decode property <code><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#sendCodeId">sendCodeId</a></code> is set to
- <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_BEFORE_LABEL">USERDEFINED_IDENTIFIER_BEFORE_LABEL</a></code> or <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_AFTER_LABEL">USERDEFINED_IDENTIFIER_AFTER_LABEL</a></code>.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Public ctors -->
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
-
-
-
-<A NAME="QRCode(com.datalogic.device.configuration.PropertyGetter)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">QRCode</span>
-      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of QRCode. All symbology options are initialized
- by editor.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>editor</td>
-          <td>A <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></code> used to load the current barcode family.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 
 
 
@@ -1271,6 +1218,71 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="valueOf(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>
+      </span>
+      <span class="sympad">valueOf</span>
+      <span class="normal">(String name)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="values()"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+         
+         
+        <a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode[]</a>
+      </span>
+      <span class="sympad">values</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
 
 
 

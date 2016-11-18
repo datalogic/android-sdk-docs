@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2' ];
+        var SINCE_DATA = [ '1', '2', '3' ];
         buildApiLevelSelector();
       </script>
                   
@@ -336,6 +336,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
+          <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
@@ -588,6 +589,18 @@ Summary:
           <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html#onlyOnFocus">onlyOnFocus</a></td>
           <td class="jd-descrcol" width="100%"><code>onlyOnFocus</code> enables the input of the keystrokes only in input areas with
  active focus and an IME active, such as a touch keyboard.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-3" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html#wedgeMode">wedgeMode</a></td>
+          <td class="jd-descrcol" width="100%"><code>wedgeMode</code> indicates the method by which the KeyboardWedge
+ operates.</td>
       </tr>
       
     
@@ -1051,6 +1064,37 @@ From class
  will be sent to the foreground application in the form of key events only when previous
  conditions will be met. Instead, set to false, it will emulate keystrokes directly into the
  foreground activity. Be aware, keeping this deactivated could lead to undesired behaviors.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="wedgeMode"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a>&gt;
+      </span>
+        wedgeMode
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>wedgeMode</code> indicates the method by which the KeyboardWedge
+ operates. The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html#TEXT_INJECTION">TEXT_INJECTION</a></code>.
 </p></div>
 
     
