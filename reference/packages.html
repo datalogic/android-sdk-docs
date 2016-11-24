@@ -338,7 +338,12 @@ Distribution</a></li>
 <div id="jd-content">
 
 <div class="jd-descr">
-<p>These are the Datalogic SDK v1 APIs. See all <a href="classes.html">API classes</a>. Remember to switch the selected <em>Revision</em> number in accordance with your device firmware and installed Android <em>Datalogic SDK</em> update.</p>
+<p>These are the Datalogic SDK v1 APIs. See all <a href="classes.html">API classes</a>. Remember to switch the selected <em>Revision</em> number in accordance with your device firmware and installed Android <em>Datalogic SDK</em> update.
+        <p>In order to use these API <strong>do not forget</strong> to add the following "uses-library" tag to your application manifest.</p>
+		<pre class="prettyprint">
+&lt;uses-library
+        android:name="com.datalogic.device"
+        android:required="true" /&gt;</pre></p>
 </div>
 
 
