@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3' ];
+        var SINCE_DATA = [ '1', '2', '3', '4' ];
         buildApiLevelSelector();
       </script>
                   
@@ -636,7 +636,25 @@ From interface
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyAvailability(int[], boolean[])">getPropertyAvailability</a></span>(int[] id_buffer, boolean[] availability_buffer)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the availability, the support, for the passed programming parameters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -649,6 +667,24 @@ From interface
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyInts(int[], int[])">getPropertyInts</a></span>(int[] id_buffer, int[] value_buffer)</nobr>
         
         <div class="jd-descrdiv">Gets one or more label programming parameters of type Integer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyRanges(int[], int[][])">getPropertyRanges</a></span>(int[] id_buffer, int[][] property_ranges)</nobr>
+        
+        <div class="jd-descrdiv">Gets one or more property ranges for the passed programming parameters.</div>
   
   </td></tr>
 

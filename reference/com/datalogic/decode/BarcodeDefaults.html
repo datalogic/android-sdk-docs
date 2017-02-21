@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3' ];
+        var SINCE_DATA = [ '1', '2', '3', '4' ];
         buildApiLevelSelector();
       </script>
                   
@@ -572,7 +572,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeDefaults.html#getPropertyAvailability(int[], boolean[])">getPropertyAvailability</a></span>(int[] id_buffer, boolean[] availability_buffer)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the availability, the support, for the passed programming parameters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -585,6 +603,24 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeDefaults.html#getPropertyInts(int[], int[])">getPropertyInts</a></span>(int[] id_buffer, int[] value_buffer)</nobr>
         
         <div class="jd-descrdiv">Retrieves the default Property integer values associated to specific IDs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeDefaults.html#getPropertyRanges(int[], int[][])">getPropertyRanges</a></span>(int[] id_buffer, int[][] property_ranges)</nobr>
+        
+        <div class="jd-descrdiv">Gets one or more property ranges for the passed programming parameters.</div>
   
   </td></tr>
 
@@ -844,7 +880,25 @@ From interface
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyAvailability(int[], boolean[])">getPropertyAvailability</a></span>(int[] id_buffer, boolean[] availability_buffer)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the availability, the support, for the passed programming parameters.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -857,6 +911,24 @@ From interface
         <span class="sympad"><a href="../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyInts(int[], int[])">getPropertyInts</a></span>(int[] id_buffer, int[] value_buffer)</nobr>
         
         <div class="jd-descrdiv">Gets one or more label programming parameters of type Integer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyRanges(int[], int[][])">getPropertyRanges</a></span>(int[] id_buffer, int[][] property_ranges)</nobr>
+        
+        <div class="jd-descrdiv">Gets one or more property ranges for the passed programming parameters.</div>
   
   </td></tr>
 
@@ -965,6 +1037,64 @@ From interface
 
 
 
+<A NAME="getPropertyAvailability(int[], boolean[])"></A>
+
+<div class="jd-details api apilevel-4"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPropertyAvailability</span>
+      <span class="normal">(int[] id_buffer, boolean[] availability_buffer)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 4</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves the availability, the support, for the passed programming parameters.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>id_buffer</td>
+          <td>The <code>int[]</code> of identifiers for parameters to look for.</td>
+        </tr>
+        <tr>
+          <th>availability_buffer</td>
+          <td>The <code>boolean[]</code> of the passed IDs' availability, that will be filled in.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getPropertyInts(int[], int[])"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1001,6 +1131,64 @@ From interface
           <th>value_buffer</td>
           <td>A <code>int[]</code> buffer containing all the corresponding values associated to the passed IDs.
             It will be filled in during the operation.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getPropertyRanges(int[], int[][])"></A>
+
+<div class="jd-details api apilevel-4"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getPropertyRanges</span>
+      <span class="normal">(int[] id_buffer, int[][] property_ranges)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 4</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets one or more property ranges for the passed programming parameters.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>id_buffer</td>
+          <td>The <code>int[]</code> of identifiers for parameters to look for.</td>
+        </tr>
+        <tr>
+          <th>property_ranges</td>
+          <td>The <code>int[][]</code> array of ranges associated to the passed IDs, that will be filled in.</td>
         </tr>
       </table>
   </div>
