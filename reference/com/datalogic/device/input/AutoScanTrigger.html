@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>PropertyEditor - Datalogic SDK version 1 | Android Add-on</title>
+<title>AutoScanTrigger - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="5" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -262,11 +262,11 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
-    <li class="api apilevel-1">
+    <li class="selected api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/input/package-summary.html">com.datalogic.device.input</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/location/package-summary.html">com.datalogic.device.location</a></li>
@@ -290,29 +290,23 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></li>
+          <li class="selected api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></li>
+          <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></li>
+          <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.html">KeyboardManager</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.VScanCode.html">KeyboardManager.VScanCode</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyCodeEntry.html">KeyCodeEntry</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/VScanEntry.html">VScanEntry</a></li>
       </ul>
     </li>
               
               
-    <li><h2>Exceptions</h2>
-      <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></li>
-      </ul>
-    </li>
               
             </ul><br/>
         
@@ -376,6 +370,8 @@ Distribution</a></li>
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -386,7 +382,8 @@ Summary:
 
 
 
-  <a href="#pubmethods">Methods</a>
+
+  &#124; <a href="#pubmethods">Methods</a>
   
 
 
@@ -398,7 +395,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
   
   
 
@@ -414,7 +411,7 @@ Summary:
      
     
     interface
-<h1 itemprop="name">PropertyEditor</h1>
+<h1 itemprop="name">AutoScanTrigger</h1>
 
 
 
@@ -422,7 +419,7 @@ Summary:
   
       implements 
       
-        <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> 
+        <a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a> 
       
   
   
@@ -432,13 +429,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-5">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.configuration.PropertyEditor</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.input.AutoScanTrigger</td>
     </tr>
     
 
@@ -449,45 +446,13 @@ Summary:
 
 
 
-<table class="jd-sumtable jd-sumtable-subclasses"><tr><td colspan="12" style="border:none;margin:0;padding:0;">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="subclasses-indirect" class="jd-expando-trigger closed"
-          ><img id="subclasses-indirect-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>Known Indirect Subclasses
-
-  <div id="subclasses-indirect">
-      <div id="subclasses-indirect-list"
-              class="jd-inheritedlinks"
-              
-              >
-          
-            
-              <a href="../../../../../reference/com/datalogic/decode/BarcodeManager.html">BarcodeManager</a>
-            
-          
-      </div>
-      <div id="subclasses-indirect-summary"
-              style="display: none;"
-              >
-  <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-1" >
-              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/BarcodeManager.html">BarcodeManager</a></td>
-              <td class="jd-descrcol" width="100%"><code>BarcodeManager</code> gives developers access to decoder related
- methods of the device.&nbsp;</td>
-          </tr>
-  </table>
-      </div>
-  </div>
-</td></tr></table>
-
 
 <div class="jd-descr">
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>PropertyEditor</code> is the interface to get and set properties
- from/to the underlying subsystem.
+<p itemprop="articleBody">Interface representing a trigger that automatically executes a specific
+ action (scan by default) when entering a defined range.
 </p>
 
 
@@ -515,6 +480,27 @@ Summary:
 
 
 <h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-5" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a></td>
+      <td class="jd-descrcol" width="100%">Class representing a specific AutoScan range, constituted by
+ an id and a name.&nbsp;</td>
+    </tr>
+    
+    
 
 
 
@@ -548,55 +534,37 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            int</nobr>
+            List&lt;<a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html#commitProperties()">commitProperties</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html#getSupportedRanges()">getSupportedRanges</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Saves the configuration.</div>
+        <div class="jd-descrdiv">Returns the list of supported ranges.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            int</nobr>
+            boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html#setPropertyInts(int[], int[])">setPropertyInts</a></span>(int[] id_buffer, int[] value_buffer)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html#setCurrentRange(com.datalogic.device.input.AutoScanTrigger.Range)">setCurrentRange</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a> range)</nobr>
         
-        <div class="jd-descrdiv">Sets one or more label programming parameters of type Integer.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html#setPropertyStrings(int[], java.lang.String[])">setPropertyStrings</a></span>(int[] id_buffer, String[] value_buffer)</nobr>
-        
-        <div class="jd-descrdiv">Sets one or more label programming parameters of type String.</div>
+        <div class="jd-descrdiv">Sets the current range between the ones supported.</div>
   
   </td></tr>
 
@@ -618,25 +586,25 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.device.configuration.PropertyGetter" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.datalogic.device.configuration.PropertyGetter-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.device.input.Trigger" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.datalogic.device.input.Trigger-trigger"
           src="../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From interface
 
-  <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">com.datalogic.device.configuration.PropertyGetter</a>
+  <a href="../../../../../reference/com/datalogic/device/input/Trigger.html">com.datalogic.device.input.Trigger</a>
 
-<div id="inherited-methods-com.datalogic.device.configuration.PropertyGetter">
-  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGetter-list"
+<div id="inherited-methods-com.datalogic.device.input.Trigger">
+  <div id="inherited-methods-com.datalogic.device.input.Trigger-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGetter-summary" style="display: none;">
+  <div id="inherited-methods-com.datalogic.device.input.Trigger-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-4" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -646,33 +614,33 @@ From interface
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyAvailability(int[], boolean[])">getPropertyAvailability</a></span>(int[] id_buffer, boolean[] availability_buffer)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getId()">getId</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Retrieves the availability, the support, for the passed programming parameters.</div>
+        <div class="jd-descrdiv">Return the unique ID associated with the trigger.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            int</nobr>
+            String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyInts(int[], int[])">getPropertyInts</a></span>(int[] id_buffer, int[] value_buffer)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getName()">getName</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets one or more label programming parameters of type Integer.</div>
+        <div class="jd-descrdiv">Return the name associated with the trigger.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-4" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -682,27 +650,45 @@ From interface
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyRanges(int[], int[][])">getPropertyRanges</a></span>(int[] id_buffer, int[][] property_ranges)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getScanCode()">getScanCode</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets one or more property ranges for the passed programming parameters.</div>
+        <div class="jd-descrdiv">Return the unique scan code associated with the trigger.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            int</nobr>
+            boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html#getPropertyStrings(int[], java.lang.String[])">getPropertyStrings</a></span>(int[] id_buffer, String[] value_buffer)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#isEnabled()">isEnabled</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets one or more label programming parameters of type String.</div>
+        <div class="jd-descrdiv">Checks if the trigger is enabled.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#setEnabled(boolean)">setEnabled</a></span>(boolean enabled)</nobr>
+        
+        <div class="jd-descrdiv">Enables or disables the trigger by specifying a <code>boolean</code> value.</div>
   
   </td></tr>
 
@@ -755,9 +741,9 @@ From interface
 
 
 
-<A NAME="commitProperties()"></A>
+<A NAME="getSupportedRanges()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-5"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -765,45 +751,34 @@ From interface
          
         abstract 
          
-        int
+        List&lt;<a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a>&gt;
       </span>
-      <span class="sympad">commitProperties</span>
+      <span class="sympad">getSupportedRanges</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Saves the configuration. The configuration is saved in a persistent way
- across system reboots.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the list of supported ranges.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
+      <ul class="nolist"><li>List of <code><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a></code> objects.
+</li></ul>
   </div>
 
     </div>
 </div>
 
 
-<A NAME="setPropertyInts(int[], int[])"></A>
+<A NAME="setCurrentRange(com.datalogic.device.input.AutoScanTrigger.Range)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-5"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -811,106 +786,35 @@ From interface
          
         abstract 
          
-        int
+        boolean
       </span>
-      <span class="sympad">setPropertyInts</span>
-      <span class="normal">(int[] id_buffer, int[] value_buffer)</span>
+      <span class="sympad">setCurrentRange</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a> range)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type Integer.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the current range between the ones supported.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>id_buffer</td>
-          <td>The <code>int[]</code> of identifiers for parameters to set.</td>
-        </tr>
-        <tr>
-          <th>value_buffer</td>
-          <td>The <code>int[]</code> of values associated to the passed IDs to set.</td>
+          <th>range</td>
+          <td>The range to set.</td>
         </tr>
       </table>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="setPropertyStrings(int[], java.lang.String[])"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        int
-      </span>
-      <span class="sympad">setPropertyStrings</span>
-      <span class="normal">(int[] id_buffer, String[] value_buffer)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type String.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>id_buffer</td>
-          <td>The <code>int[]</code> identifiers for parameters to set.</td>
-        </tr>
-        <tr>
-          <th>value_buffer</td>
-          <td>The <code>String[]</code> of values associated to the passed IDs to set.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
+      <ul class="nolist"><li><code>boolean</code>
+         true if the range has been set successfully, false otherwise.
+</li></ul>
   </div>
 
     </div>

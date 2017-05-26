@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
         buildApiLevelSelector();
       </script>
                   
@@ -296,6 +296,14 @@ Distribution</a></li>
       </ul>
     </li>
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a></li>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></li>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -583,6 +591,42 @@ Summary:
 
 
 	 
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getImage(com.datalogic.softspot.ActionType, com.datalogic.softspot.ImageState)">getImage</a></span>(<a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a> actionType, <a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a> imageState)</nobr>
+        
+        <div class="jd-descrdiv">Get the image in use for the given ActionType and ImageState values.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getLockState()">getLockState</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get current lock state (can I move it around the screen on finger drag?)</div>
+  
+  </td></tr>
+
+
+	 
     <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
@@ -730,6 +774,43 @@ Summary:
 
 
 	 
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#lock(boolean)">lock</a></span>(boolean lockVal)</nobr>
+        
+        <div class="jd-descrdiv">Set lock state of SoftSpot, it impacts SoftSpot motion ability on finger dragging events.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setDecodedDuration(com.datalogic.softspot.DecodedDuration)">setDecodedDuration</a></span>(<a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a> decodedDuration)</nobr>
+        
+        <div class="jd-descrdiv">Set the duration for how long the decoded image should be displayed
+ on screen after a good read before switching back to the <code><a href="../../../../reference/com/datalogic/softspot/ImageState.html#NORMAL">NORMAL</a></code> image.</div>
+  
+  </td></tr>
+
+
+	 
     <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
@@ -748,7 +829,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setImage(com.datalogic.softspot.ActionType, com.datalogic.softspot.ImageState, com.datalogic.softspot.ImageEnum)">setImage</a></span>(<a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a> actionType, <a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a> imageState, <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum)</nobr>
+        
+        <div class="jd-descrdiv">Set the image to use when SoftSpot has the given ActionType and ImageState values.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -766,7 +865,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -779,6 +878,24 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setScale(float)">setScale</a></span>(float scalar)</nobr>
         
         <div class="jd-descrdiv">Set the scale multiplier used for SoftSpot size.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setVibrator(boolean)">setVibrator</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Toggle the vibrator on or off when SoftSpot is pressed or moved.</div>
   
   </td></tr>
 
@@ -1154,6 +1271,85 @@ From class
 
 
 
+<A NAME="getImage(com.datalogic.softspot.ActionType, com.datalogic.softspot.ImageState)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
+      </span>
+      <span class="sympad">getImage</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a> actionType, <a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a> imageState)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the image in use for the given ActionType and ImageState values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>actionType</td>
+          <td>The type of action to retreive an image for.</td>
+        </tr>
+        <tr>
+          <th>imageState</td>
+          <td>The state of the image to retrieve the image for.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getLockState()"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">getLockState</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get current lock state (can I move it around the screen on finger drag?)</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Current lock state of SoftSpot
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getPosition()"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1436,6 +1632,89 @@ From class
 </div>
 
 
+<A NAME="lock(boolean)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">lock</span>
+      <span class="normal">(boolean lockVal)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set lock state of SoftSpot, it impacts SoftSpot motion ability on finger dragging events.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>lockVal</td>
+          <td>Pass in 'true' to keep SoftSpot locked to its current position.
+              Pass in 'false' to allow SoftSpot to be moved around the screen.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDecodedDuration(com.datalogic.softspot.DecodedDuration)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setDecodedDuration</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a> decodedDuration)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the duration for how long the decoded image should be displayed
+ on screen after a good read before switching back to the <code><a href="../../../../reference/com/datalogic/softspot/ImageState.html#NORMAL">NORMAL</a></code> image.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>decodedDuration</td>
+          <td>Enum value representing the number of seconds to display
+			the 'decoded' image for.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="setEnabled(boolean)"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1467,6 +1746,54 @@ From class
         <tr>
           <th>enable</td>
           <td>True to enable SoftSpot, false to disable SoftSpot.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setImage(com.datalogic.softspot.ActionType, com.datalogic.softspot.ImageState, com.datalogic.softspot.ImageEnum)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setImage</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a> actionType, <a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a> imageState, <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the image to use when SoftSpot has the given ActionType and ImageState values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>actionType</td>
+          <td>The type of action to set an image for.</td>
+        </tr>
+        <tr>
+          <th>imageState</td>
+          <td>The state of the image for which the image should be set.</td>
+        </tr>
+        <tr>
+          <th>imageEnum</td>
+          <td>The image to set as active.
 </td>
         </tr>
       </table>
@@ -1548,6 +1875,47 @@ From class
           <th>scalar</td>
           <td>Scale multiplier to set SoftSpot size. A value that is not
             between the minimum and maximum will be ignored.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setVibrator(boolean)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setVibrator</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Toggle the vibrator on or off when SoftSpot is pressed or moved.
+ Also, vibrate when SoftSpot is used to launch an application.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>set to true to enable vibrator. set to false to disable vibrator.
 </td>
         </tr>
       </table>

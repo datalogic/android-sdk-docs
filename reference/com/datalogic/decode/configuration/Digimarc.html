@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>PostalAustralian - Datalogic SDK version 1 | Android Add-on</title>
+<title>Digimarc - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="5" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -298,7 +298,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Datamatrix.html">Datamatrix</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DecodingNotification.html">DecodingNotification</a></li>
-          <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></li>
+          <li class="selected api apilevel-5"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Discrete25.html">Discrete25</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DisplayNotification.html">DisplayNotification</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html">Ean13</a></li>
@@ -317,7 +317,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalKix.html">PostalKix</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalRoyalMail.html">PostalRoyalMail</a></li>
@@ -439,7 +439,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
   
   
 
@@ -455,7 +455,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">PostalAustralian</h1>
+<h1 itemprop="name">Digimarc</h1>
 
 
 
@@ -478,7 +478,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-5">
 <table class="jd-inheritance-table">
 
 
@@ -502,7 +502,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.PostalAustralian</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.Digimarc</td>
     </tr>
     
 
@@ -518,8 +518,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>PostalAustralian</code> is the class that configures the Postal
- Australian.
+<p itemprop="articleBody"><code>Digimarc</code>&#174; is the class that configures the Digimarc barcode &#8482; reading capability.
+ The technology requires specific devices equipped with certain Datalogic scan engines.
 </p>
 
 
@@ -570,25 +570,14 @@ Summary:
 
 
     
-      <tr class="alt-color api apilevel-" >
+      <tr class="alt-color api apilevel-5" >
           <td class="jd-typecol"><nobr>
           public
           
           
           <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html#enable">enable</a></td>
-          <td class="jd-descrcol" width="100%"><code>enable</code> enables or disables the symbology.</td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html#userID">userID</a></td>
-          <td class="jd-descrcol" width="100%"><code>userID</code> specifies the symbology identifier (if any).</td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html#enable">enable</a></td>
+          <td class="jd-descrcol" width="100%"><code>enable</code> activates the Digimarc barcode &#8482; reading functionalities.</td>
       </tr>
       
     
@@ -607,7 +596,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -617,9 +606,9 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html#PostalAustralian(com.datalogic.device.configuration.PropertyGetter)">PostalAustralian</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html#Digimarc(com.datalogic.device.configuration.PropertyGetter)">Digimarc</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
         
-        <div class="jd-descrdiv">This is the constructor of PostalAustralian.</div>
+        <div class="jd-descrdiv">This is the constructor of Digimarc.</div>
   
   </td></tr>
 
@@ -1016,7 +1005,7 @@ From class
 
 <A NAME="enable"></A>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-5"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1028,45 +1017,14 @@ From class
     </h4>
       <div class="api-level">
         
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> enables or disables the symbology.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="userID"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a>
-      </span>
-        userID
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>userID</code> specifies the symbology identifier (if any).<br/>
- The symbology identifier is sent with the label when the
- global decode property <code><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#sendCodeId">sendCodeId</a></code> is set to
- <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_BEFORE_LABEL">USERDEFINED_IDENTIFIER_BEFORE_LABEL</a></code> or <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_AFTER_LABEL">USERDEFINED_IDENTIFIER_AFTER_LABEL</a></code>.
+  <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> activates the Digimarc barcode &#8482; reading functionalities.
 </p></div>
 
     
@@ -1084,9 +1042,9 @@ From class
 
 
 
-<A NAME="PostalAustralian(com.datalogic.device.configuration.PropertyGetter)"></A>
+<A NAME="Digimarc(com.datalogic.device.configuration.PropertyGetter)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-5"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1096,26 +1054,26 @@ From class
          
         
       </span>
-      <span class="sympad">PostalAustralian</span>
+      <span class="sympad">Digimarc</span>
       <span class="normal">(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of PostalAustralian. All symbology options are
- initialized by editor.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of Digimarc. All options are initialized by
+ editor.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>editor</td>
-          <td>A <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></code> used to load the current barcode family.
+          <td>A <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></code> used to load the current reading technology.
 </td>
         </tr>
       </table>

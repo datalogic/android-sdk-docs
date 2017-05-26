@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
         buildApiLevelSelector();
       </script>
                   
@@ -366,7 +366,28 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/ActionType.html">ActionType</a></td>
+            <td class="jd-descrcol" width="100%"><code>ActionType</code> is an enumeration defining constants for different actions
+ performed by SoftSpot.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></td>
+            <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
+ action (scan by default) when entering a defined range.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a></td>
+            <td class="jd-descrcol" width="100%">Class representing a specific AutoScan range, constituted by
+ an id and a name.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Aztec.html">Aztec</a></td>
             <td class="jd-descrcol" width="100%"><code>Aztec</code> is the class that configures the Aztec Code.&nbsp;</td>
         </tr>
@@ -490,13 +511,20 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></td>
+            <td class="jd-descrcol" width="100%"><code>DecodedDuration</code> is an enumeration defining constants for the
+ time periods SoftSpot can configured to display the decoded icon for.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
             <td class="jd-descrcol" width="100%"><code>DecodeException</code> is used for decoder related errors.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/DecodeResult.html">DecodeResult</a></td>
             <td class="jd-descrcol" width="100%"><code>DecodeResult</code> is an interface passed by
  <code><a href="../reference/com/datalogic/decode/ReadListener.html#onRead(com.datalogic.decode.DecodeResult)">onRead(DecodeResult)</a></code> to retrieve scanned data from the
@@ -504,16 +532,22 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/DecodingNotification.html">DecodingNotification</a></td>
             <td class="jd-descrcol" width="100%"><code>DecodingNotification</code> is the class that configures the
  notification to produce on a successful read .&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
             <td class="jd-descrcol" width="100%">This exception is used for device related errors.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></td>
+            <td class="jd-descrcol" width="100%"><code>Digimarc</code>&#174; is the class that configures the Digimarc barcode &#8482; reading capability.&nbsp;</td>
         </tr>
     
     
@@ -617,6 +651,20 @@ Distribution</a></li>
 
 <h2 id="letter_I">I</h2>
 <table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></td>
+            <td class="jd-descrcol" width="100%"><code>ImageEnum</code> is an enumeration defining constants for different images that
+ can be displayed by SoftSpot.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/ImageState.html">ImageState</a></td>
+            <td class="jd-descrcol" width="100%"><code>ImageState</code> is an enumeration defining constants for different states
+ SoftSpot can be in.&nbsp;</td>
+        </tr>
     
     
         <tr class="alt-color api apilevel-1" >
@@ -1017,6 +1065,12 @@ Distribution</a></li>
         <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></td>
             <td class="jd-descrcol" width="100%">This class provides access to touch panel related methods of the device.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-5" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/Trigger.html">Trigger</a></td>
+            <td class="jd-descrcol" width="100%">Interface representing a trigger associated by default with the scan action.&nbsp;</td>
         </tr>
     
     
