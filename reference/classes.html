@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6' ];
         buildApiLevelSelector();
       </script>
                   
@@ -474,14 +474,13 @@ Distribution</a></li>
     
         <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></td>
-            <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code 128 Symbology.&nbsp;</td>
+            <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code128 and GS1-128 Symbologies.&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></td>
-            <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39 Symbology
- Properties.&nbsp;</td>
+            <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39, Code32 and TriOptic Symbologies.&nbsp;</td>
         </tr>
     
     
@@ -760,13 +759,19 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-6" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></td>
+            <td class="jd-descrcol" width="100%"><code>LinearQuietZones</code> is the class that configures the admitted quiet zones for the supported linear symbologies.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/location/LocationManager.html">LocationManager</a></td>
             <td class="jd-descrcol" width="100%">The <code>LocationManager</code> class provides access to geo-location related methods of the device.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/location/LocationMode.html">LocationMode</a></td>
             <td class="jd-descrcol" width="100%">The <code>LocationMode</code> enumeration defines different location systems that can be selectively
  activated to help the Android LocationManager.&nbsp;</td>

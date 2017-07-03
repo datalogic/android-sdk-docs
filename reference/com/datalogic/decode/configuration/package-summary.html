@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6' ];
         buildApiLevelSelector();
       </script>
                   
@@ -312,6 +312,7 @@ Distribution</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html">IntentWedge</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Interleaved25.html">Interleaved25</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></li>
+        <li class="api apilevel-6"><a href="../../../../../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Matrix25.html">Matrix25</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></li>
@@ -428,7 +429,7 @@ Distribution</a></li>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></code></td>
-			<td>Code 39</td>
+			<td>Code 39, Code 32 and Tri-Optic</td>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></code></td>
@@ -436,7 +437,7 @@ Distribution</a></li>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></code></td>
-			<td>Code 128</td>
+			<td>Code 128 and GS1-128</td>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Discrete25.html">Discrete25</a></code></td>
@@ -484,7 +485,11 @@ Distribution</a></li>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></code></td>
-			<td>UPC & EAN extension configuration</td>
+			<td>UPC/EAN extension configuration</td>
+		</tr>
+		<tr class="alt-color">
+			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></code></td>
+			<td>Linear barcode quiet zones configuration</td>
 		</tr>
 	</tbody>
 </table>
@@ -665,12 +670,11 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
           </tr>
         <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></td>
-              <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code 128 Symbology.&nbsp;</td>
+              <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code128 and GS1-128 Symbologies.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></td>
-              <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39 Symbology
- Properties.&nbsp;</td>
+              <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39, Code32 and TriOptic Symbologies.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></td>
@@ -748,86 +752,90 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-descrcol" width="100%"><code>KeyboardWedge</code> is the class that configures the Decode Wedge
  capability with the keystroke mode.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-6" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></td>
+              <td class="jd-descrcol" width="100%"><code>LinearQuietZones</code> is the class that configures the admitted quiet zones for the supported linear symbologies.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Matrix25.html">Matrix25</a></td>
               <td class="jd-descrcol" width="100%"><code>Matrix25</code> is the class that configures the Matrix 2/5 Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></td>
               <td class="jd-descrcol" width="100%"><code>Maxicode</code> is the class that configures the Maxicode Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></td>
               <td class="jd-descrcol" width="100%"><code>Micropdf417</code> is the class that configures the MicroPDF-417
  Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></td>
               <td class="jd-descrcol" width="100%"><code>MicroQR</code> is the class that configures the Micro QR Code Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></td>
               <td class="jd-descrcol" width="100%"><code>Msi</code> is the class that configures the MSI Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></td>
               <td class="jd-descrcol" width="100%"><code>Pdf417</code> is the class that configures the PDF 417 Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalAustralian</code> is the class that configures the Postal
  Australian.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalJapan</code> is the class that configures the Postal Japan.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalKix.html">PostalKix</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalKix</code> is the class that configures the Postal Kix.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalRoyalMail.html">PostalRoyalMail</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalRoyalMail</code> is the class that configures the Postal Royal
  Mail.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPlanet.html">PostalUsPlanet</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsPlanet</code> is the class that configures the Postal US
  Planet.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPostnet.html">PostalUsPostnet</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsPostnet</code> is the class that configures the Postal US
  Postnet.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsps4State.html">PostalUsps4State</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsps4State</code> is the class that configures the Postal
  USPS4State.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></td>
               <td class="jd-descrcol" width="100%"><code>QRCode</code> is the class that configures the QR Code Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></td>
               <td class="jd-descrcol" width="100%"><code>ScannerOptions</code> is the class that configures the scanner target
  beam and other scanner functionalities.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></td>
               <td class="jd-descrcol" width="100%"><code>ScannerProperties</code> is the scanner property container class.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcA</code> is the class that configures the UPC-A Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcE</code> is the class that configures the UPC-E Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcEanExtensions</code> is the class that configures the UPC/EAN
  Extensions.&nbsp;</td>

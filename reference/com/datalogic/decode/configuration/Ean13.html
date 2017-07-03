@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6' ];
         buildApiLevelSelector();
       </script>
                   
@@ -311,6 +311,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html">IntentWedge</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Interleaved25.html">Interleaved25</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></li>
+          <li class="api apilevel-6"><a href="../../../../../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Matrix25.html">Matrix25</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></li>
@@ -616,7 +617,19 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class="alt-color api apilevel-6" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html#sendSystemDigit">sendSystemDigit</a></td>
+          <td class="jd-descrcol" width="100%"><code>sendSystemDigit</code> includes the system digit in the label
+ transmission, it configures whether the first character should be transmitted.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -1163,6 +1176,37 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p><code>sendChecksum</code> includes the checksum in the label
  transmission.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="sendSystemDigit"></A>
+
+<div class="jd-details api apilevel-6"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+      </span>
+        sendSystemDigit
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 6</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>sendSystemDigit</code> includes the system digit in the label
+ transmission, it configures whether the first character should be transmitted.
 </p></div>
 
     
