@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>IntentDeliveryMode - Datalogic SDK version 1 | Android Add-on</title>
+<title>CharacterSetMode - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="8" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -340,8 +340,8 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
-          <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
+          <li class="selected api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
           <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
@@ -457,7 +457,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
   
   
 
@@ -473,7 +473,7 @@ Summary:
     final 
     
     enum
-<h1 itemprop="name">IntentDeliveryMode</h1>
+<h1 itemprop="name">CharacterSetMode</h1>
 
 
 
@@ -496,7 +496,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-8">
 <table class="jd-inheritance-table">
 
 
@@ -520,7 +520,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.IntentDeliveryMode</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.CharacterSetMode</td>
     </tr>
     
 
@@ -536,22 +536,132 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>IntentDeliveryMode</code> is an enumeration defining the
- method by which the intent is delivered.
+<p itemprop="articleBody"><code>CharacterSetMode</code> is an enumeration defining the different String encodings supported for certain symbologies of barcodes.
+ The result extracted from the label is converted to a selected character set, supported by Java.
  
- The type is one of:
+ The supported symbologies are:
+ <ul>
+  <li>Aztec</li>
+  <li>Data Matrix</li>
+  <li>MicroPDF417</li>
+  <li>Micro QR code</li>
+  <li>PDF417</li>
+  <li>QR code</li>
+ </ul>
+ 
+ The type of mode is one of:
  <table border=2>
  <tr>
- <td>START_ACTIVITY</td>
- <td>Intent delivered via StartActivity</td>
+ <td>BIG_5</td>
+ <td>Big5, Traditional Chinese</td>
  </tr>
  <tr>
- <td>START_SERVICE</td>
- <td>Intent delivered via StartService</td>
+ <td>EUC_CN</td>
+ <td>GB2312, EUC encoding, Simplified Chinese</td>
  </tr>
  <tr>
- <td>BROADCAST</td>
- <td>Broadcast Intent</td>
+ <td>EUC_KR</td>
+ <td>KS C 5601, EUC encoding, Korean</td>
+ </tr>
+ <tr>
+ <td>GB18030</td>
+ <td>Simplified Chinese, PRC standard</td>
+ </tr>
+ <tr>
+ <td>GBK</td>
+ <td>GBK, Simplified Chinese</td>
+ </tr>
+ <tr>
+ <td>IBM_437</td>
+ <td>MS-DOS United States, Australia, New Zealand, South Africa</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_1</td>
+ <td>Latin Alphabet No. 1</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_2</td>
+ <td>Latin Alphabet No. 2</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_3</td>
+ <td>Latin Alphabet No. 3</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_4</td>
+ <td>Latin Alphabet No. 4</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_5</td>
+ <td>Latin/Cyrillic Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_6</td>
+ <td>Latin/Arabic Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_7</td>
+ <td>Latin/Greek Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_8</td>
+ <td>Latin/Hebrew Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_9</td>
+ <td>Latin No. 5/Turkish Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_11</td>
+ <td>Latin/Thai Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_13</td>
+ <td>Latin No. 7/Baltic Rim Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_14</td>
+ <td>Latin No. 8/Celtic Alphabet</td>
+ </tr>
+ <tr>
+ <td>ISO_8859_15</td>
+ <td>Latin Alphabet No. 9</td>
+ </tr>
+ <tr>
+ <td>SHIFT_JIS</td>
+ <td>Shift-JIS, Japanese</td>
+ </tr>
+ <tr>
+ <td>US_ASCII</td>
+ <td>American Standard Code for Information Interchange</td>
+ </tr>
+ <tr>
+ <td>UTF_8</td>
+ <td>Eight-bit Unicode (or UCS) Transformation Format</td>
+ </tr>
+ <tr>
+ <td>UTF_16</td>
+ <td>Sixteen-bit Unicode (or UCS) Transformation Format, byte order identified by an optional byte-order mark</td>
+ </tr>
+ <tr>
+ <td>WINDOWS_1250</td>
+ <td>Windows Eastern European</td>
+ </tr>
+ <tr>
+ <td>WINDOWS_1251</td>
+ <td>Windows Cyrillic</td>
+ </tr>
+ <tr>
+ <td>WINDOWS_1252</td>
+ <td>Windows Latin-1</td>
+ </tr>
+ <tr>
+ <td>WINDOWS_1254</td>
+ <td>Windows Turkish</td>
+ </tr>
+ <tr>
+ <td>WINDOWS_1256</td>
+ <td>Windows Arabic</td>
  </tr>
  </table>
 </p>
@@ -596,26 +706,226 @@ Summary:
 <table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>&nbsp;</td>
-        <td class="jd-linkcol">BROADCAST&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Sends an Intent using broadcastIntent to invoke registered broadcast receivers
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">BIG_5&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Big5
 &nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>&nbsp;</td>
-        <td class="jd-linkcol">START_ACTIVITY&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Sends an Intent using startActivity to invoke an Activity
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">EUC_CN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">EUC-CN
 &nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>&nbsp;</td>
-        <td class="jd-linkcol">START_SERVICE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Sends an Intent using startService to initiate operation of a Service
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">EUC_KR&nbsp;</td>
+        <td class="jd-descrcol" width="100%">EUC-KR
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">GB18030&nbsp;</td>
+        <td class="jd-descrcol" width="100%">GB18030
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">GBK&nbsp;</td>
+        <td class="jd-descrcol" width="100%">GBK
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">IBM_437&nbsp;</td>
+        <td class="jd-descrcol" width="100%">IBM-437
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_1&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-1
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_11&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-11
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_13&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-13
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_14&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-14
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_15&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-15
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_2&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-2
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_3&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-3
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_4&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-4
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_5&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-5
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_6&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-6
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_7&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-7
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_8&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-8
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">ISO_8859_9&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ISO-8859-9
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">SHIFT_JIS&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Shift-JIS
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">US_ASCII&nbsp;</td>
+        <td class="jd-descrcol" width="100%">ASCII
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">UTF_16&nbsp;</td>
+        <td class="jd-descrcol" width="100%">UTF-16
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">UTF_8&nbsp;</td>
+        <td class="jd-descrcol" width="100%">UTF-8
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">WINDOWS_1250&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Windows 1250
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">WINDOWS_1251&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Windows 1251
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">WINDOWS_1252&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Windows 1252
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">WINDOWS_1254&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Windows 1254
+&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-8" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&nbsp;</td>
+        <td class="jd-linkcol">WINDOWS_1256&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Windows 1256
 &nbsp;</td>
     </tr>
     
@@ -644,33 +954,33 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-8" >
         <td class="jd-typecol"><nobr>
             
             
             
             static
             
-            <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></nobr>
+            <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
         
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-8" >
         <td class="jd-typecol"><nobr>
             
             
             final
             static
             
-            <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode[]</a></nobr>
+            <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode[]</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html#values()">values</a></span>()</nobr>
         
   </td></tr>
 
@@ -1163,28 +1473,28 @@ From interface
 
 
 
-<A NAME="BROADCAST"></A>
+<A NAME="BIG_5"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-8"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
       </span>
-        BROADCAST
+        BIG_5
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sends an Intent using broadcastIntent to invoke registered broadcast receivers
+  <div class="jd-tagdata jd-tagdescr"><p>Big5
 </p></div>
 
     
@@ -1193,28 +1503,28 @@ From interface
 
 
 
-<A NAME="START_ACTIVITY"></A>
+<A NAME="EUC_CN"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-8"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
       </span>
-        START_ACTIVITY
+        EUC_CN
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sends an Intent using startActivity to invoke an Activity
+  <div class="jd-tagdata jd-tagdescr"><p>EUC-CN
 </p></div>
 
     
@@ -1223,28 +1533,778 @@ From interface
 
 
 
-<A NAME="START_SERVICE"></A>
+<A NAME="EUC_KR"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-8"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
       </span>
-        START_SERVICE
+        EUC_KR
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sends an Intent using startService to initiate operation of a Service
+  <div class="jd-tagdata jd-tagdescr"><p>EUC-KR
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="GB18030"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        GB18030
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>GB18030
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="GBK"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        GBK
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>GBK
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="IBM_437"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        IBM_437
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>IBM-437
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_1"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_1
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-1
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_11"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_11
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-11
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_13"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_13
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-13
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_14"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_14
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-14
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_15"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_15
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-15
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_2"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_2
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-2
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_3"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_3
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-3
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_4"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_4
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-4
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_5"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_5
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-5
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_6"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_6
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-6
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_7"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_7
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-7
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_8"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_8
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-8
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="ISO_8859_9"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        ISO_8859_9
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO-8859-9
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="SHIFT_JIS"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        SHIFT_JIS
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Shift-JIS
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="US_ASCII"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        US_ASCII
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ASCII
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="UTF_16"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        UTF_16
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>UTF-16
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="UTF_8"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        UTF_8
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>UTF-8
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="WINDOWS_1250"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        WINDOWS_1250
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Windows 1250
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="WINDOWS_1251"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        WINDOWS_1251
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Windows 1251
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="WINDOWS_1252"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        WINDOWS_1252
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Windows 1252
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="WINDOWS_1254"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        WINDOWS_1254
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Windows 1254
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="WINDOWS_1256"></A>
+
+<div class="jd-details api apilevel-8"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
+      </span>
+        WINDOWS_1256
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Windows 1256
 </p></div>
 
     
@@ -1278,7 +2338,7 @@ From interface
 
 <A NAME="valueOf(java.lang.String)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-8"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1286,14 +2346,14 @@ From interface
          
          
          
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a>
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>
       </span>
       <span class="sympad">valueOf</span>
       <span class="normal">(String name)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a></div>
         
   
 
@@ -1308,7 +2368,7 @@ From interface
 
 <A NAME="values()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-8"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1316,14 +2376,14 @@ From interface
         final 
          
          
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode[]</a>
+        <a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode[]</a>
       </span>
       <span class="sympad">values</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 8</a></div>
         
   
 

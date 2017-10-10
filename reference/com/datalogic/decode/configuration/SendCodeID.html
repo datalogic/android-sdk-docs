@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8' ];
         buildApiLevelSelector();
       </script>
                   
@@ -318,6 +318,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></li>
+          <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></li>
@@ -339,6 +340,7 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
+          <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
           <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
@@ -609,42 +611,48 @@ Summary:
     <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">AIM_IDENTIFIER_BEFORE_LABEL&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Transmit the AIM symbology identifier before the barcode data
+&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">DATALOGIC_IDENTIFIER_AFTER_LABEL&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Transmit Datalogic legacy label identifier after the barcode data
+&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">DATALOGIC_IDENTIFIER_BEFORE_LABEL&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Transmit Datalogic legacy label identifier before the barcode data
+&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">NONE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">No identifier is transmitted with the decoded label
+&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">USERDEFINED_IDENTIFIER_AFTER_LABEL&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Transmit a user identifier label after the barcode data
+&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a>&nbsp;</td>
         <td class="jd-linkcol">USERDEFINED_IDENTIFIER_BEFORE_LABEL&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Transmit a user identifier label before the barcode data
+&nbsp;</td>
     </tr>
     
     
@@ -1212,7 +1220,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Transmit the AIM symbology identifier before the barcode data
+</p></div>
 
     
     </div>
@@ -1241,7 +1250,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Transmit Datalogic legacy label identifier after the barcode data
+</p></div>
 
     
     </div>
@@ -1270,7 +1280,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Transmit Datalogic legacy label identifier before the barcode data
+</p></div>
 
     
     </div>
@@ -1299,7 +1310,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>No identifier is transmitted with the decoded label
+</p></div>
 
     
     </div>
@@ -1328,7 +1340,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Transmit a user identifier label after the barcode data
+</p></div>
 
     
     </div>
@@ -1357,7 +1370,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Transmit a user identifier label before the barcode data
+</p></div>
 
     
     </div>

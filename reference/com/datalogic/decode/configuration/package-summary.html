@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8' ];
         buildApiLevelSelector();
       </script>
                   
@@ -319,6 +319,7 @@ Distribution</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></li>
+        <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></li>
@@ -340,6 +341,7 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
+        <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
         <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
@@ -510,7 +512,7 @@ Distribution</a></li>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Datamatrix.html">Datamatrix</a></code></td>
-			<td>Datamatrix</td>
+			<td>Data Matrix</td>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></code></td>
@@ -645,12 +647,12 @@ Distribution</a></li>
 			<td>The method by which the <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></code> operates.</td>
 		</tr>
 		<tr class="alt-color">
-			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/WebWedge.html">WebWedge</a></code></td>
-			<td>The class that enables direct web browsing through scanned labels.</td>
-		</tr>
-		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></code></td>
 			<td>Contains access to serveral specific scanner functionalities.</td>
+		</tr>
+		<tr class="alt-color">
+			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></code></td>
+			<td>A way to collect multiple labels in a single scanning operating session.</td>
 		</tr>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></code></td>
@@ -659,6 +661,10 @@ Distribution</a></li>
 		<tr class="alt-color">
 			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></code></td>
 			<td>The type of identifier to be transmitted with the scanned data.</td>
+		</tr>
+		<tr class="alt-color">
+			<td><code><a href="../../../../../reference/com/datalogic/decode/configuration/WebWedge.html">WebWedge</a></code></td>
+			<td>The class that enables direct web browsing through scanned labels.</td>
 		</tr>
 	</tbody>
 </table>
@@ -708,7 +714,7 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
           </tr>
         <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Datamatrix.html">Datamatrix</a></td>
-              <td class="jd-descrcol" width="100%"><code>Datamatrix</code> is the class that configures the Datamatrix
+              <td class="jd-descrcol" width="100%"><code>Datamatrix</code> is the class that configures the Data Matrix
  Symbology.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-1" >
@@ -803,70 +809,74 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></td>
               <td class="jd-descrcol" width="100%"><code>Msi</code> is the class that configures the MSI Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-8" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></td>
+              <td class="jd-descrcol" width="100%"><code>MultiScan</code> is the class that configures the Multi Scan functionality.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></td>
               <td class="jd-descrcol" width="100%"><code>Pdf417</code> is the class that configures the PDF 417 Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalAustralian</code> is the class that configures the Postal
  Australian.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalJapan</code> is the class that configures the Postal Japan.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalKix.html">PostalKix</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalKix</code> is the class that configures the Postal Kix.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalRoyalMail.html">PostalRoyalMail</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalRoyalMail</code> is the class that configures the Postal Royal
  Mail.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPlanet.html">PostalUsPlanet</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsPlanet</code> is the class that configures the Postal US
  Planet.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPostnet.html">PostalUsPostnet</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsPostnet</code> is the class that configures the Postal US
  Postnet.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsps4State.html">PostalUsps4State</a></td>
               <td class="jd-descrcol" width="100%"><code>PostalUsps4State</code> is the class that configures the Postal
  USPS4State.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></td>
               <td class="jd-descrcol" width="100%"><code>QRCode</code> is the class that configures the QR Code Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></td>
               <td class="jd-descrcol" width="100%"><code>ScannerOptions</code> is the class that configures the scanner target
  beam and other scanner functionalities.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></td>
               <td class="jd-descrcol" width="100%"><code>ScannerProperties</code> is the scanner property container class.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcA</code> is the class that configures the UPC-A Symbology.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcE</code> is the class that configures the UPC-E Symbology.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcEanExtensions</code> is the class that configures the UPC/EAN
  Extensions.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-7" >
+        <tr class="alt-color api apilevel-7" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/WebWedge.html">WebWedge</a></td>
               <td class="jd-descrcol" width="100%"><code>WebWedge</code> is the class that configures the Decode Wedge
  capability for direct web browsing.&nbsp;</td>
@@ -886,31 +896,35 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-descrcol" width="100%">The <code>BeamMode</code> is an enumeration defining the operating beam
  mode.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-8" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></td>
+              <td class="jd-descrcol" width="100%"><code>CharacterSetMode</code> is an enumeration defining the different String encodings supported for certain symbologies of barcodes.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></td>
               <td class="jd-descrcol" width="100%"><code>IntentDeliveryMode</code> is an enumeration defining the
  method by which the intent is delivered.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-3" >
+        <tr class=" api apilevel-3" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></td>
               <td class="jd-descrcol" width="100%"><code>KeyWedgeMode</code> is an enumeration defining the
  different <code><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></code> input methodologies.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></td>
               <td class="jd-descrcol" width="100%"><code>LengthControlMode</code> is an enumeration defining the operating length
  control mode for each barcode family that has lengths.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></td>
               <td class="jd-descrcol" width="100%"><code>SendCodeID</code> is an enumeration defining the type of
  identifier to be transmitted with the scanned data.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></td>
               <td class="jd-descrcol" width="100%"><code>ToneNotificationMode</code> is an enumeration defining the audio notification mode, subject to Good read rules.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-7" >
+        <tr class=" api apilevel-7" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanCompositeMode.html">UpcEanCompositeMode</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcEanCompositeMode</code> is an enumeration defining the type of transmission in use for GS1 Composite labels containing UPC/EAN barcodes.&nbsp;</td>
           </tr>
