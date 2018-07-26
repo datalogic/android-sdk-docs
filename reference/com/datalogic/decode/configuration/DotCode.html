@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>ScannerOptions - Datalogic SDK version 1 | Android Add-on</title>
+<title>DotCode - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="10" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -302,7 +302,7 @@ Distribution</a></li>
           <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Discrete25.html">Discrete25</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DisplayNotification.html">DisplayNotification</a></li>
-          <li class="api apilevel-10"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></li>
+          <li class="selected api apilevel-10"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html">Ean13</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean8.html">Ean8</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html">Formatting</a></li>
@@ -329,7 +329,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPostnet.html">PostalUsPostnet</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsps4State.html">PostalUsps4State</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></li>
@@ -446,7 +446,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 10</a>
   
   
 
@@ -462,7 +462,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">ScannerOptions</h1>
+<h1 itemprop="name">DotCode</h1>
 
 
 
@@ -485,7 +485,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-10">
 <table class="jd-inheritance-table">
 
 
@@ -509,7 +509,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.ScannerOptions</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.DotCode</td>
     </tr>
     
 
@@ -525,8 +525,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>ScannerOptions</code> is the class that configures the scanner target
- beam and other scanner functionalities.
+<p itemprop="articleBody"><code>DotCode</code> is the class that configures the Dot Code.
+ 
 </p>
 
 
@@ -577,26 +577,25 @@ Summary:
 
 
     
-      <tr class="alt-color api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#aimEnable">aimEnable</a></td>
-          <td class="jd-descrcol" width="100%"><code>aimEnable</code> enables aim projection when capturing frames.</td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-1" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
           
           <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#decodeTimeout">decodeTimeout</a></td>
-          <td class="jd-descrcol" width="100%"><code>decodeTimeout</code> is the maximum time the scanner remains on
- without reading a barcode.</td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#Length1">Length1</a></td>
+          <td class="jd-descrcol" width="100%"><code>Length1</code> is one of the two configurable label lengths.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#Length2">Length2</a></td>
+          <td class="jd-descrcol" width="100%"><code>Length2</code> is one of the two configurable label lengths.</td>
       </tr>
       
     
@@ -605,77 +604,42 @@ Summary:
           public
           
           
-          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#displayModeEnable">displayModeEnable</a></td>
-          <td class="jd-descrcol" width="100%"><code>displayModeEnable</code> barcode illumination management for capturing frames from displys or reflective surfaces.</td>
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#characterSetMode">characterSetMode</a></td>
+          <td class="jd-descrcol" width="100%"><code>characterSetMode</code> controls the character set in use for the decoded label.</td>
       </tr>
       
     
-      <tr class=" api apilevel-1" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
           
           <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#illuminationEnable">illuminationEnable</a></td>
-          <td class="jd-descrcol" width="100%"><code>illuminationEnable</code> enables barcode illumination when capturing frames.</td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#enable">enable</a></td>
+          <td class="jd-descrcol" width="100%"><code>enable</code> enables or disables the symbology.</td>
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
           
-          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#picklistEnable">picklistEnable</a></td>
-          <td class="jd-descrcol" width="100%"><code>picklistEnable</code> limits reading to targeted selection.</td>
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#lengthMode">lengthMode</a></td>
+          <td class="jd-descrcol" width="100%"><code>lengthMode</code> is the <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code> selected for a label.</td>
       </tr>
       
     
-      <tr class=" api apilevel-1" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
           
-          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a>&gt;</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#targetMode">targetMode</a></td>
-          <td class="jd-descrcol" width="100%"><code>targetMode</code> selects the scanner target beam mode.</td>
-      </tr>
-      
-    
-      <tr class="alt-color api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#targetModeEnable">targetModeEnable</a></td>
-          <td class="jd-descrcol" width="100%"><code>targetModeEnable</code> enables the use of a target beam mode.</td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#targetReleaseTimeout">targetReleaseTimeout</a></td>
-          <td class="jd-descrcol" width="100%"><code>targetReleaseTimeout</code> is the maximum time the scanner is on after
- trigger release when using Release Scan target beam mode.</td>
-      </tr>
-      
-    
-      <tr class="alt-color api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#targetTimeout">targetTimeout</a></td>
-          <td class="jd-descrcol" width="100%"><code>targetTimeout</code> is time the target beam is on before scanner
- attempts to read.</td>
+          <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#userID">userID</a></td>
+          <td class="jd-descrcol" width="100%"><code>userID</code> specifies the symbology identifier (if any).</td>
       </tr>
       
     
@@ -694,7 +658,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-10" >
         <td class="jd-typecol"><nobr>
             
             
@@ -704,9 +668,9 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html#ScannerOptions(com.datalogic.device.configuration.PropertyGetter)">ScannerOptions</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#DotCode(com.datalogic.device.configuration.PropertyGetter)">DotCode</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
         
-        <div class="jd-descrdiv">This is the constructor of ScannerOptions.</div>
+        <div class="jd-descrdiv">This is the constructor of DotCode.</div>
   
   </td></tr>
 
@@ -1101,39 +1065,9 @@ From class
 
 
 
-<A NAME="aimEnable"></A>
+<A NAME="Length1"></A>
 
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
-      </span>
-        aimEnable
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>aimEnable</code> enables aim projection when capturing frames.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="decodeTimeout"></A>
-
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1141,21 +1075,34 @@ From class
          
         <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
       </span>
-        decodeTimeout
+        Length1
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>decodeTimeout</code> is the maximum time the scanner remains on
- without reading a barcode. If the value exceeds the range, the value is
- set at full scale. The amount of time is represented in milliseconds.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>Length1</code> is one of the two configurable label lengths. It can be used
+ as a single fixed accepted length, when <code><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html#lengthMode">lengthMode</a></code> is set to <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#ONE_FIXED">ONE_FIXED</a></code>.
+ When <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#TWO_FIXED">TWO_FIXED</a></code> is enabled, its value is one of the two possible accepted fixed lengths for a specific label.
+ It can also represent the minor or major length value whenever <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#RANGE">RANGE</a></code> is selected.
+ 
+ If is set below the accepted minimum, the smallest accepted length will be used; instead it the set value exceed the maximum value, the
+ biggest accepted length will be used. 
+ <p>
+ <b>Note:</b> <code>Length1</code> allowed range of values is somehow related to the nature of the barcode (linear vs 2D) but it's not intended to document
+ in any way the scanner capabilities. An accepted minimum value and an accepted maximum value are introduced only to simplify length management in the 
+ device <b>Scanner settings</b> app. The chance to read a barcode depends on it's printed quality, resolution, overall size, distance from the reader, 
+ environmental light, etc...
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
+      </ul>
+  </div>
 
     
     </div>
@@ -1163,7 +1110,51 @@ From class
 
 
 
-<A NAME="displayModeEnable"></A>
+<A NAME="Length2"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
+      </span>
+        Length2
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>Length2</code> is one of the two configurable label lengths.
+ When <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#TWO_FIXED">TWO_FIXED</a></code> is enabled, its value is one of the two possible accepted fixed lengths for a specific label.
+ It can also represent the minor or major length value whenever <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html#RANGE">RANGE</a></code> is selected.
+
+ If is set below the accepted minimum, the smallest accepted length will be used; instead it the set value exceed the maximum value, the
+ biggest accepted length will be used.
+ <p>
+ <b>Note:</b> <code>Length2</code> allowed range of values is somehow related to the nature of the barcode (linear vs 2D) but it's not intended to document
+ in any way the scanner capabilities. An accepted minimum value and an accepted maximum value are introduced only to simplify length management in the 
+ device <b>Scanner settings</b> app. The chance to read a barcode depends on it's printed quality, resolution, overall size, distance from the reader, 
+ environmental light, etc...
+ </p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
+      </ul>
+  </div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="characterSetMode"></A>
 
 <div class="jd-details api apilevel-10"> 
     <h4 class="jd-details-title">
@@ -1171,9 +1162,9 @@ From class
         public 
          
          
-        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&gt;
       </span>
-        displayModeEnable
+        characterSetMode
     </h4>
       <div class="api-level">
         
@@ -1184,10 +1175,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>displayModeEnable</code> barcode illumination management for capturing frames from displys or reflective surfaces.
- The possibile configurations are: 
-  - feature disabled. Illuminator alwayas enabled;
-  - feature enabled. Illuminator adjusted according to reflection in the previous acquired frames.
+  <div class="jd-tagdata jd-tagdescr"><p><code>characterSetMode</code> controls the character set in use for the decoded label.
 </p></div>
 
     
@@ -1196,9 +1184,9 @@ From class
 
 
 
-<A NAME="illuminationEnable"></A>
+<A NAME="enable"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1206,18 +1194,17 @@ From class
          
         <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
       </span>
-        illuminationEnable
+        enable
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>illuminationEnable</code> enables barcode illumination when capturing frames.
+  <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> enables or disables the symbology.
 </p></div>
 
     
@@ -1226,29 +1213,33 @@ From class
 
 
 
-<A NAME="picklistEnable"></A>
+<A NAME="lengthMode"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
          
          
-        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a>&gt;
       </span>
-        picklistEnable
+        lengthMode
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>picklistEnable</code> limits reading to targeted selection.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>lengthMode</code> is the <code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code> selected for a label.
+ Selects the length control mode.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></code></li>
+      </ul>
+  </div>
 
     
     </div>
@@ -1256,122 +1247,30 @@ From class
 
 
 
-<A NAME="targetMode"></A>
+<A NAME="userID"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
          
          
-        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a>&gt;
+        <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a>
       </span>
-        targetMode
+        userID
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p><code>targetMode</code> selects the scanner target beam mode.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="targetModeEnable"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
-      </span>
-        targetModeEnable
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>targetModeEnable</code> enables the use of a target beam mode.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="targetReleaseTimeout"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
-      </span>
-        targetReleaseTimeout
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>targetReleaseTimeout</code> is the maximum time the scanner is on after
- trigger release when using Release Scan target beam mode. If the value
- exceeds the range, the value is set at full scale.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="targetTimeout"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        <a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a>
-      </span>
-        targetTimeout
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p><code>targetTimeout</code> is time the target beam is on before scanner
- attempts to read. 0=0.25 seconds, 1 to 4= 0.5 to 2 seconds. If the value
- exceeds the range, the value is set at full scale.
+  <div class="jd-tagdata jd-tagdescr"><p><code>userID</code> specifies the symbology identifier (if any).<br/>
+ The symbology identifier is sent with the label when the
+ global decode property <code><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#sendCodeId">sendCodeId</a></code> is set to
+ <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_BEFORE_LABEL">USERDEFINED_IDENTIFIER_BEFORE_LABEL</a></code> or <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_AFTER_LABEL">USERDEFINED_IDENTIFIER_AFTER_LABEL</a></code>.
 </p></div>
 
     
@@ -1389,9 +1288,9 @@ From class
 
 
 
-<A NAME="ScannerOptions(com.datalogic.device.configuration.PropertyGetter)"></A>
+<A NAME="DotCode(com.datalogic.device.configuration.PropertyGetter)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-10"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1401,20 +1300,20 @@ From class
          
         
       </span>
-      <span class="sympad">ScannerOptions</span>
+      <span class="sympad">DotCode</span>
       <span class="normal">(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 10</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of ScannerOptions. All options are initialized by
- editor.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of DotCode. All symbology options are initialized
+ by editor.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
