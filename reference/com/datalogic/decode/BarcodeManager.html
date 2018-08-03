@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11' ];
         buildApiLevelSelector();
       </script>
                   
@@ -1073,7 +1073,7 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startDecode()">startDecode</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startDecode(int)">startDecode</a></span>(int timeout)</nobr>
         
         <div class="jd-descrdiv">Call this method to start decoding.</div>
   
@@ -1091,7 +1091,7 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startDecode(int)">startDecode</a></span>(int timeout)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startDecode()">startDecode</a></span>()</nobr>
         
         <div class="jd-descrdiv">Call this method to start decoding.</div>
   
@@ -1289,7 +1289,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -1305,7 +1305,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -1321,7 +1321,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -3066,58 +3066,6 @@ From interface
 </div>
 
 
-<A NAME="startDecode()"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        int
-      </span>
-      <span class="sympad">startDecode</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Call this method to start decoding. <br>
- Default timeout or the one set through the SDK will be applied. <br>
- <br>
-      Example:<br>
-      <code>public int startDecoding(BarcodeManager decoder) {</code>
- <br>
-      <code> &nbsp&nbspdecoder.startDecode();</code><br>
-      <code>}</code><br></p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <A NAME="startDecode(int)"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -3162,6 +3110,58 @@ From interface
         </tr>
       </table>
   </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="startDecode()"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">startDecode</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to start decoding. <br>
+ Default timeout or the one set through the SDK will be applied. <br>
+ <br>
+      Example:<br>
+      <code>public int startDecoding(BarcodeManager decoder) {</code>
+ <br>
+      <code> &nbsp&nbspdecoder.startDecode();</code><br>
+      <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,

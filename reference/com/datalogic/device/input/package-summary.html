@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11' ];
         buildApiLevelSelector();
       </script>
                   
@@ -292,6 +292,7 @@ Distribution</a></li>
     <li><h2>Interfaces</h2>
       <ul>
         <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></li>
+        <li class="api apilevel-11"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a></li>
         <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a></li>
       </ul>
     </li>
@@ -302,6 +303,7 @@ Distribution</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.html">KeyboardManager</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.VScanCode.html">KeyboardManager.VScanCode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyCodeEntry.html">KeyCodeEntry</a></li>
+        <li class="api apilevel-11"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html">MotionTrigger.Sensitivity</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/VScanEntry.html">VScanEntry</a></li>
       </ul>
@@ -395,7 +397,12 @@ Distribution</a></li>
               <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
  action (scan by default) when entering a defined range.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-5" >
+        <tr class=" api apilevel-11" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a></td>
+              <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
+ action (scan by default) when a motion event is detected.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-5" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a></td>
               <td class="jd-descrcol" width="100%">Interface representing a trigger associated by default with the scan action.&nbsp;</td>
           </tr>
@@ -427,11 +434,16 @@ Distribution</a></li>
               <td class="jd-descrcol" width="100%">This class stores an Android KeyCode entry, as defined in <a href="http://developer.android.com/reference/android/view/KeyEvent.html">KeyEvent</a>
 &nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-11" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html">MotionTrigger.Sensitivity</a></td>
+              <td class="jd-descrcol" width="100%">Class representing the sensitivity used to trigger the action, constituted by
+ an id and a name.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></td>
               <td class="jd-descrcol" width="100%">This class provides access to touch panel related methods of the device.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/VScanEntry.html">VScanEntry</a></td>
               <td class="jd-descrcol" width="100%">This class stores a virtual key scan code entry.&nbsp;</td>
           </tr>

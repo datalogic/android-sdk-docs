@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>Trigger - Datalogic SDK version 1 | Android Add-on</title>
+<title>MotionTrigger.Sensitivity - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="5" style="display:none"></div>
+  <div id="doc-api-level" class="11" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -292,7 +292,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></li>
           <li class="api apilevel-11"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a></li>
-          <li class="selected api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a></li>
+          <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html">Trigger</a></li>
       </ul>
     </li>
               
@@ -302,7 +302,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.html">KeyboardManager</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyboardManager.VScanCode.html">KeyboardManager.VScanCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/KeyCodeEntry.html">KeyCodeEntry</a></li>
-          <li class="api apilevel-11"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html">MotionTrigger.Sensitivity</a></li>
+          <li class="selected api apilevel-11"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html">MotionTrigger.Sensitivity</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/input/VScanEntry.html">VScanEntry</a></li>
       </ul>
@@ -360,6 +360,13 @@ Distribution</a></li>
 
 
 
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -380,12 +387,14 @@ Summary:
 
 
 
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
 &#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
 
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 11</a>
   
   
 
@@ -397,13 +406,19 @@ Summary:
 
 <div id="jd-header">
     public
-     
+    static 
      
     
-    interface
-<h1 itemprop="name">Trigger</h1>
+    class
+<h1 itemprop="name">MotionTrigger.Sensitivity</h1>
 
 
+
+  
+    extends Object<br/>
+  
+  
+  
 
   
   
@@ -414,13 +429,21 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-5">
+<div id="jd-content" class="api apilevel-11">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.input.Trigger</td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.input.MotionTrigger.Sensitivity</td>
     </tr>
     
 
@@ -431,51 +454,13 @@ Summary:
 
 
 
-<table class="jd-sumtable jd-sumtable-subclasses"><tr><td colspan="12" style="border:none;margin:0;padding:0;">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="subclasses-indirect" class="jd-expando-trigger closed"
-          ><img id="subclasses-indirect-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>Known Indirect Subclasses
-
-  <div id="subclasses-indirect">
-      <div id="subclasses-indirect-list"
-              class="jd-inheritedlinks"
-              
-              >
-          
-            
-              <a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a>,
-            
-              <a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a>
-            
-          
-      </div>
-      <div id="subclasses-indirect-summary"
-              style="display: none;"
-              >
-  <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-5" >
-              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></td>
-              <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
- action (scan by default) when entering a defined range.&nbsp;</td>
-          </tr>
-        <tr class=" api apilevel-11" >
-              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a></td>
-              <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
- action (scan by default) when a motion event is detected.&nbsp;</td>
-          </tr>
-  </table>
-      </div>
-  </div>
-</td></tr></table>
-
 
 <div class="jd-descr">
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Interface representing a trigger associated by default with the scan action.
+<p itemprop="articleBody">Class representing the sensitivity used to trigger the action, constituted by
+ an id and a name.
 </p>
 
 
@@ -536,9 +521,9 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class="alt-color api apilevel-11" >
         <td class="jd-typecol"><nobr>
-            abstract
+            
             
             
             
@@ -546,17 +531,17 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getId()">getId</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html#getId()">getId</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Return the unique ID associated with the trigger.</div>
+        <div class="jd-descrdiv">Gets the sensitivity ID.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class=" api apilevel-11" >
         <td class="jd-typecol"><nobr>
-            abstract
+            
             
             
             
@@ -564,63 +549,9 @@ Summary:
             String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getName()">getName</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html#getName()">getName</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Return the name associated with the trigger.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-5" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#getScanCode()">getScanCode</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Return the unique scan code associated with the trigger.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-5" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#isEnabled()">isEnabled</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Checks if the trigger is enabled.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-5" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#setEnabled(boolean)">setEnabled</a></span>(boolean enabled)</nobr>
-        
-        <div class="jd-descrdiv">Enables or disables the trigger by specifying a <code>boolean</code> value.</div>
+        <div class="jd-descrdiv">Gets the sensitivity name.</div>
   
   </td></tr>
 
@@ -632,6 +563,216 @@ Summary:
 
 
 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
 
 
 </div><!-- jd-descr (summary) -->
@@ -675,13 +816,13 @@ Summary:
 
 <A NAME="getId()"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-11"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
          
          
-        abstract 
+         
          
         int
       </span>
@@ -690,17 +831,18 @@ Summary:
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 11</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Return the unique ID associated with the trigger.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the sensitivity ID.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> the trigger unique ID.
+      <ul class="nolist"><li><code>int</code>
+         The motion ID.
 </li></ul>
   </div>
 
@@ -710,13 +852,13 @@ Summary:
 
 <A NAME="getName()"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-11"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
          
          
-        abstract 
+         
          
         String
       </span>
@@ -725,131 +867,18 @@ Summary:
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 11</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Return the name associated with the trigger.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the sensitivity name.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> the trigger name.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="getScanCode()"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        int
-      </span>
-      <span class="sympad">getScanCode</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Return the unique scan code associated with the trigger.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> the scan code.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="isEnabled()"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        boolean
-      </span>
-      <span class="sympad">isEnabled</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Checks if the trigger is enabled.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true in case the trigger is enabled, false otherwise or in case of failure.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="setEnabled(boolean)"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        boolean
-      </span>
-      <span class="sympad">setEnabled</span>
-      <span class="normal">(boolean enabled)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Enables or disables the trigger by specifying a <code>boolean</code> value.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>enabled</td>
-          <td><code>boolean</code> that specifies whether or not the trigger will be enabled.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+      <ul class="nolist"><li><code>String</code>
+         The motion name.
 </li></ul>
   </div>
 
