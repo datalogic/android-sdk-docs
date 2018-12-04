@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13' ];
         buildApiLevelSelector();
       </script>
                   
@@ -262,6 +262,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-13">
+  <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
     <li class="api apilevel-1">
@@ -590,7 +592,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class=" api apilevel-13" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/Trigger.html#isAvailable()">isAvailable</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Checks if the trigger is available on the device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -608,7 +628,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -771,6 +791,41 @@ Summary:
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> the scan code.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isAvailable()"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        boolean
+      </span>
+      <span class="sympad">isAvailable</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checks if the trigger is available on the device.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case the trigger is available, false otherwise or in case of failure.
 </li></ul>
   </div>
 

@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13' ];
         buildApiLevelSelector();
       </script>
                   
@@ -261,6 +261,8 @@ Distribution</a></li>
   <a href="../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-13">
+  <a href="../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
     <li class="api apilevel-1">
@@ -426,9 +428,26 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></td>
+            <td class="jd-descrcol" width="100%">The <code>BatteryInfo</code> enumeration is the class that includes the battery info.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/info/BatteryInfo.html">BatteryInfo</a></td>
-            <td class="jd-descrcol" width="100%">The <code>BatteryInfo</code> class stores battery's info.&nbsp;</td>
+            <td class="jd-descrcol" width="100%"><em>
+      This class was deprecated
+      in revision 13.
+    This object has been deprecated from Datalogic SDK v1.13, because it is going away in a future release.
+             Information about Battery Manufacturing can be retrieved using <code><a href="../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></code> instead.
+</em>&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/battery/BatteryStatus.html">BatteryStatus</a></td>
+            <td class="jd-descrcol" width="100%">The <code>BatteryStatus</code> provides information related to the battery lifetime and realtime values.&nbsp;</td>
         </tr>
     
     
@@ -472,38 +491,44 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/battery/ChargingProfile.html">ChargingProfile</a></td>
+            <td class="jd-descrcol" width="100%">The <code>ChargingProfile</code> represents a charging profile used by the <code><a href="../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></code> to manage the charging preferences.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Codabar.html">Codabar</a></td>
             <td class="jd-descrcol" width="100%"><code>Codabar</code> is the class that configures the Codabar Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></td>
             <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code128 and GS1-128 Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></td>
             <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39, Code32 and TriOptic Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></td>
             <td class="jd-descrcol" width="100%"><code>Code93</code> is the class that configures the Code 93 Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-7" >
+        <tr class=" api apilevel-7" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Composite.html">Composite</a></td>
             <td class="jd-descrcol" width="100%"><code>Composite</code> is the class that configures the EAN.UCC Composite
  and GS1 Composite Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
             <td class="jd-descrcol" width="100%"><code>ConfigException</code> is used for configuration related errors.&nbsp;</td>
         </tr>
@@ -577,7 +602,13 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-10" >
+        <tr class=" api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></td>
+            <td class="jd-descrcol" width="100%">The <code>DLBatteryManager</code> allows to read specific battery parameters.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-10" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></td>
             <td class="jd-descrcol" width="100%"><code>DotCode</code> is the class that configures the Dot Code.&nbsp;</td>
         </tr>
@@ -804,52 +835,58 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></td>
+            <td class="jd-descrcol" width="100%">The <code>ManufacturerInfo</code> represents battery manufacturer information.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Matrix25.html">Matrix25</a></td>
             <td class="jd-descrcol" width="100%"><code>Matrix25</code> is the class that configures the Matrix 2/5 Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></td>
             <td class="jd-descrcol" width="100%"><code>Maxicode</code> is the class that configures the Maxicode Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></td>
             <td class="jd-descrcol" width="100%"><code>Micropdf417</code> is the class that configures the MicroPDF-417
  Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></td>
             <td class="jd-descrcol" width="100%"><code>MicroQR</code> is the class that configures the Micro QR Code Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-11" >
+        <tr class=" api apilevel-11" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/MotionTrigger.html">MotionTrigger</a></td>
             <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
  action (scan by default) when a motion event is detected.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-11" >
+        <tr class="alt-color api apilevel-11" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/MotionTrigger.Sensitivity.html">MotionTrigger.Sensitivity</a></td>
             <td class="jd-descrcol" width="100%">Class representing the sensitivity used to trigger the action, constituted by
  an id and a name.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></td>
             <td class="jd-descrcol" width="100%"><code>Msi</code> is the class that configures the MSI Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-8" >
+        <tr class="alt-color api apilevel-8" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></td>
             <td class="jd-descrcol" width="100%"><code>MultiScan</code> is the class that configures the Multi Scan functionality.&nbsp;</td>
         </tr>
@@ -998,6 +1035,12 @@ Distribution</a></li>
         <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></td>
             <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the decoder's read event.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-13" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/power/RebootReason.html">RebootReason</a></td>
+            <td class="jd-descrcol" width="100%">The <code>RebootReason</code> enumeration is the class that includes the reboot reason related to Power off.&nbsp;</td>
         </tr>
     
     

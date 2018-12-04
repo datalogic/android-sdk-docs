@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>WiFiType - Datalogic SDK version 1 | Android Add-on</title>
+<title>BatteryInfo - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="13" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -262,11 +262,11 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
-    <li class="api apilevel-13">
+    <li class="selected api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/input/package-summary.html">com.datalogic.device.input</a></li>
@@ -293,17 +293,16 @@ Distribution</a></li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html">BatteryInfo</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.html">SYSTEM</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html">SYSTEM.Version</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html">BatteryStatus</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html">ChargingProfile</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/BarcodeScannerType.html">BarcodeScannerType</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/KeyboardType.html">KeyboardType</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a></li>
+          <li class="selected api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></li>
       </ul>
     </li>
               
@@ -414,7 +413,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
   
   
 
@@ -430,7 +429,7 @@ Summary:
     final 
     
     enum
-<h1 itemprop="name">WiFiType</h1>
+<h1 itemprop="name">BatteryInfo</h1>
 
 
 
@@ -453,7 +452,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-13">
 <table class="jd-inheritance-table">
 
 
@@ -477,7 +476,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.info.WiFiType</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.battery.BatteryInfo</td>
     </tr>
     
 
@@ -493,7 +492,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The <code>WiFiType</code> enumeration lists Wi-Fi types.
+<p itemprop="articleBody">The <code>BatteryInfo</code> enumeration is the class that includes the battery info.
+ 
 </p>
 
 
@@ -536,43 +536,136 @@ Summary:
 <table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>&nbsp;</td>
-        <td class="jd-linkcol">ABG&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Wi-Fi supports a/b/g
-&nbsp;</td>
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">CAPACITY_FULL&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Last remembered value of charge in when battery became full/empty in mAh.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>&nbsp;</td>
-        <td class="jd-linkcol">ABGN&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Wi-Fi supports a/b/g/n
-&nbsp;</td>
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">CAPACITY_REMAINING&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The instantaneous value of the remaining available capacity of the battery in mAh.&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>&nbsp;</td>
-        <td class="jd-linkcol">BG&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Wi-Fi supports b/g
-&nbsp;</td>
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">CHARGE_CURRENT_MAX&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the maximum charge current recorded by the battery during its life (in mA).&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>&nbsp;</td>
-        <td class="jd-linkcol">BGN&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Wi-Fi supports b/g/n
-&nbsp;</td>
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">DISCHARGE_CURRENT_MAX&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the maximum discharge current recorded by the battery during its life (in mA).&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>&nbsp;</td>
-        <td class="jd-linkcol">NONE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">No Wi-Fi chip has been detected
-&nbsp;</td>
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">FULL_CAPACITY_DESIGN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The capacity by design of the battery in mAh.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">MANUFACTURER&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The battery pack manufacturer name as set internally in the battery pack by the manufacturer.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">MODEL_NAME&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The battery model name as set internally in the battery pack by the manufacturer.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">PRODUCTION_MONTH&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The month of the production of the battery.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">PRODUCTION_WEEK&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The week of the production of the battery.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">PRODUCTION_YEAR&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The year of the production of the battery.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">SERIAL_NUMBER&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The battery serial number as set internally in the battery pack by the manufacturer.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">STATE_OF_HEALTH&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The percentage of the state of health of the battery.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">TECHNOLOGY&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The battery technology as set internally in the battery pack by the manufacturer.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">TEMPERATURE_MAX&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the maximum temperature recorded by the battery during its life (in 0.1 °C).&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">TEMPERATURE_MIN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the minimum temperature recorded by the battery during its life (in 0.1 °C).&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">TIME_TO_EMPTY&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The estimated time left for battery to be considered empty (in seconds).&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">TOTAL_DISCHARGE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the total amount of discharge current (in 0.1 Ah) caused the charging cycles of the battery.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">VOLTAGE_MAX&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the maximum voltage recorded by the battery during its life (in mV).&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-13" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">VOLTAGE_MIN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The value of the minimum voltage recorded by the battery during its life (in mV).&nbsp;</td>
     </tr>
     
     
@@ -600,33 +693,85 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
             
             static
             
-            <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a></nobr>
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html#fromInt(int)">fromInt</a></span>(int n)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the corresponding BatteryInfo value, from a valid integer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-13" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html#toInt()">toInt</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Converts the BatteryInfo to its integer corresponding value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html#toString()">toString</a></span>()</nobr>
         
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-13" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
             final
             static
             
-            <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType[]</a></nobr>
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo[]</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html#values()">values</a></span>()</nobr>
         
   </td></tr>
 
@@ -1119,28 +1264,28 @@ From interface
 
 
 
-<A NAME="ABG"></A>
+<A NAME="CAPACITY_FULL"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
-        ABG
+        CAPACITY_FULL
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Wi-Fi supports a/b/g
+  <div class="jd-tagdata jd-tagdescr"><p>Last remembered value of charge in when battery became full/empty in mAh. The value type of this property is <code>int</code>.
 </p></div>
 
     
@@ -1149,28 +1294,28 @@ From interface
 
 
 
-<A NAME="ABGN"></A>
+<A NAME="CAPACITY_REMAINING"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
-        ABGN
+        CAPACITY_REMAINING
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Wi-Fi supports a/b/g/n
+  <div class="jd-tagdata jd-tagdescr"><p>The instantaneous value of the remaining available capacity of the battery in mAh. The value type of this property is <code>int</code>.
 </p></div>
 
     
@@ -1179,28 +1324,28 @@ From interface
 
 
 
-<A NAME="BG"></A>
+<A NAME="CHARGE_CURRENT_MAX"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
-        BG
+        CHARGE_CURRENT_MAX
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Wi-Fi supports b/g
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the maximum charge current recorded by the battery during its life (in mA). The value type of this property is <code>int</code>.
 </p></div>
 
     
@@ -1209,28 +1354,28 @@ From interface
 
 
 
-<A NAME="BGN"></A>
+<A NAME="DISCHARGE_CURRENT_MAX"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
-        BGN
+        DISCHARGE_CURRENT_MAX
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Wi-Fi supports b/g/n
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the maximum discharge current recorded by the battery during its life (in mA). The value type of this property is <code>int</code>.
 </p></div>
 
     
@@ -1239,28 +1384,450 @@ From interface
 
 
 
-<A NAME="NONE"></A>
+<A NAME="FULL_CAPACITY_DESIGN"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
-        NONE
+        FULL_CAPACITY_DESIGN
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>No Wi-Fi chip has been detected
+  <div class="jd-tagdata jd-tagdescr"><p>The capacity by design of the battery in mAh. The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="MANUFACTURER"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        MANUFACTURER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The battery pack manufacturer name as set internally in the battery pack by the manufacturer. The value type of this property is <code>String</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="MODEL_NAME"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        MODEL_NAME
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The battery model name as set internally in the battery pack by the manufacturer. The value type of this property is <code>String</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="PRODUCTION_MONTH"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        PRODUCTION_MONTH
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The month of the production of the battery. The value type of this property is <code>int</code>.
+ This property is not supported by all battery types. The batteries do not support PRODUCTION_MONTH property, they support PRODUCTION_WEEK property.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="PRODUCTION_WEEK"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        PRODUCTION_WEEK
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The week of the production of the battery. The value type of this property is <code>int</code>.
+ This property is not supported by all battery types. The batteries do not support PRODUCTION_WEEK property, they support PRODUCTION_MONTH property.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="PRODUCTION_YEAR"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        PRODUCTION_YEAR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The year of the production of the battery. The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="SERIAL_NUMBER"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        SERIAL_NUMBER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The battery serial number as set internally in the battery pack by the manufacturer. The value type of this property is <code>String</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="STATE_OF_HEALTH"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        STATE_OF_HEALTH
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The percentage of the state of health of the battery. The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TECHNOLOGY"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        TECHNOLOGY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The battery technology as set internally in the battery pack by the manufacturer. The value type of this property is <code>String</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TEMPERATURE_MAX"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        TEMPERATURE_MAX
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the maximum temperature recorded by the battery during its life (in 0.1 °C). The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TEMPERATURE_MIN"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        TEMPERATURE_MIN
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the minimum temperature recorded by the battery during its life (in 0.1 °C). The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TIME_TO_EMPTY"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        TIME_TO_EMPTY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The estimated time left for battery to be considered empty (in seconds). The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TOTAL_DISCHARGE"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        TOTAL_DISCHARGE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the total amount of discharge current (in 0.1 Ah) caused the charging cycles of the battery. The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="VOLTAGE_MAX"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        VOLTAGE_MAX
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the maximum voltage recorded by the battery during its life (in mV). The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="VOLTAGE_MIN"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        VOLTAGE_MIN
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The value of the minimum voltage recorded by the battery during its life (in mV). The value type of this property is <code>int</code>.
 </p></div>
 
     
@@ -1292,9 +1859,9 @@ From interface
 
 
 
-<A NAME="valueOf(java.lang.String)"></A>
+<A NAME="fromInt(int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1302,14 +1869,122 @@ From interface
          
          
          
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+      <span class="sympad">fromInt</span>
+      <span class="normal">(int n)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves the corresponding BatteryInfo value, from a valid integer.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>n</td>
+          <td><code>int</code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>BatteryInfo the corresponding one.
+ </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toInt()"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">toInt</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Converts the BatteryInfo to its integer corresponding value.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>int
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toString()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="valueOf(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-13"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
       </span>
       <span class="sympad">valueOf</span>
       <span class="normal">(String name)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a></div>
         
   
 
@@ -1324,7 +1999,7 @@ From interface
 
 <A NAME="values()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-13"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1332,14 +2007,14 @@ From interface
         final 
          
          
-        <a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType[]</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo[]</a>
       </span>
       <span class="sympad">values</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 13</a></div>
         
   
 
