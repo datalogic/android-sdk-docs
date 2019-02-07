@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 var API_LEVEL_COOKIE = "api_level";
 var minLevel = 1;
-var maxLevel = 13;
+var maxLevel = 14;
 
 /******* SIDENAV DIMENSIONS ************/
 

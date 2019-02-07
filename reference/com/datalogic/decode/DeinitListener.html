@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>SoftSpot.Point - Datalogic SDK version 1 | Android Add-on</title>
+<title>DeinitListener - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="14" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -256,7 +256,7 @@ Distribution</a></li>
 
               <ul>
               	
-    <li class="api apilevel-1">
+    <li class="selected api apilevel-1">
   <a href="../../../../reference/com/datalogic/decode/package-summary.html">com.datalogic.decode</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
@@ -278,7 +278,7 @@ Distribution</a></li>
   <a href="../../../../reference/com/datalogic/device/notification/package-summary.html">com.datalogic.device.notification</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/device/power/package-summary.html">com.datalogic.device.power</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/softspot/package-summary.html">com.datalogic.softspot</a></li>
               </ul><br/>
 
@@ -290,23 +290,38 @@ Distribution</a></li>
 
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/DecodeResult.html">DecodeResult</a></li>
+          <li class="selected api apilevel-14"><a href="../../../../reference/com/datalogic/decode/DeinitListener.html">DeinitListener</a></li>
+          <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StartListener.html">StartListener</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StopListener.html">StopListener</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/TimeoutListener.html">TimeoutListener</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html">SoftSpot</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html">SoftSpot.Point</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/BarcodeDefaults.html">BarcodeDefaults</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html">BarcodeManager</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/PropertyID.html">PropertyID</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a></li>
-          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></li>
-          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
-          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/BarcodeID.html">BarcodeID</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/Symbology.html">Symbology</a></li>
       </ul>
     </li>
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
         
@@ -358,44 +373,13 @@ Distribution</a></li>
 
 
 
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
-
-Summary:
-
-
-
-
-
-
-
-  <a href="#lfields">Fields</a>
-  
-
-
-
-  &#124; <a href="#pubctors">Ctors</a>
-  
-
-
-
-
-
-  &#124; <a href="#inhmethods">Inherited Methods</a>
-
-&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
 
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 14</a>
   
   
 
@@ -407,19 +391,13 @@ Summary:
 
 <div id="jd-header">
     public
-    static 
+     
      
     
-    class
-<h1 itemprop="name">SoftSpot.Point</h1>
+    interface
+<h1 itemprop="name">DeinitListener</h1>
 
 
-
-  
-    extends Object<br/>
-  
-  
-  
 
   
   
@@ -430,21 +408,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-14">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.softspot.SoftSpot.Point</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.DeinitListener</td>
     </tr>
     
 
@@ -460,8 +430,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">X/Y screen coordinates. Used for current position, minimum, and maximum
- X/Y position values.
+<p itemprop="articleBody">This interface is used by the application to listen to the scan deinit
+ event.
 </p>
 
 
@@ -507,83 +477,6 @@ Summary:
 
 
 
-<!-- =========== FIELD SUMMARY =========== -->
-<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
-
-
-    
-      <tr class="alt-color api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          int</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html#x">x</a></td>
-          <td class="jd-descrcol" width="100%"></td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          int</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html#y">y</a></td>
-          <td class="jd-descrcol" width="100%"></td>
-      </tr>
-      
-    
-
-</table>
-
-
-
-
-
-
-
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html#Point()">Point</a></span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html#Point(int, int)">Point</a></span>(int x, int y)</nobr>
-        
-  </td></tr>
-
-
-
-</table>
-
-
 
 
 
@@ -594,66 +487,14 @@ Summary:
 
 
 <!-- ========== METHOD SUMMARY =========== -->
-<table id="inhmethods" class="jd-sumtable"><tr><th>
-  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
-  <div style="clear:left;">Inherited Methods</div></th></tr>
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
 
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Object-trigger"
-          src="../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  java.lang.Object
-
-<div id="inherited-methods-java.lang.Object">
-  <div id="inherited-methods-java.lang.Object-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-14" >
         <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            Object</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
+            abstract
             
             
             
@@ -661,146 +502,20 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/DeinitListener.html#onScanDeinit()">onScanDeinit</a></span>()</nobr>
         
+        <div class="jd-descrdiv">onScanDeinit will be sent when a deinit event is fired.</div>
+  
   </td></tr>
 
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Class&lt;?&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">notify</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">notifyAll</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
-        
-  </td></tr>
 
 
 </table>
-  </div>
-</div>
-</td></tr>
 
 
-</table>
+
+
+
 
 
 </div><!-- jd-descr (summary) -->
@@ -826,137 +541,7 @@ From class
 <!-- Fields -->
 
 
-<!-- ========= FIELD DETAIL ======== -->
-<h2>Fields</h2>
-
-
-
-
-<A NAME="x"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        x
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="y"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        y
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Public ctors -->
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
-
-
-
-<A NAME="Point()"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">Point</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="Point(int, int)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">Point</span>
-      <span class="normal">(int x, int y)</span>
-    </h4>
-      <div class="api-level">
-        <div></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
 
 
 
@@ -967,6 +552,43 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="onScanDeinit()"></A>
+
+<div class="jd-details api apilevel-14"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">onScanDeinit</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 14</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>onScanDeinit will be sent when a deinit event is fired. this event is
+ fired when the scanner service is completely deinitialized.
+</p></div>
+
+    </div>
+</div>
+
+
 
 
 

@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14' ];
         buildApiLevelSelector();
       </script>
                   
@@ -294,6 +294,8 @@ Distribution</a></li>
     <li><h2>Interfaces</h2>
       <ul>
         <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/DecodeResult.html">DecodeResult</a></li>
+        <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/DeinitListener.html">DeinitListener</a></li>
+        <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></li>
         <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></li>
         <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StartListener.html">StartListener</a></li>
         <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StopListener.html">StopListener</a></li>
@@ -408,6 +410,16 @@ Distribution</a></li>
               <td class="jd-descrcol" width="100%"><code>DecodeResult</code> is an interface passed by
  <code><a href="../../../../reference/com/datalogic/decode/ReadListener.html#onRead(com.datalogic.decode.DecodeResult)">onRead(DecodeResult)</a></code> to retrieve scanned data from the
  decoder.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-14" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/DeinitListener.html">DeinitListener</a></td>
+              <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the scan deinit
+ event.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-14" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></td>
+              <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the scan init
+ event.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></td>

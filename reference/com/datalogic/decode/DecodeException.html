@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14' ];
         buildApiLevelSelector();
       </script>
                   
@@ -293,6 +293,8 @@ Distribution</a></li>
     <li><h2>Interfaces</h2>
       <ul>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/DecodeResult.html">DecodeResult</a></li>
+          <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/DeinitListener.html">DeinitListener</a></li>
+          <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StartListener.html">StartListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StopListener.html">StopListener</a></li>
@@ -627,21 +629,28 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-14" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/DecodeException.html#LISTENER_ERROR">LISTENER_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">The Scanner Service cannot register or unregister the required listener.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/DecodeException.html#NULL_POINTER_ERROR">NULL_POINTER_ERROR</a></td>
         <td class="jd-descrcol" width="100%">It is a null pointer error.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/DecodeException.html#REMOTE_CALL_ERROR">REMOTE_CALL_ERROR</a></td>
         <td class="jd-descrcol" width="100%">When it's not possible to call Datalogic service.</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></td>
         <td class="jd-descrcol" width="100%">Success constant.</td>
@@ -1463,6 +1472,46 @@ From class
             
                 -65534
                 (0xffff0002)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="LISTENER_ERROR"></A>
+
+<div class="jd-details api apilevel-14"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        LISTENER_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 14</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The Scanner Service cannot register or unregister the required listener.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -65529
+                (0xffff0007)
             
         </span>
         </div>
