@@ -124,6 +124,8 @@ var DATA = [
       { id:122, label:"com.datalogic.softspot.ImageEnum", link:"reference/com/datalogic/softspot/ImageEnum.html", type:"class", deprecated:"false" },
       { id:123, label:"com.datalogic.softspot.ImageState", link:"reference/com/datalogic/softspot/ImageState.html", type:"class", deprecated:"false" },
       { id:124, label:"com.datalogic.softspot.SoftSpot", link:"reference/com/datalogic/softspot/SoftSpot.html", type:"class", deprecated:"false" },
-      { id:125, label:"com.datalogic.softspot.SoftSpot.Point", link:"reference/com/datalogic/softspot/SoftSpot.Point.html", type:"class", deprecated:"false" }
+      { id:125, label:"com.datalogic.softspot.SoftSpot.Point", link:"reference/com/datalogic/softspot/SoftSpot.Point.html", type:"class", deprecated:"false" },
+      { id:126, label:"com.datalogic.softspot.SoftSpot.WorkingArea", link:"reference/com/datalogic/softspot/SoftSpot.WorkingArea.html", type:"class", deprecated:"false" },
+      { id:127, label:"com.datalogic.softspot.SoftSpot.WorkingArea.RotationBehavior", link:"reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html", type:"class", deprecated:"false" }
 
     ];

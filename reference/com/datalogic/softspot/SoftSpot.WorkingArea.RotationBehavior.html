@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>ImageEnum - Datalogic SDK version 1 | Android Add-on</title>
+<title>SoftSpot.WorkingArea.RotationBehavior - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="5" style="display:none"></div>
+  <div id="doc-api-level" class="15" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -303,9 +303,9 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></li>
-          <li class="selected api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a></li>
-          <li class="api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></li>
+          <li class="selected api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></li>
       </ul>
     </li>
               
@@ -416,7 +416,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
   
   
 
@@ -428,11 +428,11 @@ Summary:
 
 <div id="jd-header">
     public
-     
+    static 
     final 
     
     enum
-<h1 itemprop="name">ImageEnum</h1>
+<h1 itemprop="name">SoftSpot.WorkingArea.RotationBehavior</h1>
 
 
 
@@ -455,7 +455,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-5">
+<div id="jd-content" class="api apilevel-15">
 <table class="jd-inheritance-table">
 
 
@@ -479,7 +479,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.softspot.ImageEnum</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.softspot.SoftSpot.WorkingArea.RotationBehavior</td>
     </tr>
     
 
@@ -495,8 +495,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>ImageEnum</code> is an enumeration defining constants for different images that
- can be displayed by SoftSpot. Custom slots are functionally identical.
+<p itemprop="articleBody"><code>RotationBehavior</code> is an enumeration defining constants for different
+ ways the <code>WorkingArea</code> can behave when rotating the device.
 </p>
 
 
@@ -540,44 +540,16 @@ Summary:
 
     
     <tr class="alt-color api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_1&nbsp;</td>
-        <td class="jd-descrcol" width="100%">First custom slot &nbsp;</td>
+        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>&nbsp;</td>
+        <td class="jd-linkcol">HOLD_IN_PLACE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The area will be reevaluated to appear to stay in place.&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_2&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Second custom slot &nbsp;</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_3&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Third custom slot &nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">GREEN_BARCODE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Green barcode (default) &nbsp;</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">GREEN_BARCODE_NUMERIC&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Bright green, barcode, with numeric data below &nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">RED_TARGET&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Red barcode (Shopevolution) &nbsp;</td>
+        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>&nbsp;</td>
+        <td class="jd-linkcol">MAINTAIN_PROPORTIONS&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The size of each side proportional to the screen stays the same.&nbsp;</td>
     </tr>
     
     
@@ -605,33 +577,33 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class="alt-color api apilevel-15" >
         <td class="jd-typecol"><nobr>
             
             
             
             static
             
-            <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></nobr>
+            <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
         
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class=" api apilevel-15" >
         <td class="jd-typecol"><nobr>
             
             
             final
             static
             
-            <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum[]</a></nobr>
+            <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">RotationBehavior[]</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html#values()">values</a></span>()</nobr>
         
   </td></tr>
 
@@ -1124,7 +1096,7 @@ From interface
 
 
 
-<A NAME="CUSTOM_1"></A>
+<A NAME="HOLD_IN_PLACE"></A>
 
 <div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
@@ -1132,9 +1104,9 @@ From interface
         public 
         static 
         final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>
       </span>
-        CUSTOM_1
+        HOLD_IN_PLACE
     </h4>
       <div class="api-level">
         
@@ -1145,7 +1117,11 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>First custom slot </p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>The area will be reevaluated to appear to stay in place. This is the default.<br>
+ For example, if the <code>WorkingArea</code> is set with a <code>topPixels</code> of 50px,
+ rotating the device counterclockwise will result in the area starting 50px from the new left,
+ because that was the old top.
+</p></div>
 
     
     </div>
@@ -1153,7 +1129,7 @@ From interface
 
 
 
-<A NAME="CUSTOM_2"></A>
+<A NAME="MAINTAIN_PROPORTIONS"></A>
 
 <div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
@@ -1161,9 +1137,9 @@ From interface
         public 
         static 
         final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>
       </span>
-        CUSTOM_2
+        MAINTAIN_PROPORTIONS
     </h4>
       <div class="api-level">
         
@@ -1174,123 +1150,11 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Second custom slot </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="CUSTOM_3"></A>
-
-<div class="jd-details api apilevel-15"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        CUSTOM_3
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Third custom slot </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="GREEN_BARCODE"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        GREEN_BARCODE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Green barcode (default) </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="GREEN_BARCODE_NUMERIC"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        GREEN_BARCODE_NUMERIC
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Bright green, barcode, with numeric data below </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="RED_TARGET"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        RED_TARGET
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Red barcode (Shopevolution) </p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>The size of each side proportional to the screen stays the same. <br>
+ For example, if your screen has dimensions 500x1000 px. If your <code>WorkingArea</code> is set with a
+ <code>left</code> of 0.2 and a <socde>right</socde> of 1.0, then the area will 400px wide. Rotating the
+ device 90 degrees will make the area 800 px now.
+</p></div>
 
     
     </div>
@@ -1323,7 +1187,7 @@ From interface
 
 <A NAME="valueOf(java.lang.String)"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1331,14 +1195,14 @@ From interface
          
          
          
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>
       </span>
       <span class="sympad">valueOf</span>
       <span class="normal">(String name)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
         
   
 
@@ -1353,7 +1217,7 @@ From interface
 
 <A NAME="values()"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1361,14 +1225,14 @@ From interface
         final 
          
          
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum[]</a>
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">RotationBehavior[]</a>
       </span>
       <span class="sympad">values</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
         
   
 

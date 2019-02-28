@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>ImageEnum - Datalogic SDK version 1 | Android Add-on</title>
+<title>SoftSpot.WorkingArea - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="5" style="display:none"></div>
+  <div id="doc-api-level" class="15" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -295,7 +295,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html">SoftSpot</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html">SoftSpot.Point</a></li>
-          <li class="api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a></li>
+          <li class="selected api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a></li>
       </ul>
     </li>
               
@@ -303,7 +303,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ActionType.html">ActionType</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></li>
-          <li class="selected api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
+          <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a></li>
           <li class="api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></li>
       </ul>
@@ -367,40 +367,27 @@ Distribution</a></li>
   
   
 
-  
-   
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
 Summary:
 
-
-
-
-  <a href="#enumconstants">Enums</a>
+  <a href="#nestedclasses">Nested Classes</a>
   
 
 
 
 
 
+
+
+  &#124; <a href="#lfields">Fields</a>
+  
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
 
 
 
@@ -416,7 +403,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
   
   
 
@@ -428,20 +415,16 @@ Summary:
 
 <div id="jd-header">
     public
+    static 
      
-    final 
     
-    enum
-<h1 itemprop="name">ImageEnum</h1>
+    class
+<h1 itemprop="name">SoftSpot.WorkingArea</h1>
 
 
 
   
-  
-  
-
-  
-    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
+    extends Object<br/>
   
   
   
@@ -455,13 +438,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-5">
+<div id="jd-content" class="api apilevel-15">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="3" class="jd-inheritance-class-cell">java.lang.Object</td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
     </tr>
     
 
@@ -469,17 +452,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.softspot.ImageEnum</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.softspot.SoftSpot.WorkingArea</td>
     </tr>
     
 
@@ -495,8 +468,9 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>ImageEnum</code> is an enumeration defining constants for different images that
- can be displayed by SoftSpot. Custom slots are functionally identical.
+<p itemprop="articleBody">Constraints defining the frame to restrict SoftSpot's movement. Constraints can be specified using
+ pixel values or as proportions of the screen. For the latter, 0.0 refers to the far left/top, while
+ 1.0 refers to the very bottom/right.
 </p>
 
 
@@ -527,72 +501,215 @@ Summary:
 
 
 
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
 
 
-
-
-
-
-
-
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
-
-    
+  
     <tr class="alt-color api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_1&nbsp;</td>
-        <td class="jd-descrcol" width="100%">First custom slot &nbsp;</td>
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        enum</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></td>
+      <td class="jd-descrcol" width="100%"><code>RotationBehavior</code> is an enumeration defining constants for different
+ ways the <code>WorkingArea</code> can behave when rotating the device.&nbsp;</td>
     </tr>
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
+
+
+    
+      <tr class="alt-color api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          float</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#bottom">bottom</a></td>
+          <td class="jd-descrcol" width="100%">Lower bound, proportional to the screen.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          int</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#bottomPixels">bottomPixels</a></td>
+          <td class="jd-descrcol" width="100%">Lower bound, in pixels.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          float</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#left">left</a></td>
+          <td class="jd-descrcol" width="100%">Left bound, proportional to the screen.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          int</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#leftPixels">leftPixels</a></td>
+          <td class="jd-descrcol" width="100%">Left bound, in pixels.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          float</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#right">right</a></td>
+          <td class="jd-descrcol" width="100%">Right bound, proportional to the screen.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          int</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#rightPixels">rightPixels</a></td>
+          <td class="jd-descrcol" width="100%">Right bound, in pixels.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#rotationBehavior">rotationBehavior</a></td>
+          <td class="jd-descrcol" width="100%">Determines how the working area reacts to screen rotations.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          float</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#top">top</a></td>
+          <td class="jd-descrcol" width="100%">Upper bound, proportional to the screen.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-15" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          int</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#topPixels">topPixels</a></td>
+          <td class="jd-descrcol" width="100%">Upper bound, in pixels
+</td>
+      </tr>
+      
+    
+
+</table>
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#WorkingArea(int, int, int, int)">WorkingArea</a></span>(int leftPixels, int topPixels, int rightPixels, int bottomPixels)</nobr>
+        
+        <div class="jd-descrdiv">Create a <code>WorkingArea</code> specifying pixels values.</div>
+  
+  </td></tr>
+
+
+	 
     <tr class=" api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_2&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Second custom slot &nbsp;</td>
-    </tr>
-    
-    
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#WorkingArea(float, float, float, float)">WorkingArea</a></span>(float left, float top, float right, float bottom)</nobr>
+        
+        <div class="jd-descrdiv">Create a <code>WorkingArea</code> specifying proportions on the screen.</div>
+  
+  </td></tr>
+
+
+	 
     <tr class="alt-color api apilevel-15" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM_3&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Third custom slot &nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">GREEN_BARCODE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Green barcode (default) &nbsp;</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">GREEN_BARCODE_NUMERIC&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Bright green, barcode, with numeric data below &nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-5" >
-        <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>&nbsp;</td>
-        <td class="jd-linkcol">RED_TARGET&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Red barcode (Shopevolution) &nbsp;</td>
-    </tr>
-    
-    
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#WorkingArea(int, int, int, int, float, float, float, float, com.datalogic.softspot.SoftSpot.WorkingArea.RotationBehavior)">WorkingArea</a></span>(int leftPixels, int topPixels, int rightPixels, int bottomPixels, float left, float top, float right, float bottom, <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a> rotationBehavior)</nobr>
+        
+  </td></tr>
 
 
 
-
-
-
-
-
-
-
-
-
+</table>
 
 
 
@@ -605,34 +722,74 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class="alt-color api apilevel-15" >
         <td class="jd-typecol"><nobr>
             
             
             
-            static
             
-            <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></nobr>
+            
+            float</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#height()">height</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Height of the <code>WorkingArea</code>.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class=" api apilevel-15" >
         <td class="jd-typecol"><nobr>
             
             
-            final
-            static
             
-            <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum[]</a></nobr>
+            
+            
+            float</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#heightPixels()">heightPixels</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Height of the <code>WorkingArea</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#width()">width</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Width of the <code>WorkingArea</code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            float</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html#widthPixels()">widthPixels</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Width of the <code>WorkingArea</code>.</div>
+  
   </td></tr>
 
 
@@ -649,208 +806,6 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Enum-trigger"
-          src="../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  java.lang.Enum
-
-<div id="inherited-methods-java.lang.Enum">
-  <div id="inherited-methods-java.lang.Enum-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Object</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(E arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Class&lt;E&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDeclaringClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">name</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">ordinal</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            static
-            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
-            T</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
 
 
 <tr class="api apilevel-" >
@@ -1054,50 +1009,6 @@ From class
 </td></tr>
 
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Comparable-trigger"
-          src="../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  java.lang.Comparable
-
-<div id="inherited-methods-java.lang.Comparable">
-  <div id="inherited-methods-java.lang.Comparable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(T arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -1118,194 +1029,431 @@ From interface
 <!-- Enum Values -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Enum Values</h2>
-
-
-
-
-<A NAME="CUSTOM_1"></A>
-
-<div class="jd-details api apilevel-15"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        CUSTOM_1
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>First custom slot </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="CUSTOM_2"></A>
-
-<div class="jd-details api apilevel-15"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        CUSTOM_2
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Second custom slot </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="CUSTOM_3"></A>
-
-<div class="jd-details api apilevel-15"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        CUSTOM_3
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Third custom slot </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="GREEN_BARCODE"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        GREEN_BARCODE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Green barcode (default) </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="GREEN_BARCODE_NUMERIC"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        GREEN_BARCODE_NUMERIC
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Bright green, barcode, with numeric data below </p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="RED_TARGET"></A>
-
-<div class="jd-details api apilevel-5"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
-      </span>
-        RED_TARGET
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Red barcode (Shopevolution) </p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Constants -->
 
 
 <!-- Fields -->
 
 
+<!-- ========= FIELD DETAIL ======== -->
+<h2>Fields</h2>
+
+
+
+
+<A NAME="bottom"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        float
+      </span>
+        bottom
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Lower bound, proportional to the screen. 0 = far top, 1 = far bottom. Must be >= <code>top</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="bottomPixels"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        int
+      </span>
+        bottomPixels
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Lower bound, in pixels. Must be >= <code>topPixels</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="left"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        float
+      </span>
+        left
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Left bound, proportional to the screen. 0 = far left, 1 = far right.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="leftPixels"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        int
+      </span>
+        leftPixels
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Left bound, in pixels.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="right"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        float
+      </span>
+        right
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Right bound, proportional to the screen. 0 = far left, 1 = far right. Must be >= <code>left</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="rightPixels"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        int
+      </span>
+        rightPixels
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Right bound, in pixels. Must be >= <code>leftPixels</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="rotationBehavior"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a>
+      </span>
+        rotationBehavior
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Determines how the working area reacts to screen rotations.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="top"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        float
+      </span>
+        top
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Upper bound, proportional to the screen. 0 = far top, 1 = far bottom.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="topPixels"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        int
+      </span>
+        topPixels
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Upper bound, in pixels
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+
 <!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="WorkingArea(int, int, int, int)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">WorkingArea</span>
+      <span class="normal">(int leftPixels, int topPixels, int rightPixels, int bottomPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Create a <code>WorkingArea</code> specifying pixels values.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>leftPixels</td>
+          <td>Left bound, in pixels.</td>
+        </tr>
+        <tr>
+          <th>topPixels</td>
+          <td>Upper bound, in pixels.</td>
+        </tr>
+        <tr>
+          <th>rightPixels</td>
+          <td>Right bound, in pixels. Must be >= <code>leftPixels</code>.</td>
+        </tr>
+        <tr>
+          <th>bottomPixels</td>
+          <td>Lower bound, in pixels. Must be >= <code>topPixels</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="WorkingArea(float, float, float, float)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">WorkingArea</span>
+      <span class="normal">(float left, float top, float right, float bottom)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Create a <code>WorkingArea</code> specifying proportions on the screen.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>left</td>
+          <td>Left bound, proportional to the screen. 0 = far left, 1 = far right.</td>
+        </tr>
+        <tr>
+          <th>top</td>
+          <td>Upper bound, proportional to the screen. 0 = far top, 1 = far bottom.</td>
+        </tr>
+        <tr>
+          <th>right</td>
+          <td>Right bound, proportional to the screen. 0 = far left, 1 = far right. Must be >= <code>left</code>.</td>
+        </tr>
+        <tr>
+          <th>bottom</td>
+          <td>Lower bound, proportional to the screen. 0 = far top, 1 = far bottom. Must be >= <code>top</code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="WorkingArea(int, int, int, int, float, float, float, float, com.datalogic.softspot.SoftSpot.WorkingArea.RotationBehavior)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">WorkingArea</span>
+      <span class="normal">(int leftPixels, int topPixels, int rightPixels, int bottomPixels, float left, float top, float right, float bottom, <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a> rotationBehavior)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
 
 
 
@@ -1321,61 +1469,141 @@ From interface
 
 
 
-<A NAME="valueOf(java.lang.String)"></A>
+<A NAME="height()"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
-        static 
          
          
          
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a>
+         
+        float
       </span>
-      <span class="sympad">valueOf</span>
-      <span class="normal">(String name)</span>
+      <span class="sympad">height</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Height of the <code>WorkingArea</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The height of the <code>WorkingArea</code>, relative to the screen.
+</li></ul>
+  </div>
 
     </div>
 </div>
 
 
-<A NAME="values()"></A>
+<A NAME="heightPixels()"></A>
 
-<div class="jd-details api apilevel-5"> 
+<div class="jd-details api apilevel-15"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
-        static 
-        final 
          
          
-        <a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum[]</a>
+         
+         
+        float
       </span>
-      <span class="sympad">values</span>
+      <span class="sympad">heightPixels</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Height of the <code>WorkingArea</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The height of the <code>WorkingArea</code>, in pixels.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="width()"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">width</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Width of the <code>WorkingArea</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The width of the <code>WorkingArea</code>, relative to the screen.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="widthPixels()"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        float
+      </span>
+      <span class="sympad">widthPixels</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Width of the <code>WorkingArea</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The width of the <code>WorkingArea</code>, in pixels.
+</li></ul>
+  </div>
 
     </div>
 </div>

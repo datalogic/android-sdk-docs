@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15' ];
         buildApiLevelSelector();
       </script>
                   
@@ -295,6 +295,7 @@ Distribution</a></li>
       <ul>
           <li class="selected api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html">SoftSpot</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.Point.html">SoftSpot.Point</a></li>
+          <li class="api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a></li>
       </ul>
     </li>
               
@@ -304,6 +305,7 @@ Distribution</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/DecodedDuration.html">DecodedDuration</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></li>
           <li class="api apilevel-5"><a href="../../../../reference/com/datalogic/softspot/ImageState.html">ImageState</a></li>
+          <li class="api apilevel-15"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html">SoftSpot.WorkingArea.RotationBehavior</a></li>
       </ul>
     </li>
               
@@ -516,6 +518,18 @@ Summary:
     </tr>
     
     
+    <tr class=" api apilevel-15" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a></td>
+      <td class="jd-descrcol" width="100%">Constraints defining the frame to restrict SoftSpot's movement.&nbsp;</td>
+    </tr>
+    
+    
 
 
 
@@ -590,6 +604,42 @@ Summary:
 <!-- ========== METHOD SUMMARY =========== -->
 <table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
 
+
+
+	 
+    <tr class="alt-color api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#clearCustomImage(com.datalogic.softspot.ImageEnum)">clearCustomImage</a></span>(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum)</nobr>
+        
+        <div class="jd-descrdiv">Delete the custom image for the given ImageEnum.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#clearWorkingArea()">clearWorkingArea</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Reset the working area to the whole screen.</div>
+  
+  </td></tr>
 
 
 	 
@@ -715,7 +765,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getScaleMax()">getScaleMax</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Minimum scale multiplier</div>
+        <div class="jd-descrdiv">Maximum scale multiplier</div>
   
   </td></tr>
 
@@ -733,7 +783,43 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getScaleMin()">getScaleMin</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Maximum scale multiplier</div>
+        <div class="jd-descrdiv">Minimum scale multiplier</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getVibrator()">getVibrator</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Is vibration enabled when using SoftSpot?</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#getWorkingArea()">getWorkingArea</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get Area that SoftSpot can move within<br></div>
   
   </td></tr>
 
@@ -789,6 +875,42 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#lock(boolean)">lock</a></span>(boolean lockVal)</nobr>
         
         <div class="jd-descrdiv">Set lock state of SoftSpot, it impacts SoftSpot motion ability on finger dragging events.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setCustomImage(com.datalogic.softspot.ImageEnum, byte[])">setCustomImage</a></span>(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum, byte[] data)</nobr>
+        
+        <div class="jd-descrdiv">Copy the image in the byte array, then assigns the custom imageEnum to use that image.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setCustomImage(com.datalogic.softspot.ImageEnum, java.io.File)">setCustomImage</a></span>(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum, File imageFile)</nobr>
+        
+        <div class="jd-descrdiv">Copy the image located at the given filepath, then assigns the custom imageEnum to use that image.</div>
   
   </td></tr>
 
@@ -903,7 +1025,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-15" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/softspot/SoftSpot.html#setWorkingArea(com.datalogic.softspot.SoftSpot.WorkingArea)">setWorkingArea</a></span>(<a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a> area)</nobr>
+        
+        <div class="jd-descrdiv">Restrict SoftSpot to a square region on the screen<br></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1273,6 +1413,78 @@ From class
 
 
 
+<A NAME="clearCustomImage(com.datalogic.softspot.ImageEnum)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">clearCustomImage</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Delete the custom image for the given ImageEnum.<br>
+ It's icon will be changed back to the default number icons.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>imageEnum</td>
+          <td>The slot for the custom image to be deleted. Must be a custom slot.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="clearWorkingArea()"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">clearWorkingArea</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Reset the working area to the whole screen.
+</p></div>
+
+    </div>
+</div>
+
+
 <A NAME="getImage(com.datalogic.softspot.ActionType, com.datalogic.softspot.ImageState)"></A>
 
 <div class="jd-details api apilevel-5"> 
@@ -1519,7 +1731,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Minimum scale multiplier</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Maximum scale multiplier</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The maximum scale multiplier used for SoftSpot size.
@@ -1554,10 +1766,80 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Maximum scale multiplier</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Minimum scale multiplier</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The minimum scale multiplier used for SoftSpot size.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getVibrator()"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">getVibrator</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Is vibration enabled when using SoftSpot?</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if SoftSpot vibration effects are enabled.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getWorkingArea()"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a>
+      </span>
+      <span class="sympad">getWorkingArea</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get Area that SoftSpot can move within<br></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>WorkingArea specifying the area that SoftSpot can move within.
 </li></ul>
   </div>
 
@@ -1667,6 +1949,114 @@ From class
           <td>Pass in 'true' to keep SoftSpot locked to its current position.
               Pass in 'false' to allow SoftSpot to be moved around the screen.
 </td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCustomImage(com.datalogic.softspot.ImageEnum, byte[])"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCustomImage</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum, byte[] data)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Copy the image in the byte array, then assigns the custom imageEnum to use that image.<
+ Image will be downsampled if too large.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>imageEnum</td>
+          <td>The ImageEnum to set the new image to. Must be a custom slot.</td>
+        </tr>
+        <tr>
+          <th>data</td>
+          <td>Byte array containing the image to be copied.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>NullPointerException</td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setCustomImage(com.datalogic.softspot.ImageEnum, java.io.File)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setCustomImage</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a> imageEnum, File imageFile)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Copy the image located at the given filepath, then assigns the custom imageEnum to use that image.<
+ Image will be downsampled if too large.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>imageEnum</td>
+          <td>The ImageEnum to set the new image to. Must be a custom slot.</td>
+        </tr>
+        <tr>
+          <th>imageFile</td>
+          <td>Image in external storage to be copied.
+</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>FileNotFoundException</td>
+            <td></td>
         </tr>
       </table>
   </div>
@@ -1918,6 +2308,46 @@ From class
         <tr>
           <th>enable</td>
           <td>set to true to enable vibrator. set to false to disable vibrator.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setWorkingArea(com.datalogic.softspot.SoftSpot.WorkingArea)"></A>
+
+<div class="jd-details api apilevel-15"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setWorkingArea</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/softspot/SoftSpot.WorkingArea.html">SoftSpot.WorkingArea</a> area)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 15</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Restrict SoftSpot to a square region on the screen<br></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>area</td>
+          <td>WorkingArea describing how to restrict SoftSpot.
 </td>
         </tr>
       </table>

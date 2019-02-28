@@ -35,8 +35,8 @@ var NAVTREE_DATA =
 , "1" ], [ "com.datalogic.device.power", "reference/com/datalogic/device/power/package-summary.html", [ [ "Classes", null, [ [ "PowerManager", "reference/com/datalogic/device/power/PowerManager.html", null, "1" ] ]
 , null ], [ "Enums", null, [ [ "RebootReason", "reference/com/datalogic/device/power/RebootReason.html", null, "13" ], [ "SuspendTimeout", "reference/com/datalogic/device/power/SuspendTimeout.html", null, "1" ], [ "WakeupSource", "reference/com/datalogic/device/power/WakeupSource.html", null, "1" ] ]
 , null ] ]
-, "1" ], [ "com.datalogic.softspot", "reference/com/datalogic/softspot/package-summary.html", [ [ "Classes", null, [ [ "SoftSpot", "reference/com/datalogic/softspot/SoftSpot.html", null, "1" ], [ "SoftSpot.Point", "reference/com/datalogic/softspot/SoftSpot.Point.html", null, "1" ] ]
-, null ], [ "Enums", null, [ [ "ActionType", "reference/com/datalogic/softspot/ActionType.html", null, "5" ], [ "DecodedDuration", "reference/com/datalogic/softspot/DecodedDuration.html", null, "5" ], [ "ImageEnum", "reference/com/datalogic/softspot/ImageEnum.html", null, "5" ], [ "ImageState", "reference/com/datalogic/softspot/ImageState.html", null, "5" ] ]
+, "1" ], [ "com.datalogic.softspot", "reference/com/datalogic/softspot/package-summary.html", [ [ "Classes", null, [ [ "SoftSpot", "reference/com/datalogic/softspot/SoftSpot.html", null, "1" ], [ "SoftSpot.Point", "reference/com/datalogic/softspot/SoftSpot.Point.html", null, "1" ], [ "SoftSpot.WorkingArea", "reference/com/datalogic/softspot/SoftSpot.WorkingArea.html", null, "15" ] ]
+, null ], [ "Enums", null, [ [ "ActionType", "reference/com/datalogic/softspot/ActionType.html", null, "5" ], [ "DecodedDuration", "reference/com/datalogic/softspot/DecodedDuration.html", null, "5" ], [ "ImageEnum", "reference/com/datalogic/softspot/ImageEnum.html", null, "5" ], [ "ImageState", "reference/com/datalogic/softspot/ImageState.html", null, "5" ], [ "SoftSpot.WorkingArea.RotationBehavior", "reference/com/datalogic/softspot/SoftSpot.WorkingArea.RotationBehavior.html", null, "15" ] ]
 , null ] ]
 , "1" ] ]
 
