@@ -4,6 +4,7 @@ com.datalogic.decode.configuration
 com.datalogic.device
 com.datalogic.device.battery
 com.datalogic.device.configuration
+com.datalogic.device.display
 com.datalogic.device.info
 com.datalogic.device.input
 com.datalogic.device.location

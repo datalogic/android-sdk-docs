@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ];
         buildApiLevelSelector();
       </script>
                   
@@ -269,6 +269,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
+    <li class="api apilevel-20">
+  <a href="../../../../../reference/com/datalogic/device/display/package-summary.html">com.datalogic.device.display</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
     <li class="api apilevel-1">
@@ -348,13 +350,16 @@ Distribution</a></li>
       <ul>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
         <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
+        <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128Aggressiveness.html">Code128Aggressiveness</a></li>
         <li class="api apilevel-18"><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixOpMode.html">DatamatrixOpMode</a></li>
+        <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
         <li class="api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
         <li class="api apilevel-17"><a href="../../../../../reference/com/datalogic/decode/configuration/InverseMode.html">InverseMode</a></li>
         <li class="api apilevel-17"><a href="../../../../../reference/com/datalogic/decode/configuration/Isbt128Mode.html">Isbt128Mode</a></li>
         <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
+        <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
         <li class="api apilevel-7"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanCompositeMode.html">UpcEanCompositeMode</a></li>
@@ -711,7 +716,7 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
           </tr>
         <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></td>
-              <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code128, GS1-128 and ISBT 128 Symbologies.&nbsp;</td>
+              <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code 128, GS1-128 and ISBT 128 Symbologies.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></td>
@@ -922,9 +927,18 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></td>
               <td class="jd-descrcol" width="100%"><code>CharacterSetMode</code> is an enumeration defining the different String encodings supported for certain symbologies of barcodes.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-18" >
+        <tr class="alt-color api apilevel-20" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128Aggressiveness.html">Code128Aggressiveness</a></td>
+              <td class="jd-descrcol" width="100%"><code>Code128Aggressiveness</code> is an enumeration defining the allowed aggressive mode for Code 128 barcodes.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-18" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixOpMode.html">DatamatrixOpMode</a></td>
               <td class="jd-descrcol" width="100%"><code>DatamatrixOpMode</code> is an enumeration defining the allowed operating mode for datamatrix barcodes.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-20" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></td>
+              <td class="jd-descrcol" width="100%"><code>IlluminationType</code> is an enumeration defining the allowed illumination type
+ can be used for scanning.&nbsp;</td>
           </tr>
         <tr class=" api apilevel-19" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></td>
@@ -954,16 +968,20 @@ documents: <code><a href="../../../../../reference/com/datalogic/decode/BarcodeM
               <td class="jd-descrcol" width="100%"><code>LengthControlMode</code> is an enumeration defining the operating length
  control mode for each barcode family that has lengths.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-20" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></td>
+              <td class="jd-descrcol" width="100%"><code>MsiAggressiveness</code> is an enumeration defining the allowed aggressive mode for MSI barcodes.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></td>
               <td class="jd-descrcol" width="100%"><code>SendCodeID</code> is an enumeration defining the type of
  identifier to be transmitted with the scanned data.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></td>
               <td class="jd-descrcol" width="100%"><code>ToneNotificationMode</code> is an enumeration defining the audio notification mode, subject to Good read rules.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-7" >
+        <tr class="alt-color api apilevel-7" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanCompositeMode.html">UpcEanCompositeMode</a></td>
               <td class="jd-descrcol" width="100%"><code>UpcEanCompositeMode</code> is an enumeration defining the type of transmission in use for GS1 Composite labels containing UPC/EAN barcodes.&nbsp;</td>
           </tr>

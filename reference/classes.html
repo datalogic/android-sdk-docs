@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ];
         buildApiLevelSelector();
       </script>
                   
@@ -267,6 +267,8 @@ Distribution</a></li>
   <a href="../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
+    <li class="api apilevel-20">
+  <a href="../reference/com/datalogic/device/display/package-summary.html">com.datalogic.device.display</a></li>
     <li class="api apilevel-1">
   <a href="../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
     <li class="api apilevel-1">
@@ -502,30 +504,36 @@ Distribution</a></li>
     
         <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></td>
-            <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code128, GS1-128 and ISBT 128 Symbologies.&nbsp;</td>
+            <td class="jd-descrcol" width="100%"><code>Code128</code> is the class that configures the Code 128, GS1-128 and ISBT 128 Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class=" api apilevel-20" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code128Aggressiveness.html">Code128Aggressiveness</a></td>
+            <td class="jd-descrcol" width="100%"><code>Code128Aggressiveness</code> is an enumeration defining the allowed aggressive mode for Code 128 barcodes.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></td>
             <td class="jd-descrcol" width="100%"><code>Code39</code> is the class that configures the Code39, Code32 and TriOptic Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></td>
             <td class="jd-descrcol" width="100%"><code>Code93</code> is the class that configures the Code 93 Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-7" >
+        <tr class="alt-color api apilevel-7" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Composite.html">Composite</a></td>
             <td class="jd-descrcol" width="100%"><code>Composite</code> is the class that configures the EAN.UCC Composite
  and GS1 Composite Symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
             <td class="jd-descrcol" width="100%"><code>ConfigException</code> is used for configuration related errors.&nbsp;</td>
         </tr>
@@ -624,7 +632,13 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-10" >
+        <tr class=" api apilevel-20" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a></td>
+            <td class="jd-descrcol" width="100%">The <code>DLSecondDisplayManager</code> allows to configure and manage the 2nd Display.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-10" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></td>
             <td class="jd-descrcol" width="100%"><code>DotCode</code> is the class that configures the Dot Code.&nbsp;</td>
         </tr>
@@ -718,75 +732,82 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-19" >
+        <tr class="alt-color api apilevel-20" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></td>
+            <td class="jd-descrcol" width="100%"><code>IlluminationType</code> is an enumeration defining the allowed illumination type
+ can be used for scanning.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-19" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></td>
             <td class="jd-descrcol" width="100%">The <code>ImageCaptureProfile</code> is an enumeration defining the scanner profile
  for image capture.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-5" >
+        <tr class="alt-color api apilevel-5" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/ImageEnum.html">ImageEnum</a></td>
             <td class="jd-descrcol" width="100%"><code>ImageEnum</code> is an enumeration defining constants for different images that
  can be displayed by SoftSpot.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-5" >
+        <tr class=" api apilevel-5" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/softspot/ImageState.html">ImageState</a></td>
             <td class="jd-descrcol" width="100%"><code>ImageState</code> is an enumeration defining constants for different states
  SoftSpot can be in.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-14" >
+        <tr class="alt-color api apilevel-14" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/InitListener.html">InitListener</a></td>
             <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the scan init
  event.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-16" >
+        <tr class=" api apilevel-16" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/InsertionState.html">InsertionState</a></td>
             <td class="jd-descrcol" width="100%">Enumerative representing an insertion state depending on the device's
  position.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></td>
             <td class="jd-descrcol" width="100%"><code>IntentDeliveryMode</code> is an enumeration defining the
  method by which the intent is delivered.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/IntentWedge.html">IntentWedge</a></td>
             <td class="jd-descrcol" width="100%"><code>IntentWedge</code> is the class that configures the Decode Wedge
  capability with the intent mode.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Interleaved25.html">Interleaved25</a></td>
             <td class="jd-descrcol" width="100%"><code>Interleaved25</code> is the class that configures the Interleaved 2/5
  Symbology.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-17" >
+        <tr class=" api apilevel-17" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Inverse.html">Inverse</a></td>
             <td class="jd-descrcol" width="100%"><code>Inverse</code> is the class that configures the inverse mode for the supported linear and 2D symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-17" >
+        <tr class="alt-color api apilevel-17" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/InverseMode.html">InverseMode</a></td>
             <td class="jd-descrcol" width="100%"><code>InverseMode</code> is an enumeration defining the decoding mode for regular/reverse barcodes.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-17" >
+        <tr class=" api apilevel-17" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Isbt128Mode.html">Isbt128Mode</a></td>
             <td class="jd-descrcol" width="100%"><code>Isbt128Mode</code> is an enumeration defining the decoding mode for ISBT 128 barcodes.&nbsp;</td>
         </tr>
@@ -941,7 +962,13 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class="alt-color api apilevel-8" >
+        <tr class="alt-color api apilevel-20" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></td>
+            <td class="jd-descrcol" width="100%"><code>MsiAggressiveness</code> is an enumeration defining the allowed aggressive mode for MSI barcodes.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-8" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></td>
             <td class="jd-descrcol" width="100%"><code>MultiScan</code> is the class that configures the Multi Scan functionality.&nbsp;</td>
         </tr>

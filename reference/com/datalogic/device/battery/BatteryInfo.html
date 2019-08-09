@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ];
         buildApiLevelSelector();
       </script>
                   
@@ -268,6 +268,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
+    <li class="api apilevel-20">
+  <a href="../../../../../reference/com/datalogic/device/display/package-summary.html">com.datalogic.device.display</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
     <li class="api apilevel-1">
@@ -608,63 +610,70 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-13" >
+    <tr class="alt-color api apilevel-20" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
+        <td class="jd-linkcol">PRODUCT_NUMBER&nbsp;</td>
+        <td class="jd-descrcol" width="100%">The battery product number as set internally in the battery pack by the manufacturer.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">SERIAL_NUMBER&nbsp;</td>
         <td class="jd-descrcol" width="100%">The battery serial number as set internally in the battery pack by the manufacturer.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">STATE_OF_HEALTH&nbsp;</td>
         <td class="jd-descrcol" width="100%">The percentage of the state of health of the battery.&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">TECHNOLOGY&nbsp;</td>
         <td class="jd-descrcol" width="100%">The battery technology as set internally in the battery pack by the manufacturer.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">TEMPERATURE_MAX&nbsp;</td>
         <td class="jd-descrcol" width="100%">The value of the maximum temperature recorded by the battery during its life (in 0.1 °C).&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">TEMPERATURE_MIN&nbsp;</td>
         <td class="jd-descrcol" width="100%">The value of the minimum temperature recorded by the battery during its life (in 0.1 °C).&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">TIME_TO_EMPTY&nbsp;</td>
         <td class="jd-descrcol" width="100%">The estimated time left for battery to be considered empty (in seconds).&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">TOTAL_DISCHARGE&nbsp;</td>
         <td class="jd-descrcol" width="100%">The value of the total amount of discharge current (in 0.1 Ah) caused the charging cycles of the battery.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">VOLTAGE_MAX&nbsp;</td>
         <td class="jd-descrcol" width="100%">The value of the maximum voltage recorded by the battery during its life (in mV).&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>&nbsp;</td>
         <td class="jd-linkcol">VOLTAGE_MIN&nbsp;</td>
         <td class="jd-descrcol" width="100%">The value of the minimum voltage recorded by the battery during its life (in mV).&nbsp;</td>
@@ -1560,6 +1569,36 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>The year of the production of the battery. The value type of this property is <code>int</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="PRODUCT_NUMBER"></A>
+
+<div class="jd-details api apilevel-20"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a>
+      </span>
+        PRODUCT_NUMBER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The battery product number as set internally in the battery pack by the manufacturer. The value type of this property is <code>String</code>.
 </p></div>
 
     

@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>Led - Datalogic SDK version 1 | Android Add-on</title>
+<title>DLSecondDisplayManager - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="20" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -268,7 +268,7 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
-    <li class="api apilevel-20">
+    <li class="selected api apilevel-20">
   <a href="../../../../../reference/com/datalogic/device/display/package-summary.html">com.datalogic.device.display</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
@@ -278,7 +278,7 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/location/package-summary.html">com.datalogic.device.location</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/nfc/package-summary.html">com.datalogic.device.nfc</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/notification/package-summary.html">com.datalogic.device.notification</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/power/package-summary.html">com.datalogic.device.power</a></li>
@@ -297,15 +297,10 @@ Distribution</a></li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html">LedManager</a></li>
+          <li class="selected api apilevel-20"><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a></li>
       </ul>
     </li>
               
-    <li><h2>Enums</h2>
-      <ul>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a></li>
-      </ul>
-    </li>
               
               
             </ul><br/>
@@ -365,25 +360,6 @@ Distribution</a></li>
   
   
 
-  
-   
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
@@ -392,8 +368,6 @@ Summary:
 
 
 
-  <a href="#enumconstants">Enums</a>
-  
 
 
 
@@ -401,8 +375,7 @@ Summary:
 
 
 
-
-  &#124; <a href="#pubmethods">Methods</a>
+  <a href="#pubmethods">Methods</a>
   
 
 
@@ -414,7 +387,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a>
   
   
 
@@ -429,17 +402,13 @@ Summary:
      
     final 
     
-    enum
-<h1 itemprop="name">Led</h1>
+    class
+<h1 itemprop="name">DLSecondDisplayManager</h1>
 
 
 
   
-  
-  
-
-  
-    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
+    extends Object<br/>
   
   
   
@@ -453,13 +422,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-20">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="3" class="jd-inheritance-class-cell">java.lang.Object</td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
     </tr>
     
 
@@ -467,17 +436,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.notification.Led</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.display.DLSecondDisplayManager</td>
     </tr>
     
 
@@ -493,7 +452,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The <code>Led</code> enumeration lists led type identifiers.
+<p itemprop="articleBody">The <code>DLSecondDisplayManager</code> allows to configure and manage the 2nd Display.
 </p>
 
 
@@ -532,36 +491,6 @@ Summary:
 
 
 
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
-
-    
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
-        <td class="jd-linkcol">LED_GOOD_READ&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Good read LED
-&nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
-        <td class="jd-linkcol">LED_GREEN_SPOT&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Green Spot LED
-&nbsp;</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
-        <td class="jd-linkcol">LED_NOTIFICATION&nbsp;</td>
-        <td class="jd-descrcol" width="100%">General notification led
-&nbsp;</td>
-    </tr>
-    
-    
-
-
 
 
 
@@ -584,34 +513,74 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-20" >
         <td class="jd-typecol"><nobr>
             
             
             
             static
             
-            <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a></nobr>
+            <a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/Led.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html#getInstance()">getInstance</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns an instance of the <code><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a></code>.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-20" >
         <td class="jd-typecol"><nobr>
             
             
-            final
-            static
             
-            <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led[]</a></nobr>
+            
+            
+            boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/Led.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html#isSecondDisplayAvailable()">isSecondDisplayAvailable</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the availability of the 2nd Display feature.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-20" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html#isSecondDisplayEnabled()">isSecondDisplayEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the enabled/disabled status of the 2nd Display.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-20" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html#setSecondDisplayEnabled(boolean)">setSecondDisplayEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Enables or disables the 2nd Display.</div>
+  
   </td></tr>
 
 
@@ -628,208 +597,6 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Enum-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  java.lang.Enum
-
-<div id="inherited-methods-java.lang.Enum">
-  <div id="inherited-methods-java.lang.Enum-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Object</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(E arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Class&lt;E&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDeclaringClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">name</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">ordinal</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            static
-            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
-            T</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
 
 
 <tr class="api apilevel-" >
@@ -1033,50 +800,6 @@ From class
 </td></tr>
 
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Comparable-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  java.lang.Comparable
-
-<div id="inherited-methods-java.lang.Comparable">
-  <div id="inherited-methods-java.lang.Comparable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(T arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -1095,103 +818,6 @@ From interface
 
 
 <!-- Enum Values -->
-
-
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Enum Values</h2>
-
-
-
-
-<A NAME="LED_GOOD_READ"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>
-      </span>
-        LED_GOOD_READ
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Good read LED
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="LED_GREEN_SPOT"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>
-      </span>
-        LED_GREEN_SPOT
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Green Spot LED
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="LED_NOTIFICATION"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>
-      </span>
-        LED_NOTIFICATION
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>General notification led
-</p></div>
-
-    
-    </div>
-</div>
-
-
 
 
 <!-- Constants -->
@@ -1216,9 +842,9 @@ From interface
 
 
 
-<A NAME="valueOf(java.lang.String)"></A>
+<A NAME="getInstance()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-20"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1226,51 +852,179 @@ From interface
          
          
          
-        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>
+        <a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a>
       </span>
-      <span class="sympad">valueOf</span>
-      <span class="normal">(String name)</span>
+      <span class="sympad">getInstance</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns an instance of the <code><a href="../../../../../reference/com/datalogic/device/display/DLSecondDisplayManager.html">DLSecondDisplayManager</a></code>.
+ This method provides the reference to the unique instance of
+ 2nd Display Manager.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The 2nd Display Manager.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
 
 
-<A NAME="values()"></A>
+<A NAME="isSecondDisplayAvailable()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-20"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
-        static 
-        final 
          
          
-        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led[]</a>
+         
+         
+        boolean
       </span>
-      <span class="sympad">values</span>
+      <span class="sympad">isSecondDisplayAvailable</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the availability of the 2nd Display feature.
+ This method can be used to know if the device supports the 
+ 2nd Display feature.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code>
+         True if the device supports the 2nd Display, False otherwise,
+          or throws an<code>Exception</code> in case of failure.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isSecondDisplayEnabled()"></A>
+
+<div class="jd-details api apilevel-20"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isSecondDisplayEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the enabled/disabled status of the 2nd Display.
+ This method can be used to know the current enabled/disabled
+ status of the whole 2nd Display feature. When 2nd Display is enabled,
+ it works according to its configuration.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code>
+         True is the 2nd Display is enabled, False otherwise.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSecondDisplayEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-20"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">setSecondDisplayEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enables or disables the 2nd Display.
+ This method can be to enable or disable the whole 2nd Display feature.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>True to enable the 2nd Display, False to disable it.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code>
+         True is the operation complete successfully, False otherwise.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
