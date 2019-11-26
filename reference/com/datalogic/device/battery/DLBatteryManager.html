@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21' ];
         buildApiLevelSelector();
       </script>
                   
@@ -294,6 +294,11 @@ Distribution</a></li>
 
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
@@ -306,10 +311,16 @@ Distribution</a></li>
               
     <li><h2>Enums</h2>
       <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></li>
           <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></li>
       </ul>
     </li>
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
         
@@ -522,7 +533,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class="alt-color api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#addBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">addBatteryEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Registers a <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> to be notified of the BatteryManager events.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -540,7 +569,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -558,7 +587,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -576,7 +605,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -594,7 +623,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -612,7 +641,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -630,7 +659,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -648,7 +677,43 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-13" >
+    <tr class="alt-color api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#initBatteryEvents(android.content.Context)">initBatteryEvents</a></span>(Context context)</nobr>
+        
+        <div class="jd-descrdiv">Prepare the DlBatteryManager to receive events from the Android PowerManger Service.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#removeBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">removeBatteryEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Unregisters a <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> associated with the BatteryManager.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -921,6 +986,64 @@ From class
 
 <h2>Public Methods</h2>
 
+
+
+<A NAME="addBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addBatteryEventListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Registers a <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> to be notified of the BatteryManager events. <br>
+ A call to addBatteryEventListener will fail with error <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#CONTEXT_UNKNOWN">CONTEXT_UNKNOWN</a></code>
+ if <code><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#initBatteryEvents(android.content.Context)">initBatteryEvents(Context)</a></code> has not been not previously called to register the client's context. <br>
+ Call <code><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#removeBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">removeBatteryEventListener(BatteryEventListener)</a></code> before the application
+ closes to properly shut down the listener and avoid memory leaks.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> that will be called to signal a <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
 
 
 <A NAME="getBatteryStatus()"></A>
@@ -1197,6 +1320,101 @@ From class
          The list can be empty in case no charging profile is supported in the
          current device.
 </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="initBatteryEvents(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">initBatteryEvents</span>
+      <span class="normal">(Context context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Prepare the DlBatteryManager to receive events from the Android PowerManger Service. <br>
+ If not called the <code><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#addBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">addBatteryEventListener(BatteryEventListener)</a></code> fails with error <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#CONTEXT_UNKNOWN">CONTEXT_UNKNOWN</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>context</td>
+          <td>The context of the caller.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="removeBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">removeBatteryEventListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Unregisters a <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> associated with the BatteryManager.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></code> that will be no more notified.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
   </div>
 
     </div>

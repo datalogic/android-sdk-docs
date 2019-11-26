@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>com.datalogic.device.nfc - Datalogic SDK version 1 | Android Add-on</title>
+<title>BatteryEventListener - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -113,10 +113,9 @@ type="text/css">
 </script>
 
 </head>
-
 <body class="gc-documentation 
-  develop">
-  <div id="doc-api-level" class="" style="display:none"></div>
+  develop" itemscope itemtype="http://schema.org/Article">
+  <div id="doc-api-level" class="21" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -265,7 +264,7 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
-    <li class="api apilevel-13">
+    <li class="selected api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
@@ -277,7 +276,7 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/input/package-summary.html">com.datalogic.device.input</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/location/package-summary.html">com.datalogic.device.location</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/nfc/package-summary.html">com.datalogic.device.nfc</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/notification/package-summary.html">com.datalogic.device.notification</a></li>
@@ -295,14 +294,33 @@ Distribution</a></li>
 
             <ul>
               
-              
-    <li><h2>Classes</h2>
+    <li><h2>Interfaces</h2>
       <ul>
-        <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html">NfcManager</a></li>
+          <li class="selected api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></li>
       </ul>
     </li>
               
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html">BatteryStatus</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html">ChargingProfile</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></li>
+      </ul>
+    </li>
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
         
@@ -348,64 +366,251 @@ Distribution</a></li>
 
 
 
-<div class="col-12" id="doc-col">
+<div class="col-12"  id="doc-col">
 
 <div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+</div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
   
   
 
 </div>
-</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
 
 <div id="jd-header">
-  package
-  <h1>com.datalogic.device.nfc</h1>
+    public
+     
+     
+    
+    interface
+<h1 itemprop="name">BatteryEventListener</h1>
+
+
+
+  
+  
+  
+
+
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-21">
+<table class="jd-inheritance-table">
 
 
-  <div class="jd-descr">
-    <p>Support for managing the NFC chip.</p>
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.battery.BatteryEventListener</td>
+    </tr>
+    
+
+</table>
 
 
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">This interface is used by the application to listen to battery events.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html#onEvent(com.datalogic.device.battery.BatteryEvent, java.lang.Object)">onEvent</a></span>(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a> event, Object data)</nobr>
+        
+        <div class="jd-descrdiv">onEvent will be call to signal an event concerning battery.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="onEvent(com.datalogic.device.battery.BatteryEvent, java.lang.Object)"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">onEvent</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a> event, Object data)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>onEvent will be call to signal an event concerning battery. 
+ e.g: when the battery swap starts or ends.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>event</td>
+          <td><code><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></code>
+          <code>BatteryEvent</code> type of event</td>
+        </tr>
+        <tr>
+          <th>data</td>
+          <td><code>Object</code> details of the event
+ e.g: event = BATTERY_SWAP_EVENT_BEGIN, Object = timestamp (long System.currentTimeMillis())
+</td>
+        </tr>
+      </table>
   </div>
 
-
-
-
-
-  
-
-
-  
-    <h2>Classes</h2>
-    <div class="jd-sumtable">
-    
-  <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-1" >
-              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html">NfcManager</a></td>
-              <td class="jd-descrcol" width="100%">This class provides access to enable and disable the nfc adapter
-&nbsp;</td>
-          </tr>
-  </table>
     </div>
-  
+</div>
 
 
-  
 
 
-  
+
+<!-- ========= METHOD DETAIL ======== -->
 
 
-  
 
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
 
 <div id="footer" class="wrap" >
         
@@ -428,8 +633,9 @@ Datalogic S.p.A.</a> and/or its affiliates.
 
 </div> <!-- end footer -->
 
-</div><!-- end jd-content -->
-</div><!-- doc-content -->
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
 
 </div> <!-- end body-content --> 
 

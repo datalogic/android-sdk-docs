@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>ImageCaptureProfile - Datalogic SDK version 1 | Android Add-on</title>
+<title>BatteryEvent - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="19" style="display:none"></div>
+  <div id="doc-api-level" class="21" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -260,11 +260,11 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/cradle/package-summary.html">com.datalogic.cradle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/decode/package-summary.html">com.datalogic.decode</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
-    <li class="api apilevel-13">
+    <li class="selected api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
@@ -294,77 +294,33 @@ Distribution</a></li>
 
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEventListener.html">BatteryEventListener</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Aztec.html">Aztec</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Codabar.html">Codabar</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html">Code128</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Code39.html">Code39</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></li>
-          <li class="api apilevel-7"><a href="../../../../../reference/com/datalogic/decode/configuration/Composite.html">Composite</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Datamatrix.html">Datamatrix</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DecodingNotification.html">DecodingNotification</a></li>
-          <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Discrete25.html">Discrete25</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DisplayNotification.html">DisplayNotification</a></li>
-          <li class="api apilevel-10"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html">Ean13</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean8.html">Ean8</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html">Formatting</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/GoodRead.html">GoodRead</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1DataBar_14.html">Gs1DataBar_14</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1DataBar_Expanded.html">Gs1DataBar_Expanded</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1DataBar_Limited.html">Gs1DataBar_Limited</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html">IntentWedge</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Interleaved25.html">Interleaved25</a></li>
-          <li class="api apilevel-17"><a href="../../../../../reference/com/datalogic/decode/configuration/Inverse.html">Inverse</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyboardWedge.html">KeyboardWedge</a></li>
-          <li class="api apilevel-6"><a href="../../../../../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Matrix25.html">Matrix25</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Maxicode.html">Maxicode</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Micropdf417.html">Micropdf417</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/MicroQR.html">MicroQR</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Msi.html">Msi</a></li>
-          <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/MultiScan.html">MultiScan</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Pdf417.html">Pdf417</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalAustralian.html">PostalAustralian</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalJapan.html">PostalJapan</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalKix.html">PostalKix</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalRoyalMail.html">PostalRoyalMail</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPlanet.html">PostalUsPlanet</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsPostnet.html">PostalUsPostnet</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/PostalUsps4State.html">PostalUsps4State</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></li>
-          <li class="api apilevel-7"><a href="../../../../../reference/com/datalogic/decode/configuration/WebWedge.html">WebWedge</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html">BatteryStatus</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html">ChargingProfile</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
-          <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
-          <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128Aggressiveness.html">Code128Aggressiveness</a></li>
-          <li class="api apilevel-18"><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixOpMode.html">DatamatrixOpMode</a></li>
-          <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
-          <li class="selected api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
-          <li class="api apilevel-17"><a href="../../../../../reference/com/datalogic/decode/configuration/InverseMode.html">InverseMode</a></li>
-          <li class="api apilevel-17"><a href="../../../../../reference/com/datalogic/decode/configuration/Isbt128Mode.html">Isbt128Mode</a></li>
-          <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
-          <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
-          <li class="api apilevel-7"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanCompositeMode.html">UpcEanCompositeMode</a></li>
+          <li class="selected api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></li>
+          <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryInfo.html">BatteryInfo</a></li>
       </ul>
     </li>
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-21"><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
         
@@ -472,7 +428,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
   
   
 
@@ -488,7 +444,7 @@ Summary:
     final 
     
     enum
-<h1 itemprop="name">ImageCaptureProfile</h1>
+<h1 itemprop="name">BatteryEvent</h1>
 
 
 
@@ -511,7 +467,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-19">
+<div id="jd-content" class="api apilevel-21">
 <table class="jd-inheritance-table">
 
 
@@ -535,7 +491,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.ImageCaptureProfile</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.battery.BatteryEvent</td>
     </tr>
     
 
@@ -551,24 +507,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The <code>ImageCaptureProfile</code> is an enumeration defining the scanner profile
- for image capture.
- 
- The type is one of:
- <table border=2>
- <tr>
- <td>AUTOMATIC_BY_ENABLED_SYMBOLOGIES</td>
- <td>Capture frames according to the enabled symbologies</td>
- </tr>
- <tr>
- <td>MOTION_TOLERANCE</td>
- <td>Capture frames taking into account the motion</td>
- </tr>
- <tr>
- <td>REFLECTIONS_TOLERANCE</td>
- <td>Capture frames taking into account possible reflections</td>
- </tr>
- </table>
+<p itemprop="articleBody">Enumerative representing the battery events.
 </p>
 
 
@@ -611,35 +550,24 @@ Summary:
 <table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-19" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>&nbsp;</td>
-        <td class="jd-linkcol">AUTOMATIC_BY_ENABLED_SYMBOLOGIES&nbsp;</td>
-        <td class="jd-descrcol" width="100%">The profile is set according to the enabled symbologies
-&nbsp;</td>
+    <tr class="alt-color api apilevel-21" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>&nbsp;</td>
+        <td class="jd-linkcol">BATTERY_SWAP_EVENT_BEGIN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Batter Swap begin event.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-20" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>&nbsp;</td>
-        <td class="jd-linkcol">CUSTOM&nbsp;</td>
-        <td class="jd-descrcol" width="100%">This allows to customize a profile to improve the performance taking into account specific needs
-&nbsp;</td>
+    <tr class=" api apilevel-21" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>&nbsp;</td>
+        <td class="jd-linkcol">BATTERY_SWAP_EVENT_END&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Batter Swap end event.&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-19" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>&nbsp;</td>
-        <td class="jd-linkcol">MOTION_TOLERANCE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">The profile improves the performance taking into account the motion
-&nbsp;</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-19" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>&nbsp;</td>
-        <td class="jd-linkcol">REFLECTIONS_TOLERANCE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">The profile improves the performance taking into account possible reflections
-&nbsp;</td>
+    <tr class="alt-color api apilevel-21" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>&nbsp;</td>
+        <td class="jd-linkcol">BATTERY_SWAP_EVENT_UNKNOWN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Unknown Battery Event from.&nbsp;</td>
     </tr>
     
     
@@ -667,33 +595,85 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-19" >
+    <tr class="alt-color api apilevel-21" >
         <td class="jd-typecol"><nobr>
             
             
             
             static
             
-            <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></nobr>
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html#fromInt(int)">fromInt</a></span>(int n)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the corresponding BatteryEvent value, from a valid integer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html#toInt()">toInt</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Converts the BatteryEvent enum to its integer representing value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html#toString()">toString</a></span>()</nobr>
         
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-19" >
+    <tr class=" api apilevel-21" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-21" >
         <td class="jd-typecol"><nobr>
             
             
             final
             static
             
-            <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile[]</a></nobr>
+            <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent[]</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html#values()">values</a></span>()</nobr>
         
   </td></tr>
 
@@ -1186,28 +1166,28 @@ From interface
 
 
 
-<A NAME="AUTOMATIC_BY_ENABLED_SYMBOLOGIES"></A>
+<A NAME="BATTERY_SWAP_EVENT_BEGIN"></A>
 
-<div class="jd-details api apilevel-19"> 
+<div class="jd-details api apilevel-21"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>
       </span>
-        AUTOMATIC_BY_ENABLED_SYMBOLOGIES
+        BATTERY_SWAP_EVENT_BEGIN
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The profile is set according to the enabled symbologies
+  <div class="jd-tagdata jd-tagdescr"><p>Batter Swap begin event.
 </p></div>
 
     
@@ -1216,28 +1196,28 @@ From interface
 
 
 
-<A NAME="CUSTOM"></A>
+<A NAME="BATTERY_SWAP_EVENT_END"></A>
 
-<div class="jd-details api apilevel-20"> 
+<div class="jd-details api apilevel-21"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>
       </span>
-        CUSTOM
+        BATTERY_SWAP_EVENT_END
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 20</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This allows to customize a profile to improve the performance taking into account specific needs
+  <div class="jd-tagdata jd-tagdescr"><p>Batter Swap end event.
 </p></div>
 
     
@@ -1246,58 +1226,28 @@ From interface
 
 
 
-<A NAME="MOTION_TOLERANCE"></A>
+<A NAME="BATTERY_SWAP_EVENT_UNKNOWN"></A>
 
-<div class="jd-details api apilevel-19"> 
+<div class="jd-details api apilevel-21"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>
       </span>
-        MOTION_TOLERANCE
+        BATTERY_SWAP_EVENT_UNKNOWN
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The profile improves the performance taking into account the motion
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="REFLECTIONS_TOLERANCE"></A>
-
-<div class="jd-details api apilevel-19"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>
-      </span>
-        REFLECTIONS_TOLERANCE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The profile improves the performance taking into account possible reflections
+  <div class="jd-tagdata jd-tagdescr"><p>Unknown Battery Event from.
 </p></div>
 
     
@@ -1329,9 +1279,9 @@ From interface
 
 
 
-<A NAME="valueOf(java.lang.String)"></A>
+<A NAME="fromInt(int)"></A>
 
-<div class="jd-details api apilevel-19"> 
+<div class="jd-details api apilevel-21"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1339,14 +1289,122 @@ From interface
          
          
          
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>
+      </span>
+      <span class="sympad">fromInt</span>
+      <span class="normal">(int n)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves the corresponding BatteryEvent value, from a valid integer.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>n</td>
+          <td><code>int</code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>BatteryEvent the corresponding one.
+ </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toInt()"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">toInt</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Converts the BatteryEvent enum to its integer representing value.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>int
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toString()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        String
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="valueOf(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent</a>
       </span>
       <span class="sympad">valueOf</span>
       <span class="normal">(String name)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
         
   
 
@@ -1361,7 +1419,7 @@ From interface
 
 <A NAME="values()"></A>
 
-<div class="jd-details api apilevel-19"> 
+<div class="jd-details api apilevel-21"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1369,14 +1427,14 @@ From interface
         final 
          
          
-        <a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile[]</a>
+        <a href="../../../../../reference/com/datalogic/device/battery/BatteryEvent.html">BatteryEvent[]</a>
       </span>
       <span class="sympad">values</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 19</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a></div>
         
   
 

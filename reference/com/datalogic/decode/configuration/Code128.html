@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21' ];
         buildApiLevelSelector();
       </script>
                   
@@ -690,7 +690,18 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class=" api apilevel-21" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html#isbt_128_userID">isbt_128_userID</a></td>
+          <td class="jd-descrcol" width="100%"><code>isbt_128_userID</code> specifies the ISBT-128 symbology identifier (if any).</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -701,7 +712,7 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -1427,6 +1438,39 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><code>isbt_128</code> enables or disables the ISBT 128 symbology.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="isbt_128_userID"></A>
+
+<div class="jd-details api apilevel-21"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a>
+      </span>
+        isbt_128_userID
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 21</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>isbt_128_userID</code> specifies the ISBT-128 symbology identifier (if any).<br/>
+ The symbology identifier is sent with the label when the
+ global decode property <code><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#sendCodeId">sendCodeId</a></code> is set to
+ <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_BEFORE_LABEL">USERDEFINED_IDENTIFIER_BEFORE_LABEL</a></code> or <code><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html#USERDEFINED_IDENTIFIER_AFTER_LABEL">USERDEFINED_IDENTIFIER_AFTER_LABEL</a></code>.
 </p></div>
 
     
