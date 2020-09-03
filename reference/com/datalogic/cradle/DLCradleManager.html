@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23' ];
         buildApiLevelSelector();
       </script>
                   
@@ -294,6 +294,12 @@ Distribution</a></li>
 
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></li>
+          <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
@@ -305,6 +311,7 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-16"><a href="../../../../reference/com/datalogic/cradle/AvailableSourcePower.html">AvailableSourcePower</a></li>
           <li class="api apilevel-16"><a href="../../../../reference/com/datalogic/cradle/InsertionState.html">InsertionState</a></li>
+          <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></li>
       </ul>
     </li>
               
@@ -519,7 +526,61 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-16" >
+    <tr class="alt-color api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)">addInsertionEventListener</a></span>(<a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Add an Insertion listener used to be notify about insertion and extraction events from the Cradle.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)">addUnlockKeyEventListener</a></span>(<a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Add an Unlock Key Event listener used to be notify about Unlock Key events occurred on the Cradle.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#firmwareUpgrade(java.lang.String, long)">firmwareUpgrade</a></span>(String binaryPath, long size)</nobr>
+        
+        <div class="jd-descrdiv">Performs Cradle Firmware update procedure.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-16" >
         <td class="jd-typecol"><nobr>
             
             
@@ -537,7 +598,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-16" >
+    <tr class="alt-color api apilevel-16" >
         <td class="jd-typecol"><nobr>
             
             
@@ -555,7 +616,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-16" >
+    <tr class=" api apilevel-16" >
         <td class="jd-typecol"><nobr>
             
             
@@ -568,6 +629,60 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#getInstance()">getInstance</a></span>()</nobr>
         
         <div class="jd-descrdiv">Returns an instance of the <code><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html">DLCradleManager</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#getUnlockKeyStatus()">getUnlockKeyStatus</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the current position related to the unlock key.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#removeInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)">removeInsertionEventListener</a></span>(<a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Remove an Insertion listener previously added with the <code><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)">addInsertionEventListener(CradleInsertionEventListener)</a></code> method.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-23" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#removeUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)">removeUnlockKeyEventListener</a></span>(<a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Remove an Unlock Key Event listener previously added with the <code><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)">addUnlockKeyEventListener(CradleUnlockKeyEventListener)</a></code> method.</div>
   
   </td></tr>
 
@@ -830,6 +945,142 @@ From class
 
 
 
+<A NAME="addInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">addInsertionEventListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Add an Insertion listener used to be notify about insertion and extraction events from the Cradle.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></code> to be added.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">addUnlockKeyEventListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Add an Unlock Key Event listener used to be notify about Unlock Key events occurred on the Cradle.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a></code> to be added.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="firmwareUpgrade(java.lang.String, long)"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">firmwareUpgrade</span>
+      <span class="normal">(String binaryPath, long size)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Performs Cradle Firmware update procedure.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>binaryPath</td>
+          <td>the <code>String</code> path where the binary file is stored.</td>
+        </tr>
+        <tr>
+          <th>size</td>
+          <td>the <code>String</code> dimension of the binary file.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getAvailableSourcePowerLevel()"></A>
 
 <div class="jd-details api apilevel-16"> 
@@ -928,6 +1179,129 @@ From class
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The Cradle Manager.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getUnlockKeyStatus()"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a>
+      </span>
+      <span class="sympad">getUnlockKeyStatus</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the current position related to the unlock key.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The current <code><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></code> of the unlock key.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="removeInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">removeInsertionEventListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Remove an Insertion listener previously added with the <code><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addInsertionEventListener(com.datalogic.cradle.CradleInsertionEventListener)">addInsertionEventListener(CradleInsertionEventListener)</a></code> method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></code> to be removed.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="removeUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)"></A>
+
+<div class="jd-details api apilevel-23"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">removeUnlockKeyEventListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 23</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Remove an Unlock Key Event listener previously added with the <code><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#addUnlockKeyEventListener(com.datalogic.cradle.CradleUnlockKeyEventListener)">addUnlockKeyEventListener(CradleUnlockKeyEventListener)</a></code> method.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a></code> to be removed.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
 </li></ul>
   </div>
 
