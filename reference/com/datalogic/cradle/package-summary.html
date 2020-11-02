@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24' ];
         buildApiLevelSelector();
       </script>
                   
@@ -297,7 +297,9 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
+        <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/CradleFailureEventListener.html">CradleFailureEventListener</a></li>
         <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></li>
+        <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/CradleUnlockEventListener.html">CradleUnlockEventListener</a></li>
         <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a></li>
       </ul>
     </li>
@@ -311,7 +313,9 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
         <li class="api apilevel-16"><a href="../../../../reference/com/datalogic/cradle/AvailableSourcePower.html">AvailableSourcePower</a></li>
+        <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/Failure.html">Failure</a></li>
         <li class="api apilevel-16"><a href="../../../../reference/com/datalogic/cradle/InsertionState.html">InsertionState</a></li>
+        <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/LeverStatus.html">LeverStatus</a></li>
         <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></li>
       </ul>
     </li>
@@ -398,10 +402,28 @@ Distribution</a></li>
     <div class="jd-sumtable">
     
   <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-23" >
+        <tr class="alt-color api apilevel-24" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/CradleFailureEventListener.html">CradleFailureEventListener</a></td>
+              <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about
+ occured on the Cradle.The <code><a href="../../../../reference/com/datalogic/cradle/Failure.html">Failure</a></code> notifies the listener
+ about Cradle failures among
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_BAD_LEVER_POSITION">FAILURE_BAD_LEVER_POSITION</a></code>,
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_SOLENOID_OVERTEMPERATURE">FAILURE_SOLENOID_OVERTEMPERATURE</a></code>,
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_EOC_TIMEOUT">FAILURE_WLC_EOC_TIMEOUT</a></code>,
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_FOD">FAILURE_WLC_FOD</a></code>,
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_TX">FAILURE_WLC_TX</a></code>,
+ <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_WRONG_DAISY_CHAIN_CONFIG">FAILURE_WRONG_DAISY_CHAIN_CONFIG</a></code>,
+ or  <code><a href="../../../../reference/com/datalogic/cradle/Failure.html#FAILURE_UNKNOWN">FAILURE_UNKNOWN</a></code> (in case of errors).&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-23" >
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></td>
               <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about
  insertion and extraction of the device from the Cradle.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-24" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/CradleUnlockEventListener.html">CradleUnlockEventListener</a></td>
+              <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about Cradle Lever open event
+ (device unlocked from the Cradle) and Cradle Lever closed event (device locked into the Cradle).&nbsp;</td>
           </tr>
         <tr class=" api apilevel-23" >
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/CradleUnlockKeyEventListener.html">CradleUnlockKeyEventListener</a></td>
@@ -436,10 +458,18 @@ Distribution</a></li>
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/AvailableSourcePower.html">AvailableSourcePower</a></td>
               <td class="jd-descrcol" width="100%">Enumerative representing the Cradle Available Source Power Level depending on the cradle configuration.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-16" >
+        <tr class=" api apilevel-24" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/Failure.html">Failure</a></td>
+              <td class="jd-descrcol" width="100%">This enum lists failures managed by the Cradle.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-16" >
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/InsertionState.html">InsertionState</a></td>
               <td class="jd-descrcol" width="100%">Enumerative representing an insertion state depending on the device's
  position.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-24" >
+              <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/LeverStatus.html">LeverStatus</a></td>
+              <td class="jd-descrcol" width="100%">Enumerative representing the Cradle Lever status.&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-23" >
               <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></td>

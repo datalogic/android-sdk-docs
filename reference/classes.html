@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24' ];
         buildApiLevelSelector();
       </script>
                   
@@ -423,47 +423,54 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class="alt-color api apilevel-22" >
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AdvancedKeyboard.Overlay.html">AdvancedKeyboard.Overlay</a></td>
+            <td class="jd-descrcol" width="100%">Class that stores the info related to a keyboard overlay
+ configuration.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AdvancedKeyboard.PersistenceType.html">AdvancedKeyboard.PersistenceType</a></td>
             <td class="jd-descrcol" width="100%">Enumerative representing the persistence type of the installed keyboard
  configuration.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-22" >
+        <tr class="alt-color api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AdvancedKeyboard.Property.html">AdvancedKeyboard.Property</a></td>
             <td class="jd-descrcol" width="100%">Read-only properties related to the currently configured keyboard.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-22" >
+        <tr class=" api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AdvancedKeyboard.Resources.html">AdvancedKeyboard.Resources</a></td>
             <td class="jd-descrcol" width="100%">Class that stores the resources related to the installed keyboard
  configuration.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-5" >
+        <tr class="alt-color api apilevel-5" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AutoScanTrigger.html">AutoScanTrigger</a></td>
             <td class="jd-descrcol" width="100%">Interface representing a trigger that automatically executes a specific
  action (scan by default) when entering a defined range.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-5" >
+        <tr class=" api apilevel-5" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/AutoScanTrigger.Range.html">AutoScanTrigger.Range</a></td>
             <td class="jd-descrcol" width="100%">Class representing a specific AutoScan range, constituted by
  an id and a name.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-16" >
+        <tr class="alt-color api apilevel-16" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/AvailableSourcePower.html">AvailableSourcePower</a></td>
             <td class="jd-descrcol" width="100%">Enumerative representing the Cradle Available Source Power Level depending on the cradle configuration.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Aztec.html">Aztec</a></td>
             <td class="jd-descrcol" width="100%"><code>Aztec</code> is the class that configures the Aztec Code.&nbsp;</td>
         </tr>
@@ -629,10 +636,32 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-23" >
+        <tr class=" api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/CradleFailureEventListener.html">CradleFailureEventListener</a></td>
+            <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about
+ occured on the Cradle.The <code><a href="../reference/com/datalogic/cradle/Failure.html">Failure</a></code> notifies the listener
+ about Cradle failures among
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_BAD_LEVER_POSITION">FAILURE_BAD_LEVER_POSITION</a></code>,
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_SOLENOID_OVERTEMPERATURE">FAILURE_SOLENOID_OVERTEMPERATURE</a></code>,
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_EOC_TIMEOUT">FAILURE_WLC_EOC_TIMEOUT</a></code>,
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_FOD">FAILURE_WLC_FOD</a></code>,
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_WLC_TX">FAILURE_WLC_TX</a></code>,
+ <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_WRONG_DAISY_CHAIN_CONFIG">FAILURE_WRONG_DAISY_CHAIN_CONFIG</a></code>,
+ or  <code><a href="../reference/com/datalogic/cradle/Failure.html#FAILURE_UNKNOWN">FAILURE_UNKNOWN</a></code> (in case of errors).&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-23" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/CradleInsertionEventListener.html">CradleInsertionEventListener</a></td>
             <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about
  insertion and extraction of the device from the Cradle.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/CradleUnlockEventListener.html">CradleUnlockEventListener</a></td>
+            <td class="jd-descrcol" width="100%">This interface allows an the application to be notified about Cradle Lever open event
+ (device unlocked from the Cradle) and Cradle Lever closed event (device locked into the Cradle).&nbsp;</td>
         </tr>
     
     
@@ -800,47 +829,53 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-23" >
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/Failure.html">Failure</a></td>
+            <td class="jd-descrcol" width="100%">This enum lists failures managed by the Cradle.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-23" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/FirmwareUpdatePolicy.html">FirmwareUpdatePolicy</a></td>
             <td class="jd-descrcol" width="100%">Enumerative representing the Policy to update the Cradle Firmware.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/Formatting.html">Formatting</a></td>
             <td class="jd-descrcol" width="100%"><code>Formatting</code> is the class that configures the properties related
  to barcode text formatting.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-22" >
+        <tr class=" api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/FrameCaptureConfiguration.html">FrameCaptureConfiguration</a></td>
             <td class="jd-descrcol" width="100%"><code>FrameCaptureConfiguration</code> is the class that configures the scanner to capture
  store and provide frames.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-22" >
+        <tr class="alt-color api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/FrameCaptureFormat.html">FrameCaptureFormat</a></td>
             <td class="jd-descrcol" width="100%">The <code>FrameCaptureFileType</code> is an enumeration defining the file type
  for the frames captured by the Scanner.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-22" >
+        <tr class=" api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/FrameCaptureListener.html">FrameCaptureListener</a></td>
             <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the decoder's frame capture event.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-22" >
+        <tr class="alt-color api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/FrameCaptureMode.html">FrameCaptureMode</a></td>
             <td class="jd-descrcol" width="100%">The <code>FrameCaptureMode</code> is an enumeration defining the operating frame
  capture mode.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-22" >
+        <tr class=" api apilevel-22" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/FrameSaveListener.html">FrameSaveListener</a></td>
             <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the decoder's frame save event.&nbsp;</td>
         </tr>
@@ -1041,19 +1076,25 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class=" api apilevel-6" >
+        <tr class=" api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/cradle/LeverStatus.html">LeverStatus</a></td>
+            <td class="jd-descrcol" width="100%">Enumerative representing the Cradle Lever status.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-6" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/LinearQuietZones.html">LinearQuietZones</a></td>
             <td class="jd-descrcol" width="100%"><code>LinearQuietZones</code> is the class that configures the admitted quiet zones for the supported linear symbologies.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/location/LocationManager.html">LocationManager</a></td>
             <td class="jd-descrcol" width="100%">The <code>LocationManager</code> class provides access to geo-location related methods of the device.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/location/LocationMode.html">LocationMode</a></td>
             <td class="jd-descrcol" width="100%">The <code>LocationMode</code> enumeration defines different location systems that can be selectively
  activated to help the Android LocationManager.&nbsp;</td>
@@ -1282,6 +1323,12 @@ Distribution</a></li>
         </tr>
     
     
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/display/RotationSpeed.html">RotationSpeed</a></td>
+            <td class="jd-descrcol" width="100%">The <code>RotationSpeed</code> enumeration defines the possible notification rotation speed on 2nd display.&nbsp;</td>
+        </tr>
+    
+    
 </table>
 
 
@@ -1402,19 +1449,25 @@ Distribution</a></li>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/device/display/TimeoutSleep.html">TimeoutSleep</a></td>
+            <td class="jd-descrcol" width="100%">The <code>TimeoutSleep</code> enumeration defines the possible value for 2nd display sleep timeout.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></td>
             <td class="jd-descrcol" width="100%"><code>ToneNotificationMode</code> is an enumeration defining the audio notification mode, subject to Good read rules.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/TouchManager.html">TouchManager</a></td>
             <td class="jd-descrcol" width="100%">This class provides access to touch panel related methods of the device.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-5" >
+        <tr class=" api apilevel-5" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/device/input/Trigger.html">Trigger</a></td>
             <td class="jd-descrcol" width="100%">Interface representing a trigger associated by default with the scan action.&nbsp;</td>
         </tr>
@@ -1463,6 +1516,33 @@ Distribution</a></li>
 
 <h2 id="letter_V">V</h2>
 <table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/VisualFormatter.html">VisualFormatter</a></td>
+            <td class="jd-descrcol" width="100%"><code>VisualFormatter</code> is a class used to install and manage the different
+ projects created from the Visual Formatter tool available inside Scan2Deploy Studio.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/VisualFormatter.Item.html">VisualFormatter.Item</a></td>
+            <td class="jd-descrcol" width="100%"><code>VisualFormatter.Item</code> is a class representing a visual formatting item,
+ used to manipulate the input barcode data when set as active item.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/VisualFormatter.Item.Type.html">VisualFormatter.Item.Type</a></td>
+            <td class="jd-descrcol" width="100%"><code>VisualFormatter.Item.Type</code> is an enumeration representing the type of item.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-24" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a></td>
+            <td class="jd-descrcol" width="100%"><code>VisualFormatter.PersistenceType</code> is an enumeration representing the
+ persistence type of the installed visual formatter configuration.&nbsp;</td>
+        </tr>
     
     
         <tr class="alt-color api apilevel-1" >
