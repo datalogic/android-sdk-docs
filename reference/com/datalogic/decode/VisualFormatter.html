@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
         buildApiLevelSelector();
       </script>
                   
@@ -264,6 +264,8 @@ Distribution</a></li>
   <a href="../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-25">
+  <a href="../../../../reference/com/datalogic/device/app/package-summary.html">com.datalogic.device.app</a></li>
     <li class="api apilevel-13">
   <a href="../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
@@ -709,9 +711,9 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html#remove(com.datalogic.decode.VisualFormatter.PersistenceType)">remove</a></span>(<a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a> persistenceType)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html#remove(java.lang.String)">remove</a></span>(String projectId)</nobr>
         
-        <div class="jd-descrdiv">Remove the items of the specified persistence type.</div>
+        <div class="jd-descrdiv">Remove the items of the specified project.</div>
   
   </td></tr>
 
@@ -727,9 +729,9 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html#remove(java.lang.String)">remove</a></span>(String projectId)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html#remove(com.datalogic.decode.VisualFormatter.PersistenceType)">remove</a></span>(<a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a> persistenceType)</nobr>
         
-        <div class="jd-descrdiv">Remove the items of the specified project.</div>
+        <div class="jd-descrdiv">Remove the items of the specified persistence type.</div>
   
   </td></tr>
 
@@ -979,7 +981,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -995,7 +997,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -1011,7 +1013,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -1339,60 +1341,6 @@ From class
 </div>
 
 
-<A NAME="remove(com.datalogic.decode.VisualFormatter.PersistenceType)"></A>
-
-<div class="jd-details api apilevel-24"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        int
-      </span>
-      <span class="sympad">remove</span>
-      <span class="normal">(<a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a> persistenceType)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 24</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Remove the items of the specified persistence type.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>persistenceType</td>
-          <td>The persistence type of the items to remove.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>DecodeException.SUCCESS in case it succeeds, otherwise it returns an error code if the
-        exceptions are disabled or throws a DecodeException in case the exceptions are enabled.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 <A NAME="remove(java.lang.String)"></A>
 
 <div class="jd-details api apilevel-24"> 
@@ -1424,6 +1372,60 @@ From class
         <tr>
           <th>projectId</td>
           <td>The project id.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>DecodeException.SUCCESS in case it succeeds, otherwise it returns an error code if the
+        exceptions are disabled or throws a DecodeException in case the exceptions are enabled.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="remove(com.datalogic.decode.VisualFormatter.PersistenceType)"></A>
+
+<div class="jd-details api apilevel-24"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">remove</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a> persistenceType)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 24</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Remove the items of the specified persistence type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>persistenceType</td>
+          <td>The persistence type of the items to remove.</td>
         </tr>
       </table>
   </div>

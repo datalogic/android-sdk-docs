@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
         buildApiLevelSelector();
       </script>
                   
@@ -264,6 +264,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-25">
+  <a href="../../../../../reference/com/datalogic/device/app/package-summary.html">com.datalogic.device.app</a></li>
     <li class="api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
@@ -594,7 +596,7 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html#setLed(com.datalogic.device.notification.Led, boolean, int)">setLed</a></span>(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable, int ARGB)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html#setLed(com.datalogic.device.notification.Led, boolean)">setLed</a></span>(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable)</nobr>
         
         <div class="jd-descrdiv">Setting led method.</div>
   
@@ -612,7 +614,7 @@ Summary:
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html#setLed(com.datalogic.device.notification.Led, boolean)">setLed</a></span>(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html#setLed(com.datalogic.device.notification.Led, boolean, int)">setLed</a></span>(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable, int ARGB)</nobr>
         
         <div class="jd-descrdiv">Setting led method.</div>
   
@@ -792,7 +794,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -808,7 +810,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -824,7 +826,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -1082,6 +1084,66 @@ From class
 </div>
 
 
+<A NAME="setLed(com.datalogic.device.notification.Led, boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setLed</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Setting led method. This method turns on or off a led without blocking
+ the caller thread.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>id</td>
+          <td>Specifies which <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a></code> to control.</td>
+        </tr>
+        <tr>
+          <th>enable</td>
+          <td>A <code>boolean</code> value set to true that enables the LED and a value of false that disables
+            the LED.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="setLed(com.datalogic.device.notification.Led, boolean, int)"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1146,66 +1208,6 @@ From class
       <h5 class="jd-tagtitle">See Also</h5>
       <ul class="nolist"><li><a href="http://developer.android.com/reference/android/graphics/Color.html#rgb(int, int, int)">android.graphics.Color#rgb</a></li>
       </ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="setLed(com.datalogic.device.notification.Led, boolean)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        int
-      </span>
-      <span class="sympad">setLed</span>
-      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a> id, boolean enable)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Setting led method. This method turns on or off a led without blocking
- the caller thread.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>id</td>
-          <td>Specifies which <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a></code> to control.</td>
-        </tr>
-        <tr>
-          <th>enable</td>
-          <td>A <code>boolean</code> value set to true that enables the LED and a value of false that disables
-            the LED.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
   </div>
 
     </div>

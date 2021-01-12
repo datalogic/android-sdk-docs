@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
         buildApiLevelSelector();
       </script>
                   
@@ -264,6 +264,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-25">
+  <a href="../../../../../reference/com/datalogic/device/app/package-summary.html">com.datalogic.device.app</a></li>
     <li class="api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
@@ -687,9 +689,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</nobr>
         
-        <div class="jd-descrdiv">Adds a listener to all action key events.</div>
+        <div class="jd-descrdiv">Adds a listener to an action key event, registering to both press and release events.</div>
   
   </td></tr>
 
@@ -705,9 +707,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int, boolean)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId, boolean pressed)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Adds a listener to a specific action key press or release.</div>
+        <div class="jd-descrdiv">Adds a listener to all action key events.</div>
   
   </td></tr>
 
@@ -723,9 +725,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int, boolean)">addActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId, boolean pressed)</nobr>
         
-        <div class="jd-descrdiv">Adds a listener to an action key event, registering to both press and release events.</div>
+        <div class="jd-descrdiv">Adds a listener to a specific action key press or release.</div>
   
   </td></tr>
 
@@ -962,9 +964,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int, boolean)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId, boolean pressed)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</nobr>
         
-        <div class="jd-descrdiv">Removes a listener to a specific action key press or release.</div>
+        <div class="jd-descrdiv">Removes a listener to a specific action key event, both for press and release.</div>
   
   </td></tr>
 
@@ -980,9 +982,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int, boolean)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId, boolean pressed)</nobr>
         
-        <div class="jd-descrdiv">Removes a listener to all action key events.</div>
+        <div class="jd-descrdiv">Removes a listener to a specific action key press or release.</div>
   
   </td></tr>
 
@@ -998,9 +1000,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.html#removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener)">removeActionEventListener</a></span>(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Removes a listener to a specific action key event, both for press and release.</div>
+        <div class="jd-descrdiv">Removes a listener to all action key events.</div>
   
   </td></tr>
 
@@ -1287,7 +1289,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -1303,7 +1305,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -1319,7 +1321,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -1370,6 +1372,66 @@ From class
 
 <h2>Public Methods</h2>
 
+
+
+<A NAME="addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)"></A>
+
+<div class="jd-details api apilevel-22"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">addActionEventListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 22</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener to an action key event, registering to both press and release events.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The listener to add.</td>
+        </tr>
+        <tr>
+          <th>actionId</td>
+          <td>ID of the action event to listen to.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if the listener has been added successfully, false otherwise
+         or throws an exception if exceptions are enabled through the
+         <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions
+         are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
 
 
 <A NAME="addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener)"></A>
@@ -1467,66 +1529,6 @@ From class
         <tr>
           <th>pressed</td>
           <td>True to listen to the pressure event, false to listen to the release event.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if the listener has been added successfully, false otherwise
-         or throws an exception if exceptions are enabled through the
-         <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
-            <td>in case of error, when exceptions
-         are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="addActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)"></A>
-
-<div class="jd-details api apilevel-22"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        boolean
-      </span>
-      <span class="sympad">addActionEventListener</span>
-      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 22</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Adds a listener to an action key event, registering to both press and release events.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>listener</td>
-          <td>The listener to add.</td>
-        </tr>
-        <tr>
-          <th>actionId</td>
-          <td>ID of the action event to listen to.</td>
         </tr>
       </table>
   </div>
@@ -2188,6 +2190,66 @@ From class
 </div>
 
 
+<A NAME="removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)"></A>
+
+<div class="jd-details api apilevel-22"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">removeActionEventListener</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 22</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener to a specific action key event, both for press and release.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The listener to remove.</td>
+        </tr>
+        <tr>
+          <th>actionId</td>
+          <td>ID of the related action key.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>True if the listener has been removed successfully, false otherwise
+         or throws an exception if exceptions are enabled through the
+         <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions
+         are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int, boolean)"></A>
 
 <div class="jd-details api apilevel-22"> 
@@ -2283,66 +2345,6 @@ From class
         <tr>
           <th>listener</td>
           <td>The listener to remove.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if the listener has been removed successfully, false otherwise
-         or throws an exception if exceptions are enabled through the
-         <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
-            <td>in case of error, when exceptions
-         are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="removeActionEventListener(com.datalogic.device.input.AdvancedKeyboard.ActionEventListener, int)"></A>
-
-<div class="jd-details api apilevel-22"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        boolean
-      </span>
-      <span class="sympad">removeActionEventListener</span>
-      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/input/AdvancedKeyboard.ActionEventListener.html">AdvancedKeyboard.ActionEventListener</a> listener, int actionId)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 22</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Removes a listener to a specific action key event, both for press and release.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>listener</td>
-          <td>The listener to remove.</td>
-        </tr>
-        <tr>
-          <th>actionId</td>
-          <td>ID of the related action key.</td>
         </tr>
       </table>
   </div>

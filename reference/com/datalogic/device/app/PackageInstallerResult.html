@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>BatteryInfo - Datalogic SDK version 1 | Android Add-on</title>
+<title>PackageInstallerResult - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="25" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
         buildApiLevelSelector();
       </script>
                   
@@ -256,7 +256,7 @@ Distribution</a></li>
 
               <ul>
               	
-    <li class="api apilevel-">
+    <li class="api apilevel-16">
   <a href="../../../../../reference/com/datalogic/cradle/package-summary.html">com.datalogic.cradle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/decode/package-summary.html">com.datalogic.decode</a></li>
@@ -264,11 +264,15 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="selected api apilevel-25">
+  <a href="../../../../../reference/com/datalogic/device/app/package-summary.html">com.datalogic.device.app</a></li>
     <li class="api apilevel-13">
   <a href="../../../../../reference/com/datalogic/device/battery/package-summary.html">com.datalogic.device.battery</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/configuration/package-summary.html">com.datalogic.device.configuration</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-20">
+  <a href="../../../../../reference/com/datalogic/device/display/package-summary.html">com.datalogic.device.display</a></li>
+    <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/info/package-summary.html">com.datalogic.device.info</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/input/package-summary.html">com.datalogic.device.input</a></li>
@@ -292,23 +296,33 @@ Distribution</a></li>
 
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerListener.html">PackageInstallerListener</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html">BatteryInfo</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.html">SYSTEM</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html">SYSTEM.Version</a></li>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html">AppManager</a></li>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstaller.html">PackageInstaller</a></li>
+          <li class="selected api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerResult.html">PackageInstallerResult</a></li>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerSession.html">PackageInstallerSession</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/BarcodeScannerType.html">BarcodeScannerType</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/KeyboardType.html">KeyboardType</a></li>
-          <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/info/WiFiType.html">WiFiType</a></li>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerEvent.html">PackageInstallerEvent</a></li>
       </ul>
     </li>
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></li>
+          <li class="api apilevel-25"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerException.html">PackageInstallerException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
         
@@ -397,7 +411,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 25</a>
   
   
 
@@ -413,7 +427,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">BatteryInfo</h1>
+<h1 itemprop="name">PackageInstallerResult</h1>
 
 
 
@@ -432,7 +446,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-25">
 <table class="jd-inheritance-table">
 
 
@@ -446,7 +460,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.info.BatteryInfo</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.device.app.PackageInstallerResult</td>
     </tr>
     
 
@@ -459,17 +473,14 @@ Summary:
 
 
 <div class="jd-descr">
-<p>
-  <p class="caution"><strong>
-      This class was deprecated
-      in revision 13.</strong><br/>
-    This object has been deprecated from Datalogic SDK v1.13, because it is going away in a future release.
-             Information about Battery Manufacturing can be retrieved using <code><a href="../../../../../reference/com/datalogic/device/battery/ManufacturerInfo.html">ManufacturerInfo</a></code> instead.
 
-  </p>
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The <code>BatteryInfo</code> class stores battery's info.</p>
+<p itemprop="articleBody"><code>PackageInstallerResult</code> is the base element of the List passed by
+ <code><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerListener.html#onResult(java.util.List<com.datalogic.device.app.PackageInstallerResult>)">onResult(List<PackageInstallerResult>)</a></code> to retrieve the result of
+ operations of install/uninstall/upgrade.
+
+</p>
 
 
 
@@ -519,58 +530,36 @@ Summary:
 
 
     
-      <tr class="alt-color api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          int</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#capacity">capacity</a></td>
-          <td class="jd-descrcol" width="100%">The estimated capacity of the main battery in mAh.</td>
-      </tr>
-      
-    
-      <tr class=" api apilevel-1" >
+      <tr class="alt-color api apilevel-25" >
           <td class="jd-typecol"><nobr>
           public
           
           
           String</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#manufacturer">manufacturer</a></td>
-          <td class="jd-descrcol" width="100%">The battery manufacturer.</td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerResult.html#data">data</a></td>
+          <td class="jd-descrcol" width="100%"><code>data</code> application to be installed/upgraded/uninstalled.</td>
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class=" api apilevel-25" >
           <td class="jd-typecol"><nobr>
           public
           
           
-          String</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#serialNumber">serialNumber</a></td>
-          <td class="jd-descrcol" width="100%">The battery serial number.</td>
+          <a href="../../../../../reference/com/datalogic/device/app/PackageInstallerEvent.html">PackageInstallerEvent</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerResult.html#event">event</a></td>
+          <td class="jd-descrcol" width="100%"><code>event</code> type of the event, value from <code><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerEvent.html">PackageInstallerEvent</a></code>.</td>
       </tr>
       
     
-      <tr class=" api apilevel-1" >
-          <td class="jd-typecol"><nobr>
-          public
-          
-          
-          int</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#week">week</a></td>
-          <td class="jd-descrcol" width="100%">The week the main battery was manufactured.</td>
-      </tr>
-      
-    
-      <tr class="alt-color api apilevel-1" >
+      <tr class="alt-color api apilevel-25" >
           <td class="jd-typecol"><nobr>
           public
           
           
           int</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#year">year</a></td>
-          <td class="jd-descrcol" width="100%">The year the main battery was manufactured.</td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerResult.html#result">result</a></td>
+          <td class="jd-descrcol" width="100%"><code>result</code> result of the command, value matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerException.html">PackageInstallerException</a></code> error constants.</td>
       </tr>
       
     
@@ -589,7 +578,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-25" >
         <td class="jd-typecol"><nobr>
             
             
@@ -599,10 +588,8 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/info/BatteryInfo.html#BatteryInfo()">BatteryInfo</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerResult.html#PackageInstallerResult()">PackageInstallerResult</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Constructor of BatteryInfo.</div>
-  
   </td></tr>
 
 
@@ -783,7 +770,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -799,7 +786,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -815,7 +802,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -858,39 +845,9 @@ From class
 
 
 
-<A NAME="capacity"></A>
+<A NAME="data"></A>
 
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        capacity
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The estimated capacity of the main battery in mAh.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="manufacturer"></A>
-
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-25"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -898,18 +855,20 @@ From class
          
         String
       </span>
-        manufacturer
+        data
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 25</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The battery manufacturer.
+  <div class="jd-tagdata jd-tagdescr"><p><code>data</code> application to be installed/upgraded/uninstalled.
+                   For install and upgrade is full path of the .apk.
+                   For uninstall is the name of the component.
 </p></div>
 
     
@@ -918,28 +877,28 @@ From class
 
 
 
-<A NAME="serialNumber"></A>
+<A NAME="event"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-25"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
          
          
-        String
+        <a href="../../../../../reference/com/datalogic/device/app/PackageInstallerEvent.html">PackageInstallerEvent</a>
       </span>
-        serialNumber
+        event
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 25</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The battery serial number.
+  <div class="jd-tagdata jd-tagdescr"><p><code>event</code> type of the event, value from <code><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerEvent.html">PackageInstallerEvent</a></code>.
 </p></div>
 
     
@@ -948,39 +907,9 @@ From class
 
 
 
-<A NAME="week"></A>
+<A NAME="result"></A>
 
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        int
-      </span>
-        week
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>The week the main battery was manufactured.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="year"></A>
-
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-25"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -988,18 +917,18 @@ From class
          
         int
       </span>
-        year
+        result
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 25</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The year the main battery was manufactured.
+  <div class="jd-tagdata jd-tagdescr"><p><code>result</code> result of the command, value matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/PackageInstallerException.html">PackageInstallerException</a></code> error constants.
 </p></div>
 
     
@@ -1017,9 +946,9 @@ From class
 
 
 
-<A NAME="BatteryInfo()"></A>
+<A NAME="PackageInstallerResult()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-25"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1029,29 +958,19 @@ From class
          
         
       </span>
-      <span class="sympad">BatteryInfo</span>
+      <span class="sympad">PackageInstallerResult</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 25</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor of BatteryInfo.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
-            <td>in case of error.
-</td>
-        </tr>
-      </table>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
 
     </div>
 </div>
