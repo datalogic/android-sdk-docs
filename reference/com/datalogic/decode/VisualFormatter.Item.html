@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
         buildApiLevelSelector();
       </script>
                   
@@ -303,6 +303,7 @@ Distribution</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/FrameCaptureListener.html">FrameCaptureListener</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/FrameSaveListener.html">FrameSaveListener</a></li>
           <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StartListener.html">StartListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StopListener.html">StopListener</a></li>
@@ -319,13 +320,17 @@ Distribution</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/SavedFrame.html">SavedFrame</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html">VisualFormatter</a></li>
           <li class="selected api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.html">VisualFormatter.Item</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.html">VisualFormatter.Item.Property</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/BarcodeID.html">BarcodeID</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/Symbology.html">Symbology</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.Direction.html">VisualFormatter.Item.Property.Direction</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.Type.html">VisualFormatter.Item.Property.Type</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Type.html">VisualFormatter.Item.Type</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a></li>
       </ul>
@@ -526,7 +531,21 @@ Summary:
 
 
   
-    <tr class="alt-color api apilevel-24" >
+    <tr class="alt-color api apilevel-26" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.html">VisualFormatter.Item.Property</a>&lt;T&gt;</td>
+      <td class="jd-descrcol" width="100%"><code>VisualFormatter.Item.Property</code> is a class representing a property of
+ a visual formatting item, used to add custom parameters that can change the runtime
+ behavior of the formatting item.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-24" >
       <td class="jd-typecol"><nobr>
         
          
@@ -697,7 +716,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-24" >
+    <tr class=" api apilevel-26" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            List&lt;<a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.html">Property</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.html#getProperties()">getProperties</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the item properties.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-24" >
         <td class="jd-typecol"><nobr>
             
             
@@ -715,7 +752,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-24" >
+    <tr class=" api apilevel-24" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1228,6 +1265,41 @@ From class
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The project name.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getProperties()"></A>
+
+<div class="jd-details api apilevel-26"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        List&lt;<a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.html">Property</a>&gt;
+      </span>
+      <span class="sympad">getProperties</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 26</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the item properties.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The item properties.
 </li></ul>
   </div>
 

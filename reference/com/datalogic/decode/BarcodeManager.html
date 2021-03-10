@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
         buildApiLevelSelector();
       </script>
                   
@@ -303,6 +303,7 @@ Distribution</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/FrameCaptureListener.html">FrameCaptureListener</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/FrameSaveListener.html">FrameSaveListener</a></li>
           <li class="api apilevel-14"><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/ReadListener.html">ReadListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StartListener.html">StartListener</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/StopListener.html">StopListener</a></li>
@@ -319,13 +320,17 @@ Distribution</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/SavedFrame.html">SavedFrame</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.html">VisualFormatter</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.html">VisualFormatter.Item</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.html">VisualFormatter.Item.Property</a></li>
       </ul>
     </li>
               
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/BarcodeID.html">BarcodeID</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/Symbology.html">Symbology</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.Direction.html">VisualFormatter.Item.Property.Direction</a></li>
+          <li class="api apilevel-26"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Property.Type.html">VisualFormatter.Item.Property.Type</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.Item.Type.html">VisualFormatter.Item.Type</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/decode/VisualFormatter.PersistenceType.html">VisualFormatter.PersistenceType</a></li>
       </ul>
@@ -737,7 +742,26 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-26" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#addPresentationStateListener(com.datalogic.decode.PresentationStateListener)">addPresentationStateListener</a></span>(<a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a frame save event is
+ triggered.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -756,7 +780,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -775,7 +799,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -794,7 +818,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -813,7 +837,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -831,7 +855,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -849,7 +873,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -867,7 +891,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-4" >
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-typecol"><nobr>
             
             
@@ -885,7 +909,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -903,7 +927,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-4" >
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-typecol"><nobr>
             
             
@@ -921,7 +945,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -939,7 +963,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-14" >
+    <tr class="alt-color api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -957,7 +981,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -975,7 +999,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -994,7 +1018,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1012,7 +1036,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1031,7 +1055,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1049,7 +1073,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-14" >
+    <tr class="alt-color api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1067,7 +1091,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-22" >
+    <tr class=" api apilevel-22" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1085,7 +1109,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-22" >
+    <tr class="alt-color api apilevel-22" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1103,7 +1127,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-14" >
+    <tr class=" api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1116,6 +1140,24 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#removeInitListener(com.datalogic.decode.InitListener)">removeInitListener</a></span>(<a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a> listener)</nobr>
         
         <div class="jd-descrdiv">Unregisters a <code><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></code> associated with the decoder.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-26" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#removePresentationStateListener(com.datalogic.decode.PresentationStateListener)">removePresentationStateListener</a></span>(<a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Unregisters a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> associated with the decoder.</div>
   
   </td></tr>
 
@@ -2142,6 +2184,63 @@ From interface
           <th>listener</td>
           <td>The <code><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></code> that will be called when a
             decoder's init event is fired.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="addPresentationStateListener(com.datalogic.decode.PresentationStateListener)"></A>
+
+<div class="jd-details api apilevel-26"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">addPresentationStateListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 26</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a frame save event is
+ triggered. Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#removeFrameSaveListener(com.datalogic.decode.FrameSaveListener)">removeFrameSaveListener(FrameSaveListener)</a></code> before the application
+ closes to properly shut down the listener.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> that will be called when a
+            decoder's read event is fired.</td>
         </tr>
       </table>
   </div>
@@ -3327,6 +3426,60 @@ From interface
         <tr>
           <th>listener</td>
           <td>The <code><a href="../../../../reference/com/datalogic/decode/InitListener.html">InitListener</a></code> that will be no more notified.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="removePresentationStateListener(com.datalogic.decode.PresentationStateListener)"></A>
+
+<div class="jd-details api apilevel-26"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">removePresentationStateListener</span>
+      <span class="normal">(<a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 26</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Unregisters a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> associated with the decoder.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>listener</td>
+          <td>The <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> that will be no more notified.</td>
         </tr>
       </table>
   </div>
