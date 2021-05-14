@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
         buildApiLevelSelector();
       </script>
                   
@@ -317,6 +317,7 @@ Distribution</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/Failure.html">Failure</a></li>
           <li class="api apilevel-16"><a href="../../../../reference/com/datalogic/cradle/InsertionState.html">InsertionState</a></li>
           <li class="api apilevel-24"><a href="../../../../reference/com/datalogic/cradle/LeverStatus.html">LeverStatus</a></li>
+          <li class="api apilevel-27"><a href="../../../../reference/com/datalogic/cradle/Type.html">Type</a></li>
           <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></li>
       </ul>
     </li>
@@ -694,7 +695,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-23" >
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../reference/com/datalogic/cradle/Type.html">Type</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#getType()">getType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the Cradle type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-23" >
         <td class="jd-typecol"><nobr>
             
             
@@ -707,6 +726,24 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#getUnlockKeyStatus()">getUnlockKeyStatus</a></span>()</nobr>
         
         <div class="jd-descrdiv">Returns the current position related to the unlock key.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/cradle/DLCradleManager.html#rebootCradle()">rebootCradle</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Reboot the Cradle.</div>
   
   </td></tr>
 
@@ -1275,8 +1312,17 @@ From class
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
-</li></ul>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>in case of error.
+</td>
+        </tr>
+      </table>
   </div>
 
     </div>
@@ -1423,6 +1469,41 @@ From class
 </div>
 
 
+<A NAME="getType()"></A>
+
+<div class="jd-details api apilevel-27"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../reference/com/datalogic/cradle/Type.html">Type</a>
+      </span>
+      <span class="sympad">getType</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the Cradle type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code><a href="../../../../reference/com/datalogic/cradle/Type.html">Type</a></code> of the Cradle where the device is inserted in.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getUnlockKeyStatus()"></A>
 
 <div class="jd-details api apilevel-23"> 
@@ -1452,6 +1533,51 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The current <code><a href="../../../../reference/com/datalogic/cradle/UnlockKeyStatus.html">UnlockKeyStatus</a></code> of the unlock key.
 </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="rebootCradle()"></A>
+
+<div class="jd-details api apilevel-27"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">rebootCradle</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Reboot the Cradle.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>int
+            Returns 1 if the cradle has been rebooted sucessfully, error otherwise.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>in case of error.
+</td>
+        </tr>
+      </table>
   </div>
 
     </div>

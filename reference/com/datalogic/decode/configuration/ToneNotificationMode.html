@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
         buildApiLevelSelector();
       </script>
                   
@@ -367,6 +367,7 @@ Distribution</a></li>
           <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/decode/configuration/ScanMode.html">ScanMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
           <li class="api apilevel-26"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationChannel.html">ToneNotificationChannel</a></li>
           <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
@@ -576,6 +577,17 @@ Summary:
  <td>AUDIO_FILE</td>
  <td>Play the desired audio file, specified by <code><a href="../../../../../reference/com/datalogic/decode/configuration/DecodingNotification.html#goodReadAudioFile">goodReadAudioFile</a></code>, just one time</td>
  </tr>
+ </tr>
+ <tr>
+ <td>VIPER</td>
+ <td>Play Viper beep sound, just one time</td>
+ </tr>
+ </tr>
+ <tr>
+ <td>BAROQUE</td>
+ <td>Play Baroque beep sound, just one time</td>
+ </tr>
+
  </table>
 </p>
 
@@ -627,7 +639,14 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-27" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>&nbsp;</td>
+        <td class="jd-linkcol">BAROQUE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Play baroque tone.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>&nbsp;</td>
         <td class="jd-linkcol">BEEP&nbsp;</td>
         <td class="jd-descrcol" width="100%">Play a beep
@@ -635,11 +654,18 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>&nbsp;</td>
         <td class="jd-linkcol">NONE&nbsp;</td>
         <td class="jd-descrcol" width="100%">None
 &nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>&nbsp;</td>
+        <td class="jd-linkcol">VIPER&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Play viper tone.&nbsp;</td>
     </tr>
     
     
@@ -1216,6 +1242,36 @@ From interface
 
 
 
+<A NAME="BAROQUE"></A>
+
+<div class="jd-details api apilevel-27"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>
+      </span>
+        BAROQUE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Play baroque tone.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="BEEP"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1268,6 +1324,36 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>None
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="VIPER"></A>
+
+<div class="jd-details api apilevel-27"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a>
+      </span>
+        VIPER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Play viper tone.
 </p></div>
 
     

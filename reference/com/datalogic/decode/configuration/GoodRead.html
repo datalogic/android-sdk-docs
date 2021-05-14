@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
         buildApiLevelSelector();
       </script>
                   
@@ -367,6 +367,7 @@ Distribution</a></li>
           <li class="api apilevel-3"><a href="../../../../../reference/com/datalogic/decode/configuration/KeyWedgeMode.html">KeyWedgeMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/LengthControlMode.html">LengthControlMode</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/MsiAggressiveness.html">MsiAggressiveness</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/decode/configuration/ScanMode.html">ScanMode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/SendCodeID.html">SendCodeID</a></li>
           <li class="api apilevel-26"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationChannel.html">ToneNotificationChannel</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ToneNotificationMode.html">ToneNotificationMode</a></li>
@@ -731,7 +732,43 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getGroups()">getGroups</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the property groups contained by this group.</div>
+        <div class="jd-descrdiv">Returns the property groups contained in this group, not in the whole subtree.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getId()">getId</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the integer value of the unique identifier <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code> of the group.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getName()">getName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the name of the unique identifier<code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code> of the group.</div>
   
   </td></tr>
 
@@ -749,7 +786,79 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getProperties()">getProperties</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the properties contained by this group.</div>
+        <div class="jd-descrdiv">Returns the properties contained in this group, not in the whole subtree.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyById(int)">getPropertyById</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></code>, belonging to this group's subtree, whose identifier has the given integer value in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyByName(java.lang.String)">getPropertyByName</a></span>(String name)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></code>, belonging to this group's subtree, whose identifier has the integer value defined by the given string in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyGroupById(int)">getPropertyGroupById</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></code>, belonging to this group's subtree, whose identifier has the given integer value in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyGroupByName(java.lang.String)">getPropertyGroupByName</a></span>(String name)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></code>, belonging to this group's subtree, whose identifier has the integer value defined by the given string in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code>.</div>
   
   </td></tr>
 
@@ -767,8 +876,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#isFullySupported()">isFullySupported</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Tells if this property group is completely supported by the underling decoding
- hardware.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 
@@ -805,14 +917,35 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#load(com.datalogic.device.configuration.PropertyGetter)">load</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from)</nobr>
         
-        <div class="jd-descrdiv">Load the properties values contained by this property from the
- PropertyGetter.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#setToDefault()">setToDefault</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Resets to the default value all the properties contained in the subtree.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -824,8 +957,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#store(com.datalogic.device.configuration.PropertyEditor, boolean)">store</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to, boolean persist)</nobr>
         
-        <div class="jd-descrdiv">Store the properties values contained by this property into the
- PropertyEditor.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 

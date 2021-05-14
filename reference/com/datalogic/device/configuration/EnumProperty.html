@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
         buildApiLevelSelector();
       </script>
                   
@@ -298,6 +298,7 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationChangeListener.html">ConfigurationChangeListener</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></li>
       </ul>
@@ -307,14 +308,25 @@ Distribution</a></li>
       <ul>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html">ConfigurationManager</a></li>
           <li class="selected api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></li>
       </ul>
     </li>
               
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></li>
+          <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html">WifiPowerSave</a></li>
+      </ul>
+    </li>
               
     <li><h2>Exceptions</h2>
       <ul>
@@ -649,7 +661,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#findPropertybyId(java.util.ArrayList<com.datalogic.device.configuration.Property>, int)">findPropertybyId</a></span>(ArrayList&lt;<a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a>&gt; list, int id)</nobr>
         
-        <div class="jd-descrdiv">Finds the corresponding Property matching the passed ID, in a list of Properties.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 
@@ -667,7 +683,7 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#get()">get</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets the generic object associated to the Property.</div>
+        <div class="jd-descrdiv">Gets the current value of the Property.</div>
   
   </td></tr>
 
@@ -685,7 +701,43 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#getId()">getId</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Retrieves the associated internal numeric ID.</div>
+        <div class="jd-descrdiv">Gets the integer value of the unique identifier <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code> of the property.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#getName()">getName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the name of the unique identifier <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code> of the property.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#getType()">getType</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the type of the Property.</div>
   
   </td></tr>
 
@@ -721,7 +773,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#load(com.datalogic.device.configuration.PropertyGetter)">load</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from)</nobr>
         
-        <div class="jd-descrdiv">Loads the property with the current set values, through a PropertyGetter.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used 
+</em></div>
   
   </td></tr>
 
@@ -739,7 +795,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#loadlist(com.datalogic.device.configuration.PropertyGetter, java.util.ArrayList)">loadlist</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from, ArrayList list)</nobr>
         
-        <div class="jd-descrdiv">Loads and sync the current set values into all the Properties contained in the passed list.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 
@@ -757,7 +817,7 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#set(T)">set</a></span>(T value)</nobr>
         
-        <div class="jd-descrdiv">Sets the generic object.</div>
+        <div class="jd-descrdiv">Sets the value of the property.</div>
   
   </td></tr>
 
@@ -775,7 +835,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#store(com.datalogic.device.configuration.PropertyEditor)">store</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to)</nobr>
         
-        <div class="jd-descrdiv">Stores the Property value, applying them.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 
@@ -793,7 +857,11 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#storelist(com.datalogic.device.configuration.PropertyEditor, java.util.ArrayList)">storelist</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to, ArrayList list)</nobr>
         
-        <div class="jd-descrdiv">Stores and applies all the Properties and their current associated values.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 27.
+    no more to be used
+</em></div>
   
   </td></tr>
 

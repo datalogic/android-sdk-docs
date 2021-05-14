@@ -246,7 +246,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
         buildApiLevelSelector();
       </script>
                   
@@ -299,6 +299,7 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationChangeListener.html">ConfigurationChangeListener</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></li>
       </ul>
@@ -308,14 +309,25 @@ Distribution</a></li>
       <ul>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/CharacterProperty.html">CharacterProperty</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html">ConfigurationManager</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></li>
         <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></li>
       </ul>
     </li>
               
+    <li><h2>Enums</h2>
+      <ul>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></li>
+        <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html">WifiPowerSave</a></li>
+      </ul>
+    </li>
               
     <li><h2>Exceptions</h2>
       <ul>
@@ -404,12 +416,16 @@ Distribution</a></li>
     <div class="jd-sumtable">
     
   <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationChangeListener.html">ConfigurationChangeListener</a></td>
+              <td class="jd-descrcol" width="100%">This interface is used by the application to listen to configuration changes.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a></td>
               <td class="jd-descrcol" width="100%"><code>PropertyEditor</code> is the interface to get and set properties
  from/to the underlying subsystem.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></td>
               <td class="jd-descrcol" width="100%"><code>PropertyGetter</code> is the interface to get properties from/to the
  underlying subsystem.&nbsp;</td>
@@ -434,25 +450,38 @@ Distribution</a></li>
               <td class="jd-descrcol" width="100%"><code>CharacterProperty</code> is the class that implements the property of
  type Character.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html">ConfigurationManager</a></td>
+              <td class="jd-descrcol" width="100%"><code>ConfigurationManager</code> gives the developer the ability to browse and set the configuration properties of the device.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;</td>
               <td class="jd-descrcol" width="100%"><code>EnumProperty</code> is the class that implements the property of type
  Enum.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></td>
               <td class="jd-descrcol" width="100%"><code>NumericProperty</code> is the class that implements the property of
  type Integer.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a>&lt;T&gt;</td>
               <td class="jd-descrcol" width="100%"><code>Property</code> is the abstract class that represents a generic Property of type T.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></td>
               <td class="jd-descrcol" width="100%"><code>PropertyGroup</code> contains properties and/or other property groups.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></td>
+              <td class="jd-descrcol" width="100%"><code>PropertyGroupID</code> is the class that includes all the property group identifiers.&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></td>
+              <td class="jd-descrcol" width="100%"><code>PropertyID</code> is the class that includes all the properties
+ identifiers.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></td>
               <td class="jd-descrcol" width="100%"><code>TextProperty</code> is the class that implements the property of type
  String.&nbsp;</td>
@@ -462,6 +491,29 @@ Distribution</a></li>
   
 
 
+  
+    <h2>Enums</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></td>
+              <td class="jd-descrcol" width="100%"><code>PropertyType</code> is the enumerative class representing the Property types.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class="alt-color api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-27" >
+              <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html">WifiPowerSave</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+  </table>
+    </div>
   
 
 
