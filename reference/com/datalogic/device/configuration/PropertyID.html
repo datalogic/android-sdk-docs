@@ -407,9 +407,6 @@ Summary:
 
 
 
-  &#124; <a href="#pubctors">Ctors</a>
-  
-
 
 
 
@@ -500,7 +497,7 @@ Summary:
  <ul>
      <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#WIFI_GROUP">WIFI_GROUP</a></code>
          <ul>
-         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#MODULE_SETTINGS_GROUP">MODULE_SETTINGS_GROUP</a></code>
+         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#WIFI_MODULE_SETTINGS_GROUP">WIFI_MODULE_SETTINGS_GROUP</a></code>
              <ul>
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_802_DOT_11_MODE">WIFI_802_DOT_11_MODE</a></code> </li>
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_BAND_SELECTION">WIFI_BAND_SELECTION</a></code> </li>
@@ -508,16 +505,16 @@ Summary:
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_VERBOSE_WIFI_MODULE_LOG">WIFI_VERBOSE_WIFI_MODULE_LOG</a></code> </li>
              </ul>
          </li>
-         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#ROAMING_SETTINGS_GROUP">ROAMING_SETTINGS_GROUP</a></code>
+         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#WIFI_ROAMING_SETTINGS_GROUP">WIFI_ROAMING_SETTINGS_GROUP</a></code>
              <ul>
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_PROFILE">WIFI_ROAMING_PROFILE</a></code> </li>
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_THRESHOLD">WIFI_ROAMING_RSSI_THRESHOLD</a></code> </li>
                  <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_DIFFERENCE">WIFI_ROAMING_RSSI_DIFFERENCE</a></code> </li>
              </ul>
          </li>
-         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#SCAN_SETTINGS_GROUP">SCAN_SETTINGS_GROUP</a></code>
+         <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#WIFI_SCAN_SETTINGS_GROUP">WIFI_SCAN_SETTINGS_GROUP</a></code>
              <ul>
-                 <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#SCAN_TIMINGS_GROUP">SCAN_TIMINGS_GROUP</a></code>
+                 <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#WIFI_SCAN_TIMINGS_GROUP">WIFI_SCAN_TIMINGS_GROUP</a></code>
                      <ul>
                          <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL">WIFI_SCAN_INTERVAL</a></code> </li>
                          <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL_MAX">WIFI_SCAN_INTERVAL_MAX</a></code> </li>
@@ -655,20 +652,13 @@ Summary:
     
     <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#DATE_AND_TIME_UNKNOWN">DATE_AND_TIME_UNKNOWN</a></td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-27" >
-        <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_POLICY">POWER_OFF_CHARGING_MODE_POLICY</a></td>
         <td class="jd-descrcol" width="100%">Policy for automatic exit from charging mode
 </td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_THRESHOLD">POWER_OFF_CHARGING_MODE_THRESHOLD</a></td>
         <td class="jd-descrcol" width="100%">The charging threshold (%) for automatic exit from charging mode
@@ -676,7 +666,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_CURRENT_FUNCTION">USB_CURRENT_FUNCTION</a></td>
         <td class="jd-descrcol" width="100%">Current USB data function is the USB Transfer Protocol used to change the Default USB data function 
@@ -684,87 +674,80 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_DEFAULT_FUNCTION">USB_DEFAULT_FUNCTION</a></td>
         <td class="jd-descrcol" width="100%">Default USB data function is the USB Transfer Protocol setup every time a USB is plugged-in to the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_802_DOT_11_MODE">WIFI_802_DOT_11_MODE</a></td>
         <td class="jd-descrcol" width="100%">Selects the 802.11 mode to be used (b/g/n/a/ac).</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_BAND_SELECTION">WIFI_BAND_SELECTION</a></td>
         <td class="jd-descrcol" width="100%">Selects the band used by the device (2.4/5 GHz).</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL">WIFI_CONNECTED_SCAN_INTERVAL</a></td>
         <td class="jd-descrcol" width="100%">Interval between scans when the device is on and connected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL_MAX">WIFI_CONNECTED_SCAN_INTERVAL_MAX</a></td>
         <td class="jd-descrcol" width="100%">Maximum interval between scans when the device is on and connected.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_POWER_SAVE">WIFI_POWER_SAVE</a></td>
         <td class="jd-descrcol" width="100%">Selects the power saving mode used.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_PROFILE">WIFI_ROAMING_PROFILE</a></td>
         <td class="jd-descrcol" width="100%">Enables roaming profiles.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_DIFFERENCE">WIFI_ROAMING_RSSI_DIFFERENCE</a></td>
         <td class="jd-descrcol" width="100%">Signal difference between the current AP and the target AP for roaming.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_THRESHOLD">WIFI_ROAMING_RSSI_THRESHOLD</a></td>
         <td class="jd-descrcol" width="100%">Signal threshold for triggering the roaming background scan.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL">WIFI_SCAN_INTERVAL</a></td>
         <td class="jd-descrcol" width="100%">Interval between scans when the device is on and disconnected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL_MAX">WIFI_SCAN_INTERVAL_MAX</a></td>
         <td class="jd-descrcol" width="100%">Maximum interval between scans when the device is on and disconnected.</td>
-    </tr>
-    
-    
-    <tr class="alt-color api apilevel-27" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_UNKNOWN">WIFI_UNKNOWN</a></td>
-        <td class="jd-descrcol" width="100%"></td>
     </tr>
     
     
@@ -787,31 +770,6 @@ Summary:
 
 
 
-
-
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-27" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PropertyID()">PropertyID</a></span>()</nobr>
-        
-  </td></tr>
-
-
-
-</table>
 
 
 
@@ -1345,45 +1303,6 @@ From class
 
 
 
-<A NAME="DATE_AND_TIME_UNKNOWN"></A>
-
-<div class="jd-details api apilevel-27"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        int
-      </span>
-        DATE_AND_TIME_UNKNOWN
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                1310720
-                (0x00140000)
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
 <A NAME="POWER_OFF_CHARGING_MODE_POLICY"></A>
 
 <div class="jd-details api apilevel-27"> 
@@ -1569,7 +1488,8 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Selects the 802.11 mode to be used (b/g/n/a/ac).
- This parameter controls the 802.11 mode the device will be using. <code><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></code>
+ This parameter controls the 802.11 mode the device will be using.
+ The allowed values for this property are defined by enum <code><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></code>
 </p></div>
 
     
@@ -1611,7 +1531,8 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Selects the band used by the device (2.4/5 GHz).
  This parameter controls the band the device will be using.
- When one band is disabled, the device won’t transmit anything on that band. <code><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></code>
+ When one band is disabled, the device won’t transmit anything on that band.
+ The allowed values for this property are defined by enum <code><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></code>
 </p></div>
 
     
@@ -1656,7 +1577,7 @@ From class
  has the screen on and it is connected to any Wi-Fi network. The scans are issued in this way: the first
  scan is done when the device is woken up from a standby state, then the next scans are done in an exponential
  backoff fashion. The second scan will be done after x seconds, then after 2 * x, then 4 * x... and so on,
- until it reaches the maximum.
+ until it reaches the maximum defined by <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL_MAX">WIFI_CONNECTED_SCAN_INTERVAL_MAX</a></code>.
 </p></div>
 
     
@@ -1701,7 +1622,7 @@ From class
  has the screen on and it is connected to any Wi-Fi network. The scans are issued in this way: the first scan
  is done when the device is woken up from a standby state, then the next scans are done in an exponential
  backoff fashion. The second scan will be done after x seconds, then after 2 * x, then 4 * x... and so on,
- until it reaches the maximum value.
+ until it reaches the maximum value defined by <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL_MAX">WIFI_CONNECTED_SCAN_INTERVAL_MAX</a></code>.
 </p></div>
 
     
@@ -1743,8 +1664,9 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Selects the power saving mode used.
  This parameter enables the power save mode and controls which kind of power save is used.
- The default value is QPower enabled (2), if you notice a degradation in the VoIP call performance
- increase the value to 5. <code><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html">WifiPowerSave</a></code>
+ The allowed values for this property are defined by enum <code><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html">WifiPowerSave</a></code>.
+ The default value is set to <code><a href="../../../../../reference/com/datalogic/device/configuration/WifiPowerSave.html#WIFI_Q_POWER">WIFI_Q_POWER</a></code>, if you notice a degradation in the VoIP call performance
+ change the value to {WifiPowerSave#WIFI_Q_POWER_VOIP_CALLS}.
 </p></div>
 
     
@@ -1919,7 +1841,7 @@ From class
  it is not connected to any Wi-Fi network. The scans are issued in this way: the first scan is done when
  the device is woken up from a standby state, then the next scans are done in an exponential backoff fashion.
  The second scan will be done after x seconds, then after 2 * x, then 4 * x... and so on, until it reaches
- the maximum value.
+ the maximum value defined by <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL_MAX">WIFI_SCAN_INTERVAL_MAX</a></code>.
 </p></div>
 
     
@@ -1964,7 +1886,7 @@ From class
  it is not connected to any Wi-Fi network. The scans are issued in this way: the first scan is done when
  the device is woken up from a standby state, then the next scans are done in an exponential backoff fashion.
  The second scan will be done after x seconds, then after 2 * x, then 4 * x... and so on, until it reaches
- the maximum value.
+ the maximum value defined by <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL_MAX">WIFI_SCAN_INTERVAL_MAX</a></code>.
 </p></div>
 
     
@@ -1974,45 +1896,6 @@ From class
             
                 786434
                 (0x000c0002)
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-<A NAME="WIFI_UNKNOWN"></A>
-
-<div class="jd-details api apilevel-27"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        int
-      </span>
-        WIFI_UNKNOWN
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                786432
-                (0x000c0000)
             
         </span>
         </div>
@@ -2068,43 +1951,6 @@ From class
 
 
 <!-- Public ctors -->
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
-
-
-
-<A NAME="PropertyID()"></A>
-
-<div class="jd-details api apilevel-27"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">PropertyID</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 27</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
 
 
 
