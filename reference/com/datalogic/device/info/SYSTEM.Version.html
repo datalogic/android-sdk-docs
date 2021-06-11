@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28' ];
         buildApiLevelSelector();
       </script>
                   
@@ -548,17 +548,31 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-28" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#EXTRA_PRODUCT_NUMBER">EXTRA_PRODUCT_NUMBER</a></td>
+        <td class="jd-descrcol" width="100%">Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device's product number.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#EXTRA_SCAN_ENGINE">EXTRA_SCAN_ENGINE</a></td>
         <td class="jd-descrcol" width="100%">Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device's scan engine module ID.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#EXTRA_SDK_VERSION">EXTRA_SDK_VERSION</a></td>
         <td class="jd-descrcol" width="100%">Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device Datalogic SDK version.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-28" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#EXTRA_SERIAL_NUMBER">EXTRA_SERIAL_NUMBER</a></td>
+        <td class="jd-descrcol" width="100%">Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device's serial number.</td>
     </tr>
     
     
@@ -1051,6 +1065,45 @@ From class
 
 
 
+<A NAME="EXTRA_PRODUCT_NUMBER"></A>
+
+<div class="jd-details api apilevel-28"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_PRODUCT_NUMBER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device's product number.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "product_number"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="EXTRA_SCAN_ENGINE"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1120,6 +1173,45 @@ From class
         <span>
             
                 "sdk_version"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_SERIAL_NUMBER"></A>
+
+<div class="jd-details api apilevel-28"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_SERIAL_NUMBER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Extra for <code><a href="../../../../../reference/com/datalogic/device/info/SYSTEM.Version.html#ACTION_DEVICE_INFO">ACTION_DEVICE_INFO</a></code>: String containing the device's serial number.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "serial_number"
             
         </span>
         </div>
