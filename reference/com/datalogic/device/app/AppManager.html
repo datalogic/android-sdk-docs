@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28' ];
         buildApiLevelSelector();
       </script>
                   
@@ -619,7 +619,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-25" >
+    <tr class=" api apilevel-28" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#revokePermissions(java.lang.String, java.util.ArrayList<java.lang.String>)">revokePermissions</a></span>(String packageName, ArrayList&lt;String&gt; permissions)</nobr>
+        
+        <div class="jd-descrdiv">Call this method to revoke an application the specified permissions.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-25" >
         <td class="jd-typecol"><nobr>
             
             
@@ -637,7 +655,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-25" >
+    <tr class=" api apilevel-25" >
         <td class="jd-typecol"><nobr>
             
             
@@ -655,7 +673,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-25" >
+    <tr class="alt-color api apilevel-25" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1068,7 +1086,13 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application all the permissions declared in its manifest. <br>
- <br></p></div>
+ <br>
+ The method works in best effort. If almost one of the requested permissions is not granted an error is returned.
+ In case of error to check which permissions are granted use
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20int)">PackageManger.getPackageInfo(String packageName, int flags)</a>
+ with the flag
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#GET_PERMISSIONS">PackageManager#GET_PERMISSIONS</a>
+ to get the PackageInfo of the application with the permissions information.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1124,7 +1148,13 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application the specified permissions. <br>
- <br></p></div>
+ <br>
+ The method works in best effort. If almost one of the requested permissions is not granted an error is returned.
+ In case of error to check which permissions are granted use
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20int)">PackageManger.getPackageInfo(String packageName, int flags)</a>
+ with the flag
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#GET_PERMISSIONS">PackageManager#GET_PERMISSIONS</a>
+ to get the PackageInfo of the application with the permissions information.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1135,6 +1165,72 @@ From class
         <tr>
           <th>permissions</td>
           <td><code>ArrayList<String></code> list of permissions to be granted.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+            <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="revokePermissions(java.lang.String, java.util.ArrayList<java.lang.String>)"></A>
+
+<div class="jd-details api apilevel-28"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">revokePermissions</span>
+      <span class="normal">(String packageName, ArrayList&lt;String&gt; permissions)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to revoke an application the specified permissions. <br>
+ <br>
+ The method works in best effort. If almost one of the requested permissions is not revoked an error is returned.
+ In case of error to check which permissions are revoked use
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#getPackageInfo(android.content.pm.VersionedPackage,%20int)">PackageManger.getPackageInfo(String packageName, int flags)</a>
+ with the flag
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#GET_PERMISSIONS">PackageManager#GET_PERMISSIONS</a>
+ to get the PackageInfo of the application with the permissions information.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>packageName</td>
+          <td><code>String</code>he application to revoke permissions to.</td>
+        </tr>
+        <tr>
+          <th>permissions</td>
+          <td><code>ArrayList<String></code> list of permissions to be revoked.</td>
         </tr>
       </table>
   </div>
@@ -1200,7 +1296,9 @@ From class
           <th>flags</td>
           <td><code>int</code>Optional behaviour flags.
  Value is either 0 or a combination of android.content.pm.PackageManager#DONT_KILL_APP and
- android.content.pm.PackageManager#SYNCHRONOUS.</td>
+ android.content.pm.PackageManager#SYNCHRONOUS. Not expected values in combinationation with these are ignored.
+ See for more details the Android documentation
+ <a href="https://developer.android.com/reference/android/content/pm/PackageManager#setApplicationEnabledSetting(java.lang.String,%20int,%20int)">PackageManager.setApplicationEnabledSetting(String packageName, int newState, int flags)</a>.</td>
         </tr>
       </table>
   </div>
@@ -1250,7 +1348,8 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Call this method to hide or unhide packages. <br>
- <br></p></div>
+ <br>
+ If the package is already hide/unhide the method returns  <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#GENERIC_ERROR">GENERIC_ERROR</a></code>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

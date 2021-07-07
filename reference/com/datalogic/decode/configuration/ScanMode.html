@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28' ];
         buildApiLevelSelector();
       </script>
                   
@@ -359,6 +359,7 @@ Distribution</a></li>
           <li class="api apilevel-23"><a href="../../../../../reference/com/datalogic/decode/configuration/ECIPolicy.html">ECIPolicy</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureFormat.html">FrameCaptureFormat</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureMode.html">FrameCaptureMode</a></li>
+          <li class="api apilevel-28"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
           <li class="api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentDeliveryMode.html">IntentDeliveryMode</a></li>
@@ -569,19 +570,19 @@ Summary:
  <tr>
  <td>SINGLE</td>
  <td>
- When pressing the trigger (or virtually starting the decoder),
+ When pressing the trigger or virtually starting the decoder,
  the device will scan until a barcode is read, the timeout
- has been reached or the trigger is released (or the decoder
- has been virtually stopped)
+ has been reached, the trigger is released or the decoder
+ has been virtually stopped.
  </td>
  </tr>
  <tr>
  <td>HOLD_MULTIPLE</td>
  <td>
- When pressing the trigger (or virtually starting the decoder),
+ When pressing the trigger or virtually starting the decoder,
  the device will scan continuously until the timeout from the
- last decoding result has been reached or the trigger is released
- (or the decoder has been virtually stopped)
+ last decoding result has been reached, the trigger is released
+ or the decoder has been virtually stopped.
  </td>
  </tr>
  <tr>
@@ -594,7 +595,12 @@ Summary:
  </tr>
  <tr>
  <td>ALWAYS_ON</td>
- <td>The scanning is always enabled when this option is selected</td>
+ <td>
+ Scanning is always enabled when this option is selected.
+ In this case, scanner properties different from the ScanMode
+ cannot be applied until the scan mode is set to a different
+ value.
+ </td>
  </tr>
  </table>
 </p>

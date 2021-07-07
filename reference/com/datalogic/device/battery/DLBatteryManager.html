@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28' ];
         buildApiLevelSelector();
       </script>
                   
@@ -1353,13 +1353,29 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Prepare the DlBatteryManager to receive events from the Android PowerManger Service. <br>
- If not called the <code><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#addBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">addBatteryEventListener(BatteryEventListener)</a></code> fails with error <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#CONTEXT_UNKNOWN">CONTEXT_UNKNOWN</a></code>.</p></div>
+ If not called the <code><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html#addBatteryEventListener(com.datalogic.device.battery.BatteryEventListener)">addBatteryEventListener(BatteryEventListener)</a></code> fails with error <code><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html#CONTEXT_UNKNOWN">CONTEXT_UNKNOWN</a></code>.
+ This method cannot be called from a BroadcastReceiver component; that is, from a BroadcastReceiver that is declared
+ in an application's manifest. It is okay, however, to call this method from another BroadcastReceiver that has itself
+ been registered at run time with registerReceiver(BroadcastReceiver, IntentFilter), since the lifetime of such a
+ registered BroadcastReceiver is tied to the object that registered it. See for more details:
+ <a href="https://developer.android.com/reference/android/content/Context#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)">registerReceiver(BroadcastReceiver receiver, IntentFilter filter)</a>
+ and
+ <a href="https://developer.android.com/reference/kotlin/android/content/ReceiverCallNotAllowedException">ReceiverCallNotAllowedException</a></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>context</td>
-          <td>The context of the caller.
+          <td>The context of the caller.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/battery/BatteryException.html">BatteryException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
 </td>
         </tr>
       </table>
