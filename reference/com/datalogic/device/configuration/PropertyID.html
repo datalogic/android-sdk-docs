@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30' ];
         buildApiLevelSelector();
       </script>
                   
@@ -326,6 +326,7 @@ Distribution</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/DualSimStatus.html">DualSimStatus</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/OffChargingModePolicy.html">OffChargingModePolicy</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></li>
+          <li class="api apilevel-30"><a href="../../../../../reference/com/datalogic/device/configuration/TouchMode.html">TouchMode</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/UsbFunction.html">UsbFunction</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/Wifi802Dot11Mode.html">Wifi802Dot11Mode</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/WifiBandSelection.html">WifiBandSelection</a></li>
@@ -610,6 +611,11 @@ Summary:
             <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_CURRENT_FUNCTION">USB_CURRENT_FUNCTION</a></code> </li>
          </ul>
      </li>
+     <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#ETHERNET_GROUP">ETHERNET_GROUP</a></code>
+         <ul>
+            <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#ETHERNET_ENABLED">ETHERNET_ENABLED</a></code> </li>
+         </ul>
+     </li>
      <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#DUAL_SIM_GROUP">DUAL_SIM_GROUP</a></code>
          <ul>
             <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#DUALSIM_AVAILABLE">DUALSIM_AVAILABLE</a></code> </li>
@@ -621,6 +627,11 @@ Summary:
             <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#DUALSIM_PREFERRED_DATA">DUALSIM_PREFERRED_DATA</a></code> </li>
             <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#DUALSIM_PREFERRED_CALLS">DUALSIM_PREFERRED_CALLS</a></code> </li>
             <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#DUALSIM_PREFERRED_SMS">DUALSIM_PREFERRED_SMS</a></code> </li>
+         </ul>
+     </li>
+     <li style="color:red" type="square"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#TOUCH_GROUP">TOUCH_GROUP</a></code>
+         <ul>
+            <li style="color:black" type="circle"> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TOUCH_MODE_SENSITIVITY">TOUCH_MODE_SENSITIVITY</a></code> </li>
          </ul>
      </li>
  </ul>
@@ -783,18 +794,32 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class="alt-color api apilevel-30" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#ETHERNET_ENABLED">ETHERNET_ENABLED</a></td>
+        <td class="jd-descrcol" width="100%">Enables/disables the Ethernet sub-system.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_POLICY">POWER_OFF_CHARGING_MODE_POLICY</a></td>
         <td class="jd-descrcol" width="100%">Policy for automatic exit from charging mode, according to the enum <code><a href="../../../../../reference/com/datalogic/device/configuration/OffChargingModePolicy.html">OffChargingModePolicy</a></code>.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_THRESHOLD">POWER_OFF_CHARGING_MODE_THRESHOLD</a></td>
         <td class="jd-descrcol" width="100%">The charging threshold (%) for automatic exit from charging mode
 </td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-30" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TOUCH_MODE_SENSITIVITY">TOUCH_MODE_SENSITIVITY</a></td>
+        <td class="jd-descrcol" width="100%">This is the property used to configure the touch controller, according to the enum <code><a href="../../../../../reference/com/datalogic/device/configuration/TouchMode.html">TouchMode</a></code>.</td>
     </tr>
     
     
@@ -2103,6 +2128,46 @@ From class
 
 
 
+<A NAME="ETHERNET_ENABLED"></A>
+
+<div class="jd-details api apilevel-30"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ETHERNET_ENABLED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 30</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enables/disables the Ethernet sub-system.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                2359297
+                (0x00240001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="POWER_OFF_CHARGING_MODE_POLICY"></A>
 
 <div class="jd-details api apilevel-27"> 
@@ -2174,6 +2239,46 @@ From class
             
                 1572865
                 (0x00180001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="TOUCH_MODE_SENSITIVITY"></A>
+
+<div class="jd-details api apilevel-30"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        TOUCH_MODE_SENSITIVITY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 30</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This is the property used to configure the touch controller, according to the enum <code><a href="../../../../../reference/com/datalogic/device/configuration/TouchMode.html">TouchMode</a></code>.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                2621441
+                (0x00280001)
             
         </span>
         </div>
