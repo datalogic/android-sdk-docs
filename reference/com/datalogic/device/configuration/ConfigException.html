@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32' ];
         buildApiLevelSelector();
       </script>
                   
@@ -262,6 +262,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/decode/package-summary.html">com.datalogic.decode</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
+    <li class="api apilevel-32">
+  <a href="../../../../../reference/com/datalogic/decode/utils/package-summary.html">com.datalogic.decode.utils</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
     <li class="api apilevel-25">
@@ -284,6 +286,8 @@ Distribution</a></li>
   <a href="../../../../../reference/com/datalogic/device/notification/package-summary.html">com.datalogic.device.notification</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/device/power/package-summary.html">com.datalogic.device.power</a></li>
+    <li class="api apilevel-32">
+  <a href="../../../../../reference/com/datalogic/device/wifi/package-summary.html">com.datalogic.device.wifi</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../reference/com/datalogic/softspot/package-summary.html">com.datalogic.softspot</a></li>
               </ul><br/>
@@ -311,6 +315,9 @@ Distribution</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html">ConfigurationManager</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html">NumericProperty</a></li>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/ProfileManager.html">ProfileManager</a></li>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/ProfileRuleType.html">ProfileRuleType</a></li>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/ProfileType.html">ProfileType</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></li>
@@ -321,9 +328,12 @@ Distribution</a></li>
               
     <li><h2>Enums</h2>
       <ul>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/AutoScanTriggerRange.html">AutoScanTriggerRange</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/DualSimPreferredCallsAndSms.html">DualSimPreferredCallsAndSms</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/DualSimPreferredData.html">DualSimPreferredData</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/DualSimStatus.html">DualSimStatus</a></li>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/LoggerBufferSize.html">LoggerBufferSize</a></li>
+          <li class="api apilevel-32"><a href="../../../../../reference/com/datalogic/device/configuration/MotionTriggerSensitivity.html">MotionTriggerSensitivity</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/device/configuration/OffChargingModePolicy.html">OffChargingModePolicy</a></li>
           <li class="api apilevel-27"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyType.html">PropertyType</a></li>
           <li class="api apilevel-30"><a href="../../../../../reference/com/datalogic/device/configuration/TouchMode.html">TouchMode</a></li>
@@ -647,31 +657,45 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-32" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#DUPLICATE_NAME_ERROR">DUPLICATE_NAME_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">The specified name is already in use.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#GENERIC_ERROR">GENERIC_ERROR</a></td>
         <td class="jd-descrcol" width="100%">Generic error, mostly due to a wrong parameter passed to a SDK method.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#ID_ERROR">ID_ERROR</a></td>
         <td class="jd-descrcol" width="100%">Parameter identifier is not supported.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#JSON_ERROR">JSON_ERROR</a></td>
         <td class="jd-descrcol" width="100%">The JSON configuration file has an error.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#JSON_NOT_FOUND">JSON_NOT_FOUND</a></td>
         <td class="jd-descrcol" width="100%">The JSON resource file was not found.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-32" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#NOT_FOUND_ERROR">NOT_FOUND_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">The specified object is not found.</td>
     </tr>
     
     
@@ -679,6 +703,20 @@ Summary:
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#NULL_POINTER_ERROR">NULL_POINTER_ERROR</a></td>
         <td class="jd-descrcol" width="100%">It is a null pointer error.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-32" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#OVERLAPPING_RULE_ERROR">OVERLAPPING_RULE_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">There is a defined rule with an application context that overlaps with that of the rule.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-32" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#PROFILE_ALREADY_LOADED_ERROR">PROFILE_ALREADY_LOADED_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">There is already a manually loaded profile.</td>
     </tr>
     
     
@@ -696,42 +734,49 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class="alt-color api apilevel-32" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SAVE_PROFILE_ERROR">SAVE_PROFILE_ERROR</a></td>
+        <td class="jd-descrcol" width="100%">Error saving the json file.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SERVICE_NOT_AVAILABLE">SERVICE_NOT_AVAILABLE</a></td>
         <td class="jd-descrcol" width="100%">Database not accesible.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SPECIFIC_APPLY_FAILED">SPECIFIC_APPLY_FAILED</a></td>
         <td class="jd-descrcol" width="100%">The apply on the specific service failed.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#STORE_FAILED">STORE_FAILED</a></td>
         <td class="jd-descrcol" width="100%">Store on database failed.</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></td>
         <td class="jd-descrcol" width="100%">Success constant.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-5" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUPPORT_ERROR">SUPPORT_ERROR</a></td>
         <td class="jd-descrcol" width="100%">The property is not supported.</td>
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#VALUE_ERROR">VALUE_ERROR</a></td>
         <td class="jd-descrcol" width="100%">Parameter value is wrong.</td>
@@ -1606,6 +1651,46 @@ From class
 
 
 
+<A NAME="DUPLICATE_NAME_ERROR"></A>
+
+<div class="jd-details api apilevel-32"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DUPLICATE_NAME_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 32</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The specified name is already in use.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -131055
+                (0xfffe0011)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="GENERIC_ERROR"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1766,6 +1851,46 @@ From class
 
 
 
+<A NAME="NOT_FOUND_ERROR"></A>
+
+<div class="jd-details api apilevel-32"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        NOT_FOUND_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 32</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The specified object is not found.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -131052
+                (0xfffe0014)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="NULL_POINTER_ERROR"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1797,6 +1922,86 @@ From class
             
                 -131071
                 (0xfffe0001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="OVERLAPPING_RULE_ERROR"></A>
+
+<div class="jd-details api apilevel-32"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        OVERLAPPING_RULE_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 32</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>There is a defined rule with an application context that overlaps with that of the rule.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -131053
+                (0xfffe0013)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="PROFILE_ALREADY_LOADED_ERROR"></A>
+
+<div class="jd-details api apilevel-32"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        PROFILE_ALREADY_LOADED_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 32</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>There is already a manually loaded profile.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -131051
+                (0xfffe0015)
             
         </span>
         </div>
@@ -1879,6 +2084,46 @@ From class
             
                 -131060
                 (0xfffe000c)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SAVE_PROFILE_ERROR"></A>
+
+<div class="jd-details api apilevel-32"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SAVE_PROFILE_ERROR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 32</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Error saving the json file.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -131054
+                (0xfffe0012)
             
         </span>
         </div>

@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32' ];
         buildApiLevelSelector();
       </script>
                   
@@ -262,6 +262,8 @@ Distribution</a></li>
   <a href="../../../../reference/com/datalogic/decode/package-summary.html">com.datalogic.decode</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/decode/configuration/package-summary.html">com.datalogic.decode.configuration</a></li>
+    <li class="api apilevel-32">
+  <a href="../../../../reference/com/datalogic/decode/utils/package-summary.html">com.datalogic.decode.utils</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
     <li class="api apilevel-25">
@@ -284,6 +286,8 @@ Distribution</a></li>
   <a href="../../../../reference/com/datalogic/device/notification/package-summary.html">com.datalogic.device.notification</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/device/power/package-summary.html">com.datalogic.device.power</a></li>
+    <li class="api apilevel-32">
+  <a href="../../../../reference/com/datalogic/device/wifi/package-summary.html">com.datalogic.device.wifi</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/softspot/package-summary.html">com.datalogic.softspot</a></li>
               </ul><br/>
@@ -1211,7 +1215,8 @@ From interface
         </tr>
         <tr>
           <th>property_ranges</td>
-          <td>The <code>int[][]</code> array of ranges associated to the passed IDs, that will be filled in.</td>
+          <td>The <code>int[][2]</code> array of ranges associated to the passed IDs, that will be filled in.
+	      Each element will be filled with the range of the admissible values described by min and max value.</td>
         </tr>
       </table>
   </div>

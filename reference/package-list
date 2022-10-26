@@ -1,6 +1,7 @@
 com.datalogic.cradle
 com.datalogic.decode
 com.datalogic.decode.configuration
+com.datalogic.decode.utils
 com.datalogic.device
 com.datalogic.device.app
 com.datalogic.device.battery
@@ -12,5 +13,6 @@ com.datalogic.device.location
 com.datalogic.device.nfc
 com.datalogic.device.notification
 com.datalogic.device.power
+com.datalogic.device.wifi
 com.datalogic.softspot
 
