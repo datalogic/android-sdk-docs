@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
         buildApiLevelSelector();
       </script>
                   
@@ -652,28 +652,35 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-29" >
+    <tr class="alt-color api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_SYSTEM_FIRMWARE_UPGRADE">ACTION_SYSTEM_FIRMWARE_UPGRADE</a></td>
+        <td class="jd-descrcol" width="100%"><code>ACTION_SYSTEM_FIRMWARE_UPGRADE</code> This intent allows to request a device firmware upgrade.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CONFIGURATION_CHANGED_MAP">EXTRA_CONFIGURATION_CHANGED_MAP</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CONFIGURATION_CHANGED_MAP</code> Used as an Map&lt;Integer, String&gt; extra field in <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CONFIGURATION_COMMIT">ACTION_CONFIGURATION_COMMIT</a></code> and <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CONFIGURATION_CHANGED">ACTION_CONFIGURATION_CHANGED</a></code>.</td>
     </tr>
     
     
-    <tr class=" api apilevel-29" >
+    <tr class="alt-color api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CONFIGURATION_CHANGED_TIME">EXTRA_CONFIGURATION_CHANGED_TIME</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CONFIGURATION_CHANGED_TIME</code> Used as an int extra field in <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CONFIGURATION_CHANGED">ACTION_CONFIGURATION_CHANGED</a></code>.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-29" >
+    <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CONFIGURATION_ERROR_MAP">EXTRA_CONFIGURATION_ERROR_MAP</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CONFIGURATION_ERROR_MAP</code> Used as an Map&lt;Integer, String&gt; extra field in <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CONFIGURATION_CHANGED">ACTION_CONFIGURATION_CHANGED</a></code>.</td>
     </tr>
     
     
-    <tr class=" api apilevel-29" >
+    <tr class="alt-color api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE</code> Used as an int extra field in <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CRADLE_FAILURE_OCCURRED">ACTION_CRADLE_FAILURE_OCCURRED</a></code> and <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CRADLE_FAILURE_RECOVERED">ACTION_CRADLE_FAILURE_RECOVERED</a></code>
@@ -681,52 +688,73 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-29" >
+    <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_BAD_LEVER_POSITION">EXTRA_CRADLE_FAILURE_BAD_LEVER_POSITION</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_BAD_LEVER_POSITION</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
-    <tr class=" api apilevel-29" >
+    <tr class="alt-color api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_BATTERY_AUTH">EXTRA_CRADLE_FAILURE_BATTERY_AUTH</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_BATTERY_AUTH</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-29" >
+    <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_BATTERY_DEAD">EXTRA_CRADLE_FAILURE_BATTERY_DEAD</a></td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-29" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_BATTERY_EEPROM">EXTRA_CRADLE_FAILURE_BATTERY_EEPROM</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_BATTERY_DEAD</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-29" >
         <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_CHARGER">EXTRA_CRADLE_FAILURE_CHARGER</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_BATTERY_EEPROM">EXTRA_CRADLE_FAILURE_BATTERY_EEPROM</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_BATTERY_EEPROM</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
     <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_CHARGER">EXTRA_CRADLE_FAILURE_CHARGER</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_WRONG_DAISY_CHAIN_CONFIG</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING">EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED">EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-29" >
+        <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_GENERAL">EXTRA_CRADLE_FAILURE_GENERAL</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_GENERAL</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED">EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_SOLENOID">EXTRA_CRADLE_FAILURE_SOLENOID</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_SOLENOID</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
@@ -761,7 +789,7 @@ Summary:
     <tr class=" api apilevel-29" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE_WLC_GENERAL">EXTRA_CRADLE_FAILURE_WLC_GENERAL</a></td>
-        <td class="jd-descrcol" width="100%"></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FAILURE_WLC_GENERAL</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.</td>
     </tr>
     
     
@@ -784,6 +812,27 @@ Summary:
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FIRMWARE_UPGRADE_BYTES">EXTRA_CRADLE_FIRMWARE_UPGRADE_BYTES</a></td>
         <td class="jd-descrcol" width="100%"><code>EXTRA_CRADLE_FIRMWARE_UPGRADE_BYTES</code> Used as an int extra field in <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CRADLE_FIRMWARE_UPGRADE_STARTED">ACTION_CRADLE_FIRMWARE_UPGRADE_STARTED</a></code>,
  <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CRADLE_FIRMWARE_UPGRADE_IN_PROGRESS">ACTION_CRADLE_FIRMWARE_UPGRADE_IN_PROGRESS</a></code> and <code><a href="../../../../reference/com/datalogic/device/Intents.html#ACTION_CRADLE_FIRMWARE_UPGRADE_COMPLETED">ACTION_CRADLE_FIRMWARE_UPGRADE_COMPLETED</a></code> that represents the number of bytes transferred to the cradle.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH">EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH</code> Used as a String value to specify the path of the fw to be used for the upgrade.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT">EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT</code> Used as an int value to request a device reboot after successful update.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-33" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET">EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET</a></td>
+        <td class="jd-descrcol" width="100%"><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET</code> Used as an int value to request a reset after successful update.</td>
     </tr>
     
     
@@ -1831,6 +1880,91 @@ From class
 
 
 
+<A NAME="ACTION_SYSTEM_FIRMWARE_UPGRADE"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        ACTION_SYSTEM_FIRMWARE_UPGRADE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>ACTION_SYSTEM_FIRMWARE_UPGRADE</code> This intent allows to request a device firmware upgrade. <br>
+ <br>
+ The intent will have the following extra values:
+ <br>
+ <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH">EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH</a></code> - Path of the fw to be used for the upgrade.
+ <br>
+ <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT">EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT</a></code> - To request a reboot device after a successful update.
+ <br>
+ <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET">EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET</a></code> - To request a device reset after a successful update.
+
+
+ <p>
+ <b>broadcast intent adb example:</b>
+ <pre>
+ adb shell am broadcast -a com.datalogic.systemupdate.action.FIRMWARE_UPDATE -n com.datalogic.systemupdate/.SystemUpgradeReceiver
+ --es path /sdcard/ota.zip
+ --ei reset 0
+ --ei reboot 1
+ </pre>
+
+
+ <p>
+ In addition to the broadcast intent a startService intent or a startActivity intent can be used with the same extra data of the broadcast intent.
+ <br>   
+ Pay attention that with startService intent the extra data <i>action</i> must be specified with the value <i>2</i> while for the broadcast and the startActivity intents it is implicit.
+ <br>
+
+
+ <p>
+ <b>startService intent adb example:</b>
+ <pre>
+ adb shell am startservice -n com.datalogic.systemupdate/.SystemUpgradeService
+ --ei action 2
+ --es path /sdcard/ota.zip
+ --ei reset 0
+ --ei reboot 1
+ </pre>
+
+
+ <p>
+ <b>startActivity intent adb example:</b>
+ <pre>
+ adb shell am start -n com.datalogic.systemupdate/.SystemUpgradeActivity
+ --es path /sdcard/ota.zip
+ --ei reset 0
+ --ei reboot 1
+ </pre>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.systemupdate.action.FIRMWARE_UPDATE"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="EXTRA_CONFIGURATION_CHANGED_MAP"></A>
 
 <div class="jd-details api apilevel-29"> 
@@ -2066,7 +2200,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_BATTERY_AUTH</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem on the battery authentication.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2104,7 +2240,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_BATTERY_DEAD</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem on the battery status.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2142,7 +2280,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_BATTERY_EEPROM</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem on the battery eeprom.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2180,7 +2320,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_WRONG_DAISY_CHAIN_CONFIG</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem on the charger.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2188,6 +2330,86 @@ From class
         <span>
             
                 "com.datalogic.device.intent.extra.cradle.FAILURE_CHARGER"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_DEVICE_NOT_CHARGING</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem on its internal charging system.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.device.intent.extra.cradle.FAILURE_FAILURE_DEVICE_NOT_CHARGING"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_FLASH_CORRUPTED</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The cradle's internal flash is corrupted.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.device.intent.extra.cradle.FAILURE_FLASH_CORRUPTED"
             
         </span>
         </div>
@@ -2218,7 +2440,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_GENERAL</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ General failure was detected.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2226,6 +2450,46 @@ From class
         <span>
             
                 "com.datalogic.device.intent.extra.cradle.FAILURE_GENERAL"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_LEVER_NOT_CALIBRATED</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a problem with lever calibration.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.device.intent.extra.cradle.FAILURE_LEVER_NOT_CALIBRATED"
             
         </span>
         </div>
@@ -2256,7 +2520,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_SOLENOID</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+     The locking solenoid is too hot and the lever cannot be controlled until temperature will be reduced.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2454,7 +2720,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_CRADLE_FAILURE_WLC_GENERAL</code> Used as an int value for <code><a href="../../../../reference/com/datalogic/device/Intents.html#EXTRA_CRADLE_FAILURE">EXTRA_CRADLE_FAILURE</a></code> to request the failure type.
+ The Cradle is experiencing a general problem on the wlc.
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -2582,6 +2850,133 @@ From class
         <span>
             
                 "com.datalogic.device.intent.action.cradle.FIRMWARE_TRASFERRED_BYTES"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_FILE_PATH</code> Used as a String value to specify the path of the fw to be used for the upgrade.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "path"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_REBOOT</code> Used as an int value to request a device reboot after successful update.
+ <br>
+ Use 1 to request the reboot, 0 otherwise.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "reboot"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>EXTRA_SYSTEM_FIRMWARE_UPGRADE_RESET</code> Used as an int value to request a reset after successful update.
+ <br>
+ The allowed values are:
+ <br>
+ <pre>
+ - 0 for NONE
+ - 1 for FACTORY RESET
+ - 2 for ENTERPRISE RESET
+ </pre>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "reset"
             
         </span>
         </div>

@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
         buildApiLevelSelector();
       </script>
                   
@@ -360,6 +360,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/BeamMode.html">BeamMode</a></li>
           <li class="api apilevel-8"><a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128Aggressiveness.html">Code128Aggressiveness</a></li>
+          <li class="api apilevel-33"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128ExtendedAsciiMode.html">Code128ExtendedAsciiMode</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/decode/configuration/Code39Aggressiveness.html">Code39Aggressiveness</a></li>
           <li class="api apilevel-29"><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixAggressiveness.html">DatamatrixAggressiveness</a></li>
           <li class="api apilevel-26"><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixMirror.html">DatamatrixMirror</a></li>
@@ -658,7 +659,18 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-17" >
+      <tr class="alt-color api apilevel-33" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html#characterSetMode">characterSetMode</a></td>
+          <td class="jd-descrcol" width="100%"><code>characterSetMode</code> controls the character set in use for the decoded label.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-17" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -669,7 +681,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -677,6 +689,17 @@ Summary:
           <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
           <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html#enable">enable</a></td>
           <td class="jd-descrcol" width="100%"><code>enable</code> enables or disables the symbology.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-33" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Code128ExtendedAsciiMode.html">Code128ExtendedAsciiMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Code128.html#extendedAscii">extendedAscii</a></td>
+          <td class="jd-descrcol" width="100%"><code>extendedAscii</code> select the level of support to the extended ASCII (ASCII code from 128 to 255 using special function FNC4).</td>
       </tr>
       
     
@@ -1443,6 +1466,36 @@ From class
 
 
 
+<A NAME="characterSetMode"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/CharacterSetMode.html">CharacterSetMode</a>&gt;
+      </span>
+        characterSetMode
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>characterSetMode</code> controls the character set in use for the decoded label.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="commonlyConcatenatedPairs"></A>
 
 <div class="jd-details api apilevel-17"> 
@@ -1494,6 +1547,36 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> enables or disables the symbology.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="extendedAscii"></A>
+
+<div class="jd-details api apilevel-33"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Code128ExtendedAsciiMode.html">Code128ExtendedAsciiMode</a>&gt;
+      </span>
+        extendedAscii
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 33</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>extendedAscii</code> select the level of support to the extended ASCII (ASCII code from 128 to 255 using special function FNC4).
 </p></div>
 
     
