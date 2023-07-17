@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -327,6 +327,7 @@ Distribution</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/CameraInputDevice.PreviewDisplayMode.html">CameraInputDevice.PreviewDisplayMode</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/CameraInputDevice.PreviewSize.html">CameraInputDevice.PreviewSize</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/CapturedFrame.html">CapturedFrame</a></li>
+          <li class="api apilevel-34"><a href="../../../../reference/com/datalogic/decode/CustomOCR.html">CustomOCR</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/PropertyID.html">PropertyID</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/SavedFrame.html">SavedFrame</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/ScanEngineInputDevice.html">ScanEngineInputDevice</a></li>
@@ -538,14 +539,18 @@ Summary:
  To decode bar codes with this class, use the following steps:
  </p>
  <ol>
- <li>Obtain an instance of BarcodeManager with <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#BarcodeManager()">BarcodeManager()</a></code>.
+ <li>Obtain an instance of BarcodeManager with <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#BarcodeManager()">BarcodeManager()</a></code>;
+ <li>Register the listeners needed in your application from the available ones: StartListener, ReadListener, StopListener and TimeoutListener;
  <li>To begin a decode session, call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startDecode()">startDecode()</a></code>. Your registered
  StartListener/ReadListener/TimeoutListener will be called when a successful
- decode occurs or if the configured timeout expires, etc..
- <li>Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopDecode()">stopDecode()</a></code> to end the decode session.
+ decode occurs or if the configured timeout expires, etc;
+ <li>Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopDecode()">stopDecode()</a></code> to end the decode session;
+ <li><em>Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#release()">release()</a></code> to release all registered StartListener/ReadListener/TimeoutListener/StopListener.</em>
  </ol>
- <li><b>Important:</b> Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#release()">release()</a></code> to release all registered
- StartListener/ReadListener/TimeoutListener/StopListener.
+ <p id="Persistance"><b>Configuration persistance:</b> All the configuration changes done using the <code>BarcodeManager</code> are natively not persistent to the device reboot, they are kept only in the current device session.
+ If you want to persist your changes in flash and keep them across a system reboot the only existing way is to call explicitally <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#commitProperties()">commitProperties()</a></code>. Beware that the decoding system configuration is
+ restored from flash every time the decoding service restart and so any configuration not stored persistently could be lost if the service is killed (and consequently restarted) by the Android OS. It is a rare 
+ event that could happens for many reasons (low resources, execution exception, not responding service, etc...), the decoding system is usually restored but any configuration not stored persistently could be lost.</p>
 </p>
 
 
@@ -627,9 +632,7 @@ Summary:
           int</nobr></td>
           <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#KEYCODE_BARCODE">KEYCODE_BARCODE</a></td>
           <td class="jd-descrcol" width="100%">Android keycode representing the scanning functionality, in accordance
- with
- <a href="http://developer.android.com/reference/android/view/KeyEvent.html">android.view.KeyEvent</a>
- .</td>
+ with <a href="http://developer.android.com/reference/android/view/KeyEvent.html">android.view.KeyEvent</a>.</td>
       </tr>
       
     
@@ -767,7 +770,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#addPresentationStateListener(com.datalogic.decode.PresentationStateListener)">addPresentationStateListener</a></span>(<a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a frame save event is
+        <div class="jd-descrdiv">Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a presentation mode state change event is
  triggered.</div>
   
   </td></tr>
@@ -922,7 +925,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-4" >
+    <tr class=" api apilevel-34" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            List&lt;<a href="../../../../reference/com/datalogic/decode/CustomOCR.html">CustomOCR</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#getCustomOcrItems()">getCustomOcrItems</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the list of custom OCR configurations found in the device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-typecol"><nobr>
             
             
@@ -940,7 +961,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -958,7 +979,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-4" >
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-typecol"><nobr>
             
             
@@ -976,7 +997,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -994,7 +1015,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1012,7 +1033,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-14" >
+    <tr class=" api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1030,7 +1051,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1048,7 +1069,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1067,7 +1088,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1085,7 +1106,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1104,7 +1125,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1122,7 +1143,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-14" >
+    <tr class=" api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1140,7 +1161,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-22" >
+    <tr class="alt-color api apilevel-22" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1158,7 +1179,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-22" >
+    <tr class=" api apilevel-22" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1176,7 +1197,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-14" >
+    <tr class="alt-color api apilevel-14" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1194,7 +1215,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-26" >
+    <tr class=" api apilevel-26" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1212,7 +1233,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1230,7 +1251,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1248,7 +1269,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1266,7 +1287,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1284,7 +1305,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1302,7 +1323,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1320,7 +1341,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1338,7 +1359,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1356,7 +1377,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1374,7 +1395,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1392,7 +1413,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1859,8 +1880,8 @@ From interface
  <br>
  Example:<br>
  <code>public int startDecodingIntent() {</code><br>
- <code> &nbsp&nbspIntent myintent = new Intent();</code><br>
- <code> &nbsp&nbspmyintent.setAction(ACTION_START_DECODE);</code><br>
+ <code> &nbsp;&nbsp;Intent myintent = new Intent();</code><br>
+ <code> &nbsp;&nbsp;myintent.setAction(ACTION_START_DECODE);</code><br>
  <code>}</code><br>
  Otherwise application can associate this intent to a physical key code
  through the KeyboardManager mapIntent method.</p></div>
@@ -1911,8 +1932,8 @@ From interface
  <br>
  Example:<br>
  <code>public int stopDecodingIntent() {</code><br>
- <code> &nbsp&nbspIntent myintent = new Intent();</code><br>
- <code> &nbsp&nbspmyintent.setAction(ACTION_STOP_DECODE);</code><br>
+ <code> &nbsp;&nbsp;Intent myintent = new Intent();</code><br>
+ <code> &nbsp;&nbsp;myintent.setAction(ACTION_STOP_DECODE);</code><br>
  <code>}</code><br>
 </p></div>
 
@@ -1963,9 +1984,8 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Android keycode representing the scanning functionality, in accordance
- with
- <a href="http://developer.android.com/reference/android/view/KeyEvent.html">android.view.KeyEvent</a>
- .<br>
+ with <a href="http://developer.android.com/reference/android/view/KeyEvent.html">android.view.KeyEvent</a>. <br>
+ <br>
  It is possible to associate a device generic button to the scanning
  functionality through the mapping mechanism and the
  <code><a href="../../../../reference/com/datalogic/device/input/VScanEntry.html">VScanEntry</a></code>, this means a
@@ -2298,8 +2318,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a frame save event is
- triggered. Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#removeFrameSaveListener(com.datalogic.decode.FrameSaveListener)">removeFrameSaveListener(FrameSaveListener)</a></code> before the application
+  <div class="jd-tagdata jd-tagdescr"><p>Registers a <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> to be notified when a presentation mode state change event is
+ triggered. Call <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#removePresentationStateListener(com.datalogic.decode.PresentationStateListener)">removePresentationStateListener(PresentationStateListener)</a></code> before the application
  closes to properly shut down the listener.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
@@ -2307,7 +2327,7 @@ From interface
         <tr>
           <th>listener</td>
           <td>The <code><a href="../../../../reference/com/datalogic/decode/PresentationStateListener.html">PresentationStateListener</a></code> that will be called when a
-            decoder's read event is fired.</td>
+            presentation mode state change event is fired.</td>
         </tr>
       </table>
   </div>
@@ -2584,7 +2604,7 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Saves the configuration. The configuration is saved in a persistent way
- across system reboot.</p></div>
+ across system reboot. See <a href="#Persistance">persistance note</a>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
@@ -2634,11 +2654,11 @@ From interface
              Note: <br>
              when the decoding configuration changes due a call to this
              method, it is not saved in a persistent way across system
-             reboot. <br>
+             reboot. See <a href="#Persistance">persistance note</a>.<br>
  <br>
              Example:<br>
              <code>public int enableAll() {</code><br>
-             <code> &nbsp&nbspdecoder.enableAllSymbologies(true);</code><br>
+             <code> &nbsp;&nbsp;decoder.enableAllSymbologies(true);</code><br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
@@ -2704,12 +2724,12 @@ From interface
              Note: <br>
              when the decoding configuration changes due a call to this
              method, it is not saved in a persistent way across system
-             reboot. <br>
+             reboot. See <a href="#Persistance">persistance note</a>.<br>
  <br>
              Example:<br>
              <code>public int enableCode39(BarcodeManager decoder) {</code>
  <br>
-             <code> &nbsp&nbspdecoder.enableSymbology(Symbology.CODE39, true);</code>
+             <code> &nbsp;&nbsp;decoder.enableSymbology(Symbology.CODE39, true);</code>
  <br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
@@ -2780,6 +2800,41 @@ From interface
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The current input device.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCustomOcrItems()"></A>
+
+<div class="jd-details api apilevel-34"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        List&lt;<a href="../../../../reference/com/datalogic/decode/CustomOCR.html">CustomOCR</a>&gt;
+      </span>
+      <span class="sympad">getCustomOcrItems</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 34</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the list of custom OCR configurations found in the device.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A list of all custom OCR configurations available. The list is empty if there is no cusotm OCR configuration.
 </li></ul>
   </div>
 
@@ -3129,7 +3184,7 @@ From interface
              Example:<br>
              <code>public boolean isCode39Enabled(BarcodeManager decoder) {</code>
  <br>
-             <code> &nbsp&nbspreturn decoder.isSymbologyEnabled(Symbology.CODE39);</code>
+             <code> &nbsp;&nbsp;return decoder.isSymbologyEnabled(Symbology.CODE39);</code>
  <br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
@@ -3197,7 +3252,7 @@ From interface
              Example:<br>
              <code>public boolean isQRSupported(BarcodeManager decoder) {</code>
  <br>
-             <code> &nbsp&nbspreturn decoder.isSymbologySupported(Symbology.QRCODE);</code>
+             <code> &nbsp;&nbsp;return decoder.isSymbologySupported(Symbology.QRCODE);</code>
  <br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
@@ -3927,12 +3982,12 @@ From interface
              Note: <br>
              when the decoding configuration changes due a call to this
              method, it is not saved in a persistent way across system
-             reboot. <br>
+             reboot. See <a href="#Persistance">persistance note</a>.<br>
  <br>
              Example:<br>
              <code>public int setAllDefaults(BarcodeManager decoder) {</code>
  <br>
-             <code> &nbsp&nbspdecoder.setDefaults();</code><br>
+             <code> &nbsp;&nbsp;decoder.setDefaults();</code><br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -3978,7 +4033,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type Integer.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type Integer. The change is not persistent
+ across system reboot. See <a href="#Persistance">persistance note</a>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -4036,7 +4092,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type String.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets one or more label programming parameters of type String. The change is not persistent
+ across system reboot. See <a href="#Persistance">persistance note</a>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -4101,7 +4158,7 @@ From interface
       Example:<br>
       <code>public int startDecodingForFiveSeconds(BarcodeManager decoder) {</code>
  <br>
-      <code> &nbsp&nbspdecoder.startDecode(5000);</code><br>
+      <code> &nbsp;&nbsp;decoder.startDecode(5000);</code><br>
       <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
@@ -4164,7 +4221,7 @@ From interface
       Example:<br>
       <code>public int startDecoding(BarcodeManager decoder) {</code>
  <br>
-      <code> &nbsp&nbspdecoder.startDecode();</code><br>
+      <code> &nbsp;&nbsp;decoder.startDecode();</code><br>
       <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -4215,7 +4272,7 @@ From interface
              Example:<br>
              <code>public int abortDecoding(BarcodeManager decoder) {</code>
  <br>
-             <code> &nbsp&nbspdecoder.stopDecode();</code><br>
+             <code> &nbsp;&nbsp;decoder.stopDecode();</code><br>
              <code>}</code><br></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>

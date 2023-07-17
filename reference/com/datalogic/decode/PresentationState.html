@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -327,6 +327,7 @@ Distribution</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/CameraInputDevice.PreviewDisplayMode.html">CameraInputDevice.PreviewDisplayMode</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/CameraInputDevice.PreviewSize.html">CameraInputDevice.PreviewSize</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/CapturedFrame.html">CapturedFrame</a></li>
+          <li class="api apilevel-34"><a href="../../../../reference/com/datalogic/decode/CustomOCR.html">CustomOCR</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/decode/PropertyID.html">PropertyID</a></li>
           <li class="api apilevel-22"><a href="../../../../reference/com/datalogic/decode/SavedFrame.html">SavedFrame</a></li>
           <li class="api apilevel-33"><a href="../../../../reference/com/datalogic/decode/ScanEngineInputDevice.html">ScanEngineInputDevice</a></li>
@@ -587,28 +588,28 @@ Summary:
     <tr class="alt-color api apilevel-26" >
         <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a>&nbsp;</td>
         <td class="jd-linkcol">DISABLED&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Presentation mode is disabled.&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-26" >
         <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a>&nbsp;</td>
         <td class="jd-linkcol">READY&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Presentation mode is armed and ready to detect motion.&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-26" >
         <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a>&nbsp;</td>
         <td class="jd-linkcol">SCANNING&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Presentation mode is decoding.&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-26" >
         <td class="jd-descrcol"><a href="../../../../reference/com/datalogic/decode/PresentationState.html">PresentationState</a>&nbsp;</td>
         <td class="jd-linkcol">WAITING&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Presentation mode is waiting for a stable condition.&nbsp;</td>
     </tr>
     
     
@@ -1176,7 +1177,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Presentation mode is disabled.
+</p></div>
 
     
     </div>
@@ -1205,7 +1207,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Presentation mode is armed and ready to detect motion.
+</p></div>
 
     
     </div>
@@ -1234,7 +1237,9 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Presentation mode is decoding. When the device detects a motion in <code>READY</code> state, it switches to <code>SCANNING</code> starting the decoding system. It keeps in this state until a decode result or the decode timeout expired. When the
+ decoding system switch off the device moves to the <code>WAITING</code> state.
+</p></div>
 
     
     </div>
@@ -1263,7 +1268,10 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Presentation mode is waiting for a stable condition. In this state the system cannot detect motion. To avoid unwanted 
+ activations it is important that the system could identify a static condition (device not moving and no objects in motion in front of the scan egine). When the device detects a stable condition it switches from 
+ <code>WAITING</code> to <code>READY</code>.
+</p></div>
 
     
     </div>

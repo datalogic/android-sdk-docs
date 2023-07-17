@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -311,6 +311,7 @@ Distribution</a></li>
               
     <li><h2>Enums</h2>
       <ul>
+          <li class="api apilevel-34"><a href="../../../../reference/com/datalogic/device/BatteryChargingProfile.html">BatteryChargingProfile</a></li>
           <li class="api apilevel-1"><a href="../../../../reference/com/datalogic/device/BootType.html">BootType</a></li>
           <li class="api apilevel-32"><a href="../../../../reference/com/datalogic/device/FailurePolicy.html">FailurePolicy</a></li>
           <li class="api apilevel-23"><a href="../../../../reference/com/datalogic/device/FirmwareUpdatePolicy.html">FirmwareUpdatePolicy</a></li>
@@ -537,7 +538,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-23" >
+    <tr class="alt-color api apilevel-34" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/device/DeviceManager.html#enableCradleFailureEvent(boolean)">enableCradleFailureEvent</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Enable or disable the cradle failure event</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-23" >
         <td class="jd-typecol"><nobr>
             
             
@@ -556,7 +575,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-23" >
+    <tr class="alt-color api apilevel-23" >
         <td class="jd-typecol"><nobr>
             
             
@@ -574,7 +593,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-23" >
+    <tr class=" api apilevel-23" >
         <td class="jd-typecol"><nobr>
             
             
@@ -848,6 +867,50 @@ From class
 
 <h2>Public Methods</h2>
 
+
+
+<A NAME="enableCradleFailureEvent(boolean)"></A>
+
+<div class="jd-details api apilevel-34"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">enableCradleFailureEvent</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 34</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enable or disable the cradle failure event</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>The required boolean for Cradle failure event.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
 
 
 <A NAME="getFirmwareUpdatePolicy()"></A>

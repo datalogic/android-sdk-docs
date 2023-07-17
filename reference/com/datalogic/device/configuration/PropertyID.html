@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -736,6 +736,14 @@ Summary:
                <ul>
                   <li> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_THRESHOLD">POWER_OFF_CHARGING_MODE_THRESHOLD</a></code> </li>
                   <li> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_POLICY">POWER_OFF_CHARGING_MODE_POLICY</a></code> </li>
+               </ul>
+            </details>
+            </li>
+            <li>
+            <details>
+               <summary> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html#POWER_CHARGING_MODE_GROUP">POWER_CHARGING_MODE_GROUP</a></code></summary>
+               <ul>
+                  <li> <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_BATTERY_CHARGING_PROFILE">POWER_BATTERY_CHARGING_PROFILE</a></code> </li>
                </ul>
             </details>
             </li>
@@ -1962,7 +1970,7 @@ Summary:
     <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#COMPOSITE_EAN_UPC_MODE">COMPOSITE_EAN_UPC_MODE</a></td>
-        <td class="jd-descrcol" width="100%">This parameter ccontrols UPC/EAN label recognition mode.</td>
+        <td class="jd-descrcol" width="100%">This parameter controls UPC/EAN label recognition mode.</td>
     </tr>
     
     
@@ -3380,147 +3388,154 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class=" api apilevel-34" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_BATTERY_CHARGING_PROFILE">POWER_BATTERY_CHARGING_PROFILE</a></td>
+        <td class="jd-descrcol" width="100%">This parameter defines the battery charging profile.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_POLICY">POWER_OFF_CHARGING_MODE_POLICY</a></td>
         <td class="jd-descrcol" width="100%">Policy for automatic exit from charging mode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_OFF_CHARGING_MODE_THRESHOLD">POWER_OFF_CHARGING_MODE_THRESHOLD</a></td>
         <td class="jd-descrcol" width="100%">The charging threshold (%) for automatic exit from charging mode.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_SOURCE_USB">POWER_SOURCE_USB</a></td>
         <td class="jd-descrcol" width="100%">Controls whether the USB is enabled as a power-source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_SUSPEND_EXTERNAL_TIMEOUT">POWER_SUSPEND_EXTERNAL_TIMEOUT</a></td>
         <td class="jd-descrcol" width="100%">This parameter defines the screen off timeout, in msecs, when the device is powered by an external AC power.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_SUSPEND_INTERNAL_TIMEOUT">POWER_SUSPEND_INTERNAL_TIMEOUT</a></td>
         <td class="jd-descrcol" width="100%">This parameter defines the screen off timeout, in msecs, when the device is powered by internal battery.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_ACCELEROMETER">POWER_WAKEUP_ACCELEROMETER</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether the accelerometer sensor trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_AUTOSCAN_TRIGGER">POWER_WAKEUP_AUTOSCAN_TRIGGER</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether a autoScan trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_FRONT_TRIGGER">POWER_WAKEUP_FRONT_TRIGGER</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether the front trigger button trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_LEFT_TRIGGER">POWER_WAKEUP_LEFT_TRIGGER</a></td>
         <td class="jd-descrcol" width="100%">ContrThis parameter controlsols whether the left trigger button trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_PISTOL_TRIGGER">POWER_WAKEUP_PISTOL_TRIGGER</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether the back trigger button trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_POWER_IN">POWER_WAKEUP_POWER_IN</a></td>
         <td class="jd-descrcol" width="100%">ContrThis parameter controlsols whether a generic charging power source trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_POWER_KEY">POWER_WAKEUP_POWER_KEY</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether the Power button trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_RIGHT_TRIGGER">POWER_WAKEUP_RIGHT_TRIGGER</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether the right trigger button trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_RTC_ALARM">POWER_WAKEUP_RTC_ALARM</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether a Real-Time clock alarm trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_TOUCH">POWER_WAKEUP_TOUCH</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether a touch event on the screen can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_WIFI">POWER_WAKEUP_WIFI</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether Wifi data trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#POWER_WAKEUP_WWAN">POWER_WAKEUP_WWAN</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls whether cellular data or call trigger can be used as device wake-up source.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PRESENTATION_MODE_AIMER_ENABLE">PRESENTATION_MODE_AIMER_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the use of the aimer in presentation mode.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PRESENTATION_MODE_ENABLE">PRESENTATION_MODE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the use of presentation mode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PRESENTATION_MODE_SENSITIVITY">PRESENTATION_MODE_SENSITIVITY</a></td>
         <td class="jd-descrcol" width="100%">This parameter sets sensitivity in presentation mode.</td>
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE">PREVIEW_DISPLAY_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the display mode in which to show the
@@ -3528,7 +3543,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT">PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the height of the preview shown
@@ -3537,7 +3552,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH">PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the width of the preview shown
@@ -3546,7 +3561,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X">PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the X coordinate of the preview shown
@@ -3555,7 +3570,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y">PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
@@ -3564,7 +3579,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT">PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the height of the preview shown
@@ -3573,7 +3588,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH">PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the width of the preview shown
@@ -3582,7 +3597,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X">PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
@@ -3591,7 +3606,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y">PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
@@ -3600,84 +3615,84 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_ABSOLUTE_GRID">QRCODE_ABSOLUTE_GRID</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables Absolute Grid algorithm.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_CHARACTER_SET_MODE">QRCODE_CHARACTER_SET_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls the character set in use for the decoded label.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_ENABLE">QRCODE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_GS1_ENABLE">QRCODE_GS1_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the GS1-QR Code symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_LENGTH1">QRCODE_LENGTH1</a></td>
         <td class="jd-descrcol" width="100%">This parameter is one of the two configurable label lengths.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_LENGTH2">QRCODE_LENGTH2</a></td>
         <td class="jd-descrcol" width="100%">This parameter is one of the two configurable label lengths.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_LENGTH_CONTROL">QRCODE_LENGTH_CONTROL</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies how each L1 and L2 length values should be applied to a label.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_MIRROR">QRCODE_MIRROR</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls the mirror mode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_S2D_ENABLE">QRCODE_S2D_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables device configuration through Scan2Deploy QR Codes.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_USER_ID">QRCODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#QRCODE_WIFI_ENABLE">QRCODE_WIFI_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables Wi-Fi configuration through Wi-Fi QR Code.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#REMOVE_NON_PRINTABLE_CHARS">REMOVE_NON_PRINTABLE_CHARS</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the removal of all characters in the range 0x00-0x1F and the single    
@@ -3685,70 +3700,70 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#ROYAL_MAIL_CODE_USER_ID">ROYAL_MAIL_CODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#ROYAL_MAIL_ENABLE">ROYAL_MAIL_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#ROYAL_MAIL_SEND_CHECK">ROYAL_MAIL_SEND_CHECK</a></td>
         <td class="jd-descrcol" width="100%">This parameter includes the Royal Mail checksum in the label transmission.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#SCAN_MODE">SCAN_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter selects the scan mode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#SCREEN_BRIGHTNESS">SCREEN_BRIGHTNESS</a></td>
         <td class="jd-descrcol" width="100%">This parameter sets the Brightness level of the screen.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#SEND_CODE_ID">SEND_CODE_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter selects the symbology identifier to be transmitted along with the scanned data.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-31" >
+    <tr class=" api apilevel-31" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#STATUS_BAR_HIDDEN">STATUS_BAR_HIDDEN</a></td>
         <td class="jd-descrcol" width="100%">This parameter hide/unhide the status bar.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TARGET_MODE">TARGET_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter selects the scanner target beam mode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TARGET_MODE_ENABLE">TARGET_MODE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the use of a target beam mode.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TARGET_RELEASE_TIMEOUT">TARGET_RELEASE_TIMEOUT</a></td>
         <td class="jd-descrcol" width="100%">This parameter is the maximum time the scanner is on after trigger release when using 
@@ -3756,700 +3771,700 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TARGET_TIMEOUT">TARGET_TIMEOUT</a></td>
         <td class="jd-descrcol" width="100%">This parameter is the time the target beam is on before scanner attempts to read.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TOUCH_LOCK_INPUT">TOUCH_LOCK_INPUT</a></td>
         <td class="jd-descrcol" width="100%">This parameter locks or unlocks the input from touch screen.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-30" >
+    <tr class=" api apilevel-30" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TOUCH_MODE_SENSITIVITY">TOUCH_MODE_SENSITIVITY</a></td>
         <td class="jd-descrcol" width="100%">This is the property used to configure the touch controller.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TRIOPTIC_ENABLE">TRIOPTIC_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#TRIOPTIC_USER_ID">TRIOPTIC_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_COMPOSITE_ENABLE">UPCA_COMPOSITE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter allows to use UPC-A labels in composite barcode.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_ENABLE">UPCA_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_SEND_CHECK">UPCA_SEND_CHECK</a></td>
         <td class="jd-descrcol" width="100%">This parameter includes the checksum in the label transmission.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_SEND_SYS">UPCA_SEND_SYS</a></td>
         <td class="jd-descrcol" width="100%">This parameter includes the system digit in the label transmission.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_TO_EAN13">UPCA_TO_EAN13</a></td>
         <td class="jd-descrcol" width="100%">This parameter allows to expand the UPC-A labels to their EAN-13 equivalents.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCA_USER_ID">UPCA_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE1_ENABLE">UPCE1_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables decoding of the UPC-E1 Symbology variation of UPC-E code.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_COMPOSITE_ENABLE">UPCE_COMPOSITE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter allows to use UPC-E labels in composite barcode.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_ENABLE">UPCE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_SEND_CHECK">UPCE_SEND_CHECK</a></td>
         <td class="jd-descrcol" width="100%">This parameter includes the checksum in the label transmission.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_SEND_SYS">UPCE_SEND_SYS</a></td>
         <td class="jd-descrcol" width="100%">This parameter includes the system digit in the label transmission.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_TO_UPCA">UPCE_TO_UPCA</a></td>
         <td class="jd-descrcol" width="100%">This parameter allows to expand the UPC-E labels to their UPC-A equivalents.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPCE_USER_ID">UPCE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPC_EAN_AGGRESSIVENESS">UPC_EAN_AGGRESSIVENESS</a></td>
         <td class="jd-descrcol" width="100%">This parameter controls the aggressiveness for the UPC and EAN symbology.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#UPC_EAN_SHORT_QUIET_ZONES">UPC_EAN_SHORT_QUIET_ZONES</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the reading of UPC and EAN barcode labels with short quiet zones.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_CURRENT_FUNCTION">USB_CURRENT_FUNCTION</a></td>
         <td class="jd-descrcol" width="100%">Current USB data function.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_DATA">USB_DATA</a></td>
         <td class="jd-descrcol" width="100%">Enables/disables USB data transmission.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_DEBUG_ENABLE">USB_DEBUG_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables/disables the debug mode, over USB, when USB is connected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USB_DEFAULT_FUNCTION">USB_DEFAULT_FUNCTION</a></td>
         <td class="jd-descrcol" width="100%">Default USB data function.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USPS_4STATE_CODE_USER_ID">USPS_4STATE_CODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#USPS_4STATE_ENABLE">USPS_4STATE_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#US_PLANET_CODE_USER_ID">US_PLANET_CODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#US_PLANET_ENABLE">US_PLANET_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#US_POSTNET_CODE_USER_ID">US_POSTNET_CODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">This parameter specifies the symbology identifier (if any).</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#US_POSTNET_ENABLE">US_POSTNET_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables or disables the symbology.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_ACTION_NAME">WEDGE_INTENT_ACTION_NAME</a></td>
         <td class="jd-descrcol" width="100%">This parameter is the intent action name.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_CATEGORY_NAME">WEDGE_INTENT_CATEGORY_NAME</a></td>
         <td class="jd-descrcol" width="100%">This parameter is the intent category name.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_DELIVERY_MODE">WEDGE_INTENT_DELIVERY_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the method by which the intent is delivered.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_ENABLE">WEDGE_INTENT_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the intent mode for the Decode Wedge capability.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_EXTRA_BARCODE_DATA">WEDGE_INTENT_EXTRA_BARCODE_DATA</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the corresponding intent extra tag, associated to a byte array containing the read label.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_EXTRA_BARCODE_STRING">WEDGE_INTENT_EXTRA_BARCODE_STRING</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the corresponding intent extra tag, associated to a string containing the read label.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_INTENT_EXTRA_BARCODE_TYPE">WEDGE_INTENT_EXTRA_BARCODE_TYPE</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the corresponding intent extra tag, associated to a string containing the type of read label.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_KEYBOARD_DELIVERY_MODE">WEDGE_KEYBOARD_DELIVERY_MODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter indicates the method by which the KeyboardWedge operates.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_KEYBOARD_ENABLE">WEDGE_KEYBOARD_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the the keystroke mode for the Decode Wedge capability.</td>
     </tr>
     
     
-    <tr class=" api apilevel-32" >
+    <tr class="alt-color api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_KEYBOARD_ONLY_ON_FOCUS">WEDGE_KEYBOARD_ONLY_ON_FOCUS</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the input of the keystrokes only in input areas with active focus and an IME active, such as a touch keyboard.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WEDGE_WEB_ENABLE">WEDGE_WEB_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the Decode Wedge capability for direct web browsing.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_802_DOT_11_MODE">WIFI_802_DOT_11_MODE</a></td>
         <td class="jd-descrcol" width="100%">Selects the 802.11 mode to be used (b/g/n/a/ac).</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_BAND_SELECTION">WIFI_BAND_SELECTION</a></td>
         <td class="jd-descrcol" width="100%">Selects the band used by the device (2.4/5 GHz).</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_1">WIFI_CHANNEL_1</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 1 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_10">WIFI_CHANNEL_10</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 10 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_100">WIFI_CHANNEL_100</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 100 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_104">WIFI_CHANNEL_104</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 104 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_108">WIFI_CHANNEL_108</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 108 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_11">WIFI_CHANNEL_11</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 11 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_112">WIFI_CHANNEL_112</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 112 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_116">WIFI_CHANNEL_116</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 116 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_12">WIFI_CHANNEL_12</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 12 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_120">WIFI_CHANNEL_120</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 120 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_124">WIFI_CHANNEL_124</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 124 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_128">WIFI_CHANNEL_128</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 128 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_13">WIFI_CHANNEL_13</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 13 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_132">WIFI_CHANNEL_132</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 132 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_136">WIFI_CHANNEL_136</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 136 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_140">WIFI_CHANNEL_140</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 140 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_144">WIFI_CHANNEL_144</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 144 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_149">WIFI_CHANNEL_149</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 149 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_153">WIFI_CHANNEL_153</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 153 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_157">WIFI_CHANNEL_157</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 157 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_161">WIFI_CHANNEL_161</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 161 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_165">WIFI_CHANNEL_165</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 165 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_169">WIFI_CHANNEL_169</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 169 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_173">WIFI_CHANNEL_173</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 173 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_2">WIFI_CHANNEL_2</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 2 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_3">WIFI_CHANNEL_3</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 3 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_36">WIFI_CHANNEL_36</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 36 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_4">WIFI_CHANNEL_4</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 4 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_40">WIFI_CHANNEL_40</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 40 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_44">WIFI_CHANNEL_44</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 44 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_48">WIFI_CHANNEL_48</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 48 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_5">WIFI_CHANNEL_5</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 5 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_52">WIFI_CHANNEL_52</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 52 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_56">WIFI_CHANNEL_56</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 56 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_6">WIFI_CHANNEL_6</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 6 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_60">WIFI_CHANNEL_60</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 60 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_64">WIFI_CHANNEL_64</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 64 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_7">WIFI_CHANNEL_7</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 7 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_8">WIFI_CHANNEL_8</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 8 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CHANNEL_9">WIFI_CHANNEL_9</a></td>
         <td class="jd-descrcol" width="100%">This parameters controls the Channels 9 that can be enabled or disabled on the device.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL">WIFI_CONNECTED_SCAN_INTERVAL</a></td>
         <td class="jd-descrcol" width="100%">Interval between scans when the device is on and connected.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_CONNECTED_SCAN_INTERVAL_MAX">WIFI_CONNECTED_SCAN_INTERVAL_MAX</a></td>
         <td class="jd-descrcol" width="100%">Maximum interval between scans when the device is on and connected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-28" >
+    <tr class="alt-color api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_COUNTRY_CODE">WIFI_COUNTRY_CODE</a></td>
         <td class="jd-descrcol" width="100%">This parameter reports the current Wi-Fi country-code.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-32" >
+    <tr class=" api apilevel-32" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_DEBUG_ENABLE">WIFI_DEBUG_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables/disables the debug mode, over Wi-Fi, when Wi-Fi is connected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_MAC_RANDOMIZATION">WIFI_MAC_RANDOMIZATION</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables/disables the random MAC feature.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_NO_INTERNET_EXPECTED">WIFI_NO_INTERNET_EXPECTED</a></td>
         <td class="jd-descrcol" width="100%">Controls the behaviour when the current Wi-Fi profile doesn't have an Internet connectivity.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_POWER_SAVE">WIFI_POWER_SAVE</a></td>
         <td class="jd-descrcol" width="100%">Selects the power saving mode used.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_BEACON_PERIOD">WIFI_ROAMING_BEACON_PERIOD</a></td>
         <td class="jd-descrcol" width="100%">Interval between beacon listening.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_PROFILE">WIFI_ROAMING_PROFILE</a></td>
         <td class="jd-descrcol" width="100%">Enables roaming profiles.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-33" >
+    <tr class=" api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RECALCULATION_INTERVAL">WIFI_ROAMING_RECALCULATION_INTERVAL</a></td>
         <td class="jd-descrcol" width="100%">Minimum time interval between roaming threshold calculations.</td>
     </tr>
     
     
-    <tr class=" api apilevel-33" >
+    <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RETRY_TIMES">WIFI_ROAMING_RETRY_TIMES</a></td>
         <td class="jd-descrcol" width="100%">Number of roaming retries before aborting the roaming procedure.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_DIFFERENCE">WIFI_ROAMING_RSSI_DIFFERENCE</a></td>
         <td class="jd-descrcol" width="100%">Signal difference between the current AP and the target AP for roaming.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_ROAMING_RSSI_THRESHOLD">WIFI_ROAMING_RSSI_THRESHOLD</a></td>
         <td class="jd-descrcol" width="100%">Signal threshold for triggering the roaming background scan.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-27" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL">WIFI_SCAN_INTERVAL</a></td>
         <td class="jd-descrcol" width="100%">Interval between scans when the device is on and disconnected.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_SCAN_INTERVAL_MAX">WIFI_SCAN_INTERVAL_MAX</a></td>
         <td class="jd-descrcol" width="100%">Maximum interval between scans when the device is on and disconnected.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-28" >
+    <tr class=" api apilevel-28" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_UNLOCK_CHANNELS">WIFI_UNLOCK_CHANNELS</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the Wi-Fi channels selection regardless of the current country-code.</td>
     </tr>
     
     
-    <tr class=" api apilevel-27" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html#WIFI_VERBOSE_WIFI_MODULE_LOG">WIFI_VERBOSE_WIFI_MODULE_LOG</a></td>
         <td class="jd-descrcol" width="100%">Enables the verbose Wi-Fi module logging.</td>
@@ -6820,7 +6835,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Code 93 barcode labels with short quiet zones.       
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Code 93 barcode labels with short quiet zones.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></code>.
 </p></div>
@@ -6906,7 +6921,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter ccontrols UPC/EAN label recognition mode.   
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter controls UPC/EAN label recognition mode.   
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
  The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanCompositeMode.html">UpcEanCompositeMode</a></code>. 
@@ -7609,7 +7624,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter controls the aggressiveness for the Datamatrix symbology. 
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter controls the aggressiveness for the Datamatrix symbology.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
  The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/configuration/DatamatrixAggressiveness.html">DatamatrixAggressiveness</a></code>. 
@@ -7695,9 +7710,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables or disables DataMatrix Rectangular Extended dimensions (DMRE). 
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables or disables DataMatrix Rectangular Extended dimensions (DMRE).
  New AIM specs introduce new Datamatrix format:
- 8x48, 8x64, 12x48, 12x64, 16x64, 24x32, 24x36, 24x48, 24x64, 26x32, 26x40, 26x48, 26x64 
+ 8x48, 8x64, 12x48, 12x64, 16x64, 24x32, 24x36, 24x48, 24x64, 26x32, 26x40, 26x48, 26x64
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></code>.
 </p></div>
@@ -9973,11 +9988,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enhances the Depth of Field. 
- <p>
- Depending on barcode typology, quality and  
- light condition it could enhance the Depth of Field. Try to enable it 
- only if you need to increment the DoF.
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enhances the Depth of Field.
+ <p></p>
+ Depending on barcode typology, quality and light condition it could enhance the Depth of Field.
+ Try to enable it only if you need to increment the DoF.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></code>.
 </p></div>
@@ -11988,7 +12002,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Interleaved 2 of 5 barcode labels with short quiet zones.       
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Interleaved 2 of 5 barcode labels with short quiet zones.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></code>.
 </p></div>
@@ -12296,7 +12310,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the input type to use for decoding.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
- The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/InputDevice.Type.html">InputDevice.Type</a></code>. 
+ The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/configuration/InputType.html">InputType</a></code>.
 </p></div>
 
     
@@ -13715,7 +13729,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Matrix 2 of 5 barcode labels with short quiet zones.       
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables the reading of Matrix 2 of 5 barcode labels with short quiet zones.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></code>.
 </p></div>
@@ -15793,6 +15807,49 @@ From class
 
 
 
+<A NAME="POWER_BATTERY_CHARGING_PROFILE"></A>
+
+<div class="jd-details api apilevel-34"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        POWER_BATTERY_CHARGING_PROFILE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 34</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter defines the battery charging profile.
+ <p>
+ The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
+ The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/device/BatteryChargingProfile.html">BatteryChargingProfile</a></code>.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                1572883
+                (0x00180013)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="POWER_OFF_CHARGING_MODE_POLICY"></A>
 
 <div class="jd-details api apilevel-27"> 
@@ -16659,7 +16716,7 @@ From class
  camera preview in case the input type is set to camera.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
- The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/CameraInputDevice.PreviewDisplayMode.html">CameraInputDevice.PreviewDisplayMode</a></code>. 
+ The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/configuration/PreviewDisplayMode.html">PreviewDisplayMode</a></code>.
 </p></div>
 
     
@@ -17051,7 +17108,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables or disables Absolute Grid algorithm. It performs 
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter enables or disables Absolute Grid algorithm. It performs
  a geometric reconstruction of the QR Code grid by regularizing it. This algorithm is executed
  only when the standard one fails. It may slow down decoding rate.
  <p>
@@ -17369,7 +17426,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter controls the mirror mode. 
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter controls the mirror mode.
  <p>
  The class of the property is <code><a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a></code>.
  The allowed values are defined by enum <code><a href="../../../../../reference/com/datalogic/decode/configuration/QRMirror.html">QRMirror</a></code>. 

@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -595,7 +595,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html#TextProperty(int)">TextProperty</a></span>(int index)</nobr>
         
-        <div class="jd-descrdiv">Constructor</div>
+        <div class="jd-descrdiv">This is the constructor of TextProperty.</div>
   
   </td></tr>
 
@@ -626,7 +626,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html#load(com.datalogic.device.configuration.PropertyGetter)">load</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from)</nobr>
         
-        <div class="jd-descrdiv">Loads the property querying the PropertyGetter.</div>
+        <div class="jd-descrdiv">Loads the property with the current set values, through a PropertyGetter.
+</div>
   
   </td></tr>
 
@@ -644,7 +645,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html#store(com.datalogic.device.configuration.PropertyEditor)">store</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to)</nobr>
         
-        <div class="jd-descrdiv">Store the property value using the passed PropertyEditor.</div>
+        <div class="jd-descrdiv">Stores the Property value, applying them.
+</div>
   
   </td></tr>
 
@@ -894,13 +896,31 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#set(T)">set</a></span>(T value)</nobr>
         
-        <div class="jd-descrdiv">Sets the value of the property.</div>
+        <div class="jd-descrdiv">Sets the value of the property, it is not applied to the device.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-34" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#setToDefault()">setToDefault</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Resets to the default value the property.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -918,7 +938,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1201,7 +1221,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of TextProperty.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>index</td>
+          <td><code>int</code> the corresponding ID.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1246,7 +1276,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Loads the property querying the PropertyGetter.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Loads the property with the current set values, through a PropertyGetter.
+</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1260,16 +1291,6 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
  otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
   </div>
 
     </div>
@@ -1300,7 +1321,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Store the property value using the passed PropertyEditor.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Stores the Property value, applying them.  The change is not persistent across system reboot. See the <code>BarcodeManager</code> <code><a href="../../../../../reference/com/datalogic/decode/BarcodeManager.html">persistance note</a></code>.
+</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1314,16 +1336,6 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success,
  otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.</li></ul>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
-</td>
-        </tr>
-      </table>
   </div>
 
     </div>

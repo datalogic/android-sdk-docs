@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -681,7 +681,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/NumericProperty.html#set(java.lang.Integer)">set</a></span>(Integer value)</nobr>
         
-        <div class="jd-descrdiv">Sets the desired value.</div>
+        <div class="jd-descrdiv">Sets the value of the property, it is not applied to the device.
+</div>
   
   </td></tr>
 
@@ -931,13 +932,31 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#set(T)">set</a></span>(T value)</nobr>
         
-        <div class="jd-descrdiv">Sets the value of the property.</div>
+        <div class="jd-descrdiv">Sets the value of the property, it is not applied to the device.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-34" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/Property.html#setToDefault()">setToDefault</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Resets to the default value the property.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -955,7 +974,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1420,13 +1439,14 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets the desired value.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the value of the property, it is not applied to the device. To apply the value of the property to the device and make it persistent the method <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html#commit()">commit()</a></code> of <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigurationManager.html">ConfigurationManager</a></code> must be called.
+</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>value</td>
-          <td><code>Integer</code></td>
+          <td>The value to be set.</td>
         </tr>
       </table>
   </div>
@@ -1434,7 +1454,7 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html#SUCCESS">SUCCESS</a></code> in case of success
  otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/configuration/ConfigException.html">ConfigException</a></code> error constants.
-</li></ul>
+ In case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton, an exception is thrown.</li></ul>
   </div>
 
     </div>

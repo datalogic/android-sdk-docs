@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
         buildApiLevelSelector();
       </script>
                   
@@ -1132,7 +1132,13 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>apk</td>
-          <td><code>String</code> full path of the .apk to be installed.</td>
+          <td><code>String</code> full path of the .apk to be installed. <br>
+            <strong>NOTE</strong>: Running on an Android 11 device, until Datalogic SDK v1.32, an user App can install an APK only using <br>
+                     a path of the external storage (WRITE_EXTERNAL_STORAGE permission to be granted by App to store the APK) <br>
+                     or any path not requiring memory permissions to access (e.g Downloads). <br>
+                     On the contrary, if the calling App stores the APK into the internal memory, <br>
+                     the API will be not able to install the APK due to the missing privilages for accessing to the internal memory of the calling App. <br>
+                     From Datalogic SDK v1.33, instead, the API is able to install an APK stored into the internal memory of the calling App. <br></td>
         </tr>
         <tr>
           <th>force</td>
@@ -1212,7 +1218,13 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>apk</td>
-          <td><code>String</code> full path of the .apk to be used to upgrade the current application.</td>
+          <td><code>String</code> full path of the .apk to be used to upgrade the current application. <br>
+            <strong>NOTE</strong>: Running on an Android 11 device, until Datalogic SDK v1.32, an user App can upgrade an APK only using <br>
+                     a path of the external storage (WRITE_EXTERNAL_STORAGE permission to be granted by App to store the APK) <br>
+                     or any path not requiring memory permissions to access (e.g Downloads). <br>
+                     On the contrary, if the calling App stores the APK into the internal memory, <br>
+                     the API will be not able to upgrade the APK due to the missing privilages for accessing to the internal memory of the calling App. <br>
+                     From Datalogic SDK v1.33, instead, the API is able to upgrade an APK stored into the internal memory of the calling App. <br></td>
         </tr>
       </table>
   </div>
@@ -1346,7 +1358,13 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>apk</td>
-          <td><code>String</code> full path of the .apk to be used to upgrade the application already installed that has the same Package Name of this .apk.</td>
+          <td><code>String</code> full path of the .apk to be used to upgrade the application already installed that has the same Package Name of this .apk. <br>
+            <strong>NOTE</strong>: Running on an Android 11 device, until Datalogic SDK v1.32, an user App can upgrade an APK only using <br>
+                     a path of the external storage (WRITE_EXTERNAL_STORAGE permission to be granted by App to store the APK) <br>
+                     or any path not requiring memory permissions to access (e.g Downloads). <br>
+                     On the contrary, if the calling App stores the APK into the internal memory,  <br>
+                     the API will be not able to upgrade the APK due to the missing privilages for accessing to the internal memory of the calling App. <br>
+                     From Datalogic SDK v1.33, instead, the API is able to upgrade an APK stored into the internal memory of the calling App. <br></td>
         </tr>
         <tr>
           <th>listener</td>
