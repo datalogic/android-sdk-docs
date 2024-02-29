@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35' ];
         buildApiLevelSelector();
       </script>
                   
@@ -308,6 +308,7 @@ Distribution</a></li>
               
     <li><h2>Classes</h2>
       <ul>
+          <li class="api apilevel-35"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html">BatteryDefinitions</a></li>
           <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html">BatteryStatus</a></li>
           <li class="selected api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html">ChargingProfile</a></li>
           <li class="api apilevel-13"><a href="../../../../../reference/com/datalogic/device/battery/DLBatteryManager.html">DLBatteryManager</a></li>
@@ -536,42 +537,42 @@ Summary:
     <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_CAPACITY">CHARGING_PROFILE_CAPACITY</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with capacity only preference.</td>
+        <td class="jd-descrcol" width="100%">This profile allows to fully charge the device to maximum battery capacity.</td>
     </tr>
     
     
     <tr class=" api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_CAPACITY_LIFETIME">CHARGING_PROFILE_CAPACITY_LIFETIME</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with capacity and lifetime preference.</td>
+        <td class="jd-descrcol" width="100%">This profile optimizes battery lifetime and fully charges the device to maximum battery capacity.</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_CHARGING_SPEED">CHARGING_PROFILE_CHARGING_SPEED</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with charging speed only preference.</td>
+        <td class="jd-descrcol" width="100%">This profile allows the device to be charged faster delivering more current and reducing the maximum capacity level.</td>
     </tr>
     
     
     <tr class=" api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_CHARGING_SPEED_CAPACITY">CHARGING_PROFILE_CHARGING_SPEED_CAPACITY</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with charging speed and capacity preference.</td>
+        <td class="jd-descrcol" width="100%">This profile allows the device to be fully charge faster delivering more current.</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_CHARGING_SPEED_LIFETIME">CHARGING_PROFILE_CHARGING_SPEED_LIFETIME</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with charging speed and lifetime preference.</td>
+        <td class="jd-descrcol" width="100%">This profile optimizes battery lifetime and allows the device to be charge faster delivering more current.</td>
     </tr>
     
     
     <tr class=" api apilevel-13" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/ChargingProfile.html#CHARGING_PROFILE_LIFETIME">CHARGING_PROFILE_LIFETIME</a></td>
-        <td class="jd-descrcol" width="100%">Charging profile with lifetime only preference.</td>
+        <td class="jd-descrcol" width="100%">This profile charges the device reducing the maximum capacity level.</td>
     </tr>
     
     
@@ -943,7 +944,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with capacity only preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile allows to fully charge the device to maximum battery capacity.<br/>
+ Increasing charge current and fully charge the device could stress the battery and affect negatively its health in the longterm.
 </p></div>
 
     
@@ -983,7 +985,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with capacity and lifetime preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile optimizes battery lifetime and fully charges the device to maximum battery capacity.<br/>
+ Fully charging the device could affect negatively battery health in the longterm.
 </p></div>
 
     
@@ -1023,7 +1026,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with charging speed only preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile allows the device to be charged faster delivering more current and reducing the maximum capacity level.<br/>
+ Increasing charge current could stress the battery reducing battery lifespan in the longterm.<br/>
+ Charging device partially instead has the advantage of preserve battery health in the longterm.
 </p></div>
 
     
@@ -1063,7 +1068,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with charging speed and capacity preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile allows the device to be fully charge faster delivering more current.<br/>
+ Fully charging the device could affect negatively battery health in the longterm.
 </p></div>
 
     
@@ -1103,7 +1109,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with charging speed and lifetime preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile optimizes battery lifetime and allows the device to be charge faster delivering more current.<br/>
+ Fully charging the device could affect negatively battery health in the longterm.<br/> 
+ This profile damages battery less than the other speed profiles.
 </p></div>
 
     
@@ -1143,7 +1151,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Charging profile with lifetime only preference.
+  <div class="jd-tagdata jd-tagdescr"><p>This profile charges the device reducing the maximum capacity level.<br/>
+ Charging device partially has the advantage of preserve battery health in the longterm.
 </p></div>
 
     
