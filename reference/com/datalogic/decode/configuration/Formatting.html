@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36' ];
         buildApiLevelSelector();
       </script>
                   
@@ -348,6 +348,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Tlc39.html">Tlc39</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></li>
@@ -368,6 +369,9 @@ Distribution</a></li>
           <li class="api apilevel-23"><a href="../../../../../reference/com/datalogic/decode/configuration/ECIPolicy.html">ECIPolicy</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureFormat.html">FrameCaptureFormat</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureMode.html">FrameCaptureMode</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1Conversion2d.html">Gs1Conversion2d</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1LabelSetTransmitMode.html">Gs1LabelSetTransmitMode</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/GtinFormat.html">GtinFormat</a></li>
           <li class="api apilevel-28"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
           <li class="api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
@@ -650,7 +654,41 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-32" >
+      <tr class=" api apilevel-36" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Gs1Conversion2d.html">Gs1Conversion2d</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#gs1Conversion2d">gs1Conversion2d</a></td>
+          <td class="jd-descrcol" width="100%"><code>gs1Conversion2d</code> selects the conversion used for GS1 2D barcodes.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-36" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#gs1LabelSetPrefix">gs1LabelSetPrefix</a></td>
+          <td class="jd-descrcol" width="100%"><code>gs1LabelSetPrefix</code> specifies the prefix of the label set used when
+ the label set transmit mode is set to <code>ALL_LABELS</code>.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-36" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Gs1LabelSetTransmitMode.html">Gs1LabelSetTransmitMode</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#gs1LabelSetTransmitMode">gs1LabelSetTransmitMode</a></td>
+          <td class="jd-descrcol" width="100%"><code>gs1LabelSetTransmitMode</code> selects the mode used to transmit GS1 label sets.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-32" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -661,7 +699,7 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class=" api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -670,6 +708,17 @@ Summary:
           <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#gsSubstitution">gsSubstitution</a></td>
           <td class="jd-descrcol" width="100%"><code>gsSubstitution</code> is a string of Unicode characters that
  replaces each occurrence of GS (ASCII code 0x1D) in the scanned data.</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-36" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/GtinFormat.html">GtinFormat</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html#gtinFormat">gtinFormat</a></td>
+          <td class="jd-descrcol" width="100%"><code>gtinFormat</code> selects the format to use for the GTIN representation.</td>
       </tr>
       
     
@@ -1359,6 +1408,98 @@ From class
 
 
 
+<A NAME="gs1Conversion2d"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Gs1Conversion2d.html">Gs1Conversion2d</a>&gt;
+      </span>
+        gs1Conversion2d
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>gs1Conversion2d</code> selects the conversion used for GS1 2D barcodes.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="gs1LabelSetPrefix"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a>
+      </span>
+        gs1LabelSetPrefix
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>gs1LabelSetPrefix</code> specifies the prefix of the label set used when
+ the label set transmit mode is set to <code>ALL_LABELS</code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="gs1LabelSetTransmitMode"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/Gs1LabelSetTransmitMode.html">Gs1LabelSetTransmitMode</a>&gt;
+      </span>
+        gs1LabelSetTransmitMode
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>gs1LabelSetTransmitMode</code> selects the mode used to transmit GS1 label sets.
+ A label set consists of all the GS1 barcodes that have the same GTIN value.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="gs1StringFormat"></A>
 
 <div class="jd-details api apilevel-32"> 
@@ -1412,6 +1553,36 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p><code>gsSubstitution</code> is a string of Unicode characters that
  replaces each occurrence of GS (ASCII code 0x1D) in the scanned data.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="gtinFormat"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/EnumProperty.html">EnumProperty</a>&lt;<a href="../../../../../reference/com/datalogic/decode/configuration/GtinFormat.html">GtinFormat</a>&gt;
+      </span>
+        gtinFormat
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>gtinFormat</code> selects the format to use for the GTIN representation.
 </p></div>
 
     

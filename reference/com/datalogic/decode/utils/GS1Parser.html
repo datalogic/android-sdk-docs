@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36' ];
         buildApiLevelSelector();
       </script>
                   
@@ -577,6 +577,24 @@ Summary:
   </td></tr>
 
 
+	 
+    <tr class=" api apilevel-36" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            Map&lt;String,&nbsp;<a href="../../../../../reference/com/datalogic/decode/utils/GS1Parser.GS1Field.html">GS1Parser.GS1Field</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/utils/GS1Parser.html#parseDigitalLink(java.lang.String)">parseDigitalLink</a></span>(String barcodeUri)</nobr>
+        
+        <div class="jd-descrdiv">Executes the parsing of an input string that represents an URI in GS1 Digital Link format.</div>
+  
+  </td></tr>
+
+
 
 </table>
 
@@ -866,6 +884,60 @@ From class
         <tr>
           <th>barcodeText</td>
           <td>The GS1 formatted string.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A Map containing as keys the generic application identifiers and as entries
+         the GS1Field objects containing the parsed values.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/decode/utils/GS1Parser.ParsingException.html">GS1Parser.ParsingException</a></td>
+            <td>In case of parsing errors.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="parseDigitalLink(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        Map&lt;String,&nbsp;<a href="../../../../../reference/com/datalogic/decode/utils/GS1Parser.GS1Field.html">GS1Parser.GS1Field</a>&gt;
+      </span>
+      <span class="sympad">parseDigitalLink</span>
+      <span class="normal">(String barcodeUri)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Executes the parsing of an input string that represents an URI in GS1 Digital Link format.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>barcodeUri</td>
+          <td>The GS1 Digital Link URI string.</td>
         </tr>
       </table>
   </div>

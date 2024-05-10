@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36' ];
         buildApiLevelSelector();
       </script>
                   
@@ -531,7 +531,7 @@ Summary:
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html#BATTERY_SWAP_EVENT_BEGIN">BATTERY_SWAP_EVENT_BEGIN</a></td>
         <td class="jd-descrcol" width="100%">Battery swap start event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </td>
+</td>
     </tr>
     
     
@@ -540,7 +540,7 @@ Summary:
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html#BATTERY_SWAP_EVENT_END">BATTERY_SWAP_EVENT_END</a></td>
         <td class="jd-descrcol" width="100%">Battery swap end event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </td>
+</td>
     </tr>
     
     
@@ -549,7 +549,25 @@ Summary:
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html#BATTERY_SWAP_EVENT_UNKNOWN">BATTERY_SWAP_EVENT_UNKNOWN</a></td>
         <td class="jd-descrcol" width="100%">Unknown battery swap event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </td>
+</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-36" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html#BATTERY_SWAP_REQUEST_CONFIRMED">BATTERY_SWAP_REQUEST_CONFIRMED</a></td>
+        <td class="jd-descrcol" width="100%">Battery swap request asking for confirmation through a dialog,
+ constant string value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_SWAP_REQUEST">EXTRA_BATTERY_SWAP_REQUEST</a></code>
+</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-36" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/device/battery/BatteryDefinitions.html#BATTERY_SWAP_REQUEST_UNATTENDED">BATTERY_SWAP_REQUEST_UNATTENDED</a></td>
+        <td class="jd-descrcol" width="100%">Battery swap request without asking for confirmation,
+ constant string value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_SWAP_REQUEST">EXTRA_BATTERY_SWAP_REQUEST</a></code>
+</td>
     </tr>
     
     
@@ -885,7 +903,7 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Battery swap start event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </p></div>
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -926,7 +944,7 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Battery swap end event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </p></div>
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -967,7 +985,7 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Unknown battery swap event,
  constant int value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_EVENT_ID">EXTRA_BATTERY_EVENT_ID</a></code>
- </p></div>
+</p></div>
 
     
         <div class="jd-tagdata">
@@ -976,6 +994,86 @@ From class
             
                 1
                 (0x00000001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="BATTERY_SWAP_REQUEST_CONFIRMED"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        BATTERY_SWAP_REQUEST_CONFIRMED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Battery swap request asking for confirmation through a dialog,
+ constant string value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_SWAP_REQUEST">EXTRA_BATTERY_SWAP_REQUEST</a></code>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "BATTERY_SWAP_REQUEST_CONFIRMED"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="BATTERY_SWAP_REQUEST_UNATTENDED"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        BATTERY_SWAP_REQUEST_UNATTENDED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Battery swap request without asking for confirmation,
+ constant string value for extra <code><a href="../../../../../reference/com/datalogic/device/Intents.html#EXTRA_BATTERY_SWAP_REQUEST">EXTRA_BATTERY_SWAP_REQUEST</a></code>
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "BATTERY_SWAP_REQUEST_UNATTENDED"
             
         </span>
         </div>

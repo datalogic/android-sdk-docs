@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36' ];
         buildApiLevelSelector();
       </script>
                   
@@ -348,6 +348,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/QRCode.html">QRCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerOptions.html">ScannerOptions</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/ScannerProperties.html">ScannerProperties</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Tlc39.html">Tlc39</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcA.html">UpcA</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcE.html">UpcE</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/UpcEanExtensions.html">UpcEanExtensions</a></li>
@@ -368,6 +369,9 @@ Distribution</a></li>
           <li class="api apilevel-23"><a href="../../../../../reference/com/datalogic/decode/configuration/ECIPolicy.html">ECIPolicy</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureFormat.html">FrameCaptureFormat</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureMode.html">FrameCaptureMode</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1Conversion2d.html">Gs1Conversion2d</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1LabelSetTransmitMode.html">Gs1LabelSetTransmitMode</a></li>
+          <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/GtinFormat.html">GtinFormat</a></li>
           <li class="api apilevel-28"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
           <li class="api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
@@ -638,7 +642,18 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class="alt-color api apilevel-36" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html#convertToGTIN">convertToGTIN</a></td>
+          <td class="jd-descrcol" width="100%"><code>convertToGTIN</code> allows to convert EAN-13 labels to GTIN.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -650,7 +665,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-1" >
+      <tr class="alt-color api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -662,7 +677,7 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -673,7 +688,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-1" >
+      <tr class="alt-color api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -685,7 +700,7 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-6" >
+      <tr class=" api apilevel-6" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -697,7 +712,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -1308,6 +1323,36 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p><code>compositeEnable</code> allows to use EAN-13 labels in composite barcode.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="convertToGTIN"></A>
+
+<div class="jd-details api apilevel-36"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+      </span>
+        convertToGTIN
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 36</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>convertToGTIN</code> allows to convert EAN-13 labels to GTIN.
 </p></div>
 
     
