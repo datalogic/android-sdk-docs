@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37' ];
         buildApiLevelSelector();
       </script>
                   
@@ -1607,12 +1607,12 @@ From class
  adb example with extra data as List&ltString&gt:
  <pre>
  adb shell am broadcast -a com.datalogic.device.intent.action.configuration.COMMIT
- --esal com.datalogic.device.intent.extra.configuration.CHANGED_MAP "TOUCH_MODE_SENSITIVITY=TOUCH_MODE_STYLUS,800=10,CODE128_ENABLE=false"
+ --esal com.datalogic.device.intent.extra.configuration.CHANGED_MAP 'TOUCH_MODE_SENSITIVITY=TOUCH_MODE_STYLUS,800=10,CODE128_ENABLE=false'
  </pre>
  adb example with extra data as String:
  <pre>
  adb shell am broadcast -a com.datalogic.device.intent.action.configuration.COMMIT
- --es com.datalogic.device.intent.extra.configuration.CHANGED_MAP "TOUCH_MODE_SENSITIVITY=TOUCH_MODE_STYLUS,800=10,CODE128_ENABLE=false"
+ --es com.datalogic.device.intent.extra.configuration.CHANGED_MAP 'TOUCH_MODE_SENSITIVITY=TOUCH_MODE_STYLUS,800=10,CODE128_ENABLE=false'
  </pre>    </p></div>
 
     
