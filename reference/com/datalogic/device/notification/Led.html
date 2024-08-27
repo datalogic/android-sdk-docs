@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38' ];
         buildApiLevelSelector();
       </script>
                   
@@ -499,7 +499,19 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The <code>Led</code> enumeration lists led type identifiers.
+<p itemprop="articleBody">The <code>Led</code> enumeration lists the LED type identifiers can be used to manage the LEDs on the device with <code><a href="../../../../../reference/com/datalogic/device/notification/LedManager.html">LedManager</a></code> interface.
+ </br></br>
+ Depending on the device, LEDs can be single-color, two-color (red and green) or RGB.</br>
+ Moreover, some of the LEDs defined by this interface could be not supported in some devices. </br>
+ </br>
+ <b>NOTE:</b> SDK v1.38 introduced the <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html#LED_SCANNER">LED_SCANNER</a></code> as interface extension of <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html#LED_GOOD_READ">LED_GOOD_READ</a></code>. So, even when they are both supported, they refer to the same physical LED.</br>
+ </br>
+ For further details on how to manage LEDs, refer to the comprehensive SDK examples:
+ </br>
+ <ul>
+    <li> Source code in <a href="https://github.com/datalogic/android-samples-astudio/blob/master/Java/DeviceSampleAPI/app/src/main/java/com/datalogic/examples/devicesampleapi/NotificationActivity.java">Java</a> (NotificationActivity.java)
+    <li> Source code in <a href="https://github.com/datalogic/android-samples-astudio/blob/master/Kotlin/DeviceSampleAPI/app/src/main/java/com/datalogic/examples/devicesampleapi/NotificationActivity.kt">Kotlin</a> (NotificationActivity.kt)
+ </ul>
 </p>
 
 
@@ -545,24 +557,32 @@ Summary:
     <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
         <td class="jd-linkcol">LED_GOOD_READ&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Good read LED
-&nbsp;</td>
+        <td class="jd-descrcol" width="100%"><em>
+      This field is deprecated.
+    Deprecated in SDK v1.38. If supported, <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html#LED_SCANNER">LED_SCANNER</a></code> should be used instead.
+</em>&nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
         <td class="jd-linkcol">LED_GREEN_SPOT&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Green Spot LED
-&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Green Spot LED is the scan engine GreenSpot™  LED  projected on the decoded barcode used by the decoder to notify the good read event (tipically it is as single color green LED).&nbsp;</td>
     </tr>
     
     
     <tr class="alt-color api apilevel-1" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
         <td class="jd-linkcol">LED_NOTIFICATION&nbsp;</td>
-        <td class="jd-descrcol" width="100%">General notification led
+        <td class="jd-descrcol" width="100%">Notification LED is the general LED used for Android notifications (tipically it is an rgb LED)
 &nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-38" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>&nbsp;</td>
+        <td class="jd-linkcol">LED_SCANNER&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Scanner LED is the LED used by the decoder to notify scanning in progress or the good read event (tipically it is a bicolor red/green LED).&nbsp;</td>
     </tr>
     
     
@@ -1129,9 +1149,14 @@ From interface
 
       </div>
     <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Good read LED
-</p></div>
+      <p>
+  <p class="caution"><strong>
+      This field is deprecated.</strong><br/>
+    Deprecated in SDK v1.38. If supported, <code><a href="../../../../../reference/com/datalogic/device/notification/Led.html#LED_SCANNER">LED_SCANNER</a></code> should be used instead.
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p>Good read LED is the LED used by the decoder to notify the good read event (tipically it is as single color green LED). 
+ </br></p></div>
 
     
     </div>
@@ -1160,7 +1185,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Green Spot LED
+  <div class="jd-tagdata jd-tagdescr"><p>Green Spot LED is the scan engine GreenSpot™  LED  projected on the decoded barcode used by the decoder to notify the good read event (tipically it is as single color green LED). 
 </p></div>
 
     
@@ -1190,7 +1215,37 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>General notification led
+  <div class="jd-tagdata jd-tagdescr"><p>Notification LED is the general LED used for Android notifications (tipically it is an rgb LED)
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="LED_SCANNER"></A>
+
+<div class="jd-details api apilevel-38"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/notification/Led.html">Led</a>
+      </span>
+        LED_SCANNER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 38</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Scanner LED is the LED used by the decoder to notify scanning in progress or the good read event (tipically it is a bicolor red/green LED). 
 </p></div>
 
     

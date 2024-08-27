@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>IlluminationTime - Datalogic SDK version 1 | Android Add-on</title>
+<title>ExtScannerSource - Datalogic SDK version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="28" style="display:none"></div>
+  <div id="doc-api-level" class="38" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -317,7 +317,7 @@ Distribution</a></li>
           <li class="api apilevel-10"><a href="../../../../../reference/com/datalogic/decode/configuration/DotCode.html">DotCode</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean13.html">Ean13</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Ean8.html">Ean8</a></li>
-          <li class="api apilevel-38"><a href="../../../../../reference/com/datalogic/decode/configuration/ExtScannerSource.html">ExtScannerSource</a></li>
+          <li class="selected api apilevel-38"><a href="../../../../../reference/com/datalogic/decode/configuration/ExtScannerSource.html">ExtScannerSource</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Formatting.html">Formatting</a></li>
           <li class="api apilevel-22"><a href="../../../../../reference/com/datalogic/decode/configuration/FrameCaptureConfiguration.html">FrameCaptureConfiguration</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/GoodRead.html">GoodRead</a></li>
@@ -374,7 +374,7 @@ Distribution</a></li>
           <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1Conversion2d.html">Gs1Conversion2d</a></li>
           <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/Gs1LabelSetTransmitMode.html">Gs1LabelSetTransmitMode</a></li>
           <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/decode/configuration/GtinFormat.html">GtinFormat</a></li>
-          <li class="selected api apilevel-28"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></li>
+          <li class="api apilevel-28"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></li>
           <li class="api apilevel-20"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationType.html">IlluminationType</a></li>
           <li class="api apilevel-19"><a href="../../../../../reference/com/datalogic/decode/configuration/ImageCaptureProfile.html">ImageCaptureProfile</a></li>
           <li class="api apilevel-34"><a href="../../../../../reference/com/datalogic/decode/configuration/InputType.html">InputType</a></li>
@@ -462,18 +462,6 @@ Distribution</a></li>
   
   
 
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
@@ -482,18 +470,18 @@ Summary:
 
 
 
-  <a href="#enumconstants">Enums</a>
+
+
+
+  <a href="#lfields">Fields</a>
   
 
 
 
-
-
-
-
-
-  &#124; <a href="#pubmethods">Methods</a>
+  &#124; <a href="#pubctors">Ctors</a>
   
+
+
 
 
 
@@ -504,7 +492,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 38</a>
   
   
 
@@ -517,10 +505,10 @@ Summary:
 <div id="jd-header">
     public
      
-    final 
+     
     
-    enum
-<h1 itemprop="name">IlluminationTime</h1>
+    class
+<h1 itemprop="name">ExtScannerSource</h1>
 
 
 
@@ -529,7 +517,7 @@ Summary:
   
 
   
-    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
+    extends <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a><br/>
   
   
   
@@ -543,7 +531,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-28">
+<div id="jd-content" class="api apilevel-38">
 <table class="jd-inheritance-table">
 
 
@@ -557,7 +545,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">com.datalogic.device.configuration.PropertyGroup</a></td>
     </tr>
     
 
@@ -567,7 +555,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.IlluminationTime</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.decode.configuration.ExtScannerSource</td>
     </tr>
     
 
@@ -583,20 +571,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody"><code>IlluminationTime</code> is an enumeration defining the allowed illumination time
- can be used for scanning. Only some Scanners provides this feature.
- 
- The type is one of:
- <table border=2>
- <tr>
- <td>SHORT_PULSE</td>
- <td>The short pulse illumination time is selected.</td>
- </tr>
- <tr>
- <td>LONG_PULSE</td>
- <td>The long pulse illumination time is selected.</td>
- </tr>
- </table>
+<p itemprop="articleBody"><code>ExtScannerSource</code> is the class that configures the possibility to
+ receive barcode results from an external scanner.
 </p>
 
 
@@ -635,24 +611,44 @@ Summary:
 
 
 
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
+
+
+
+
+
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
+
 
     
-    <tr class="alt-color api apilevel-28" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>&nbsp;</td>
-        <td class="jd-linkcol">LONG_PULSE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Long time illumination.&nbsp;</td>
-    </tr>
+      <tr class="alt-color api apilevel-38" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ExtScannerSource.html#enable">enable</a></td>
+          <td class="jd-descrcol" width="100%"><code>enable</code> enables the injection of barcode results from an
+ external scanner to the scanner service.</td>
+      </tr>
+      
     
+      <tr class=" api apilevel-38" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/ExtScannerSource.html#standardFormatterEnable">standardFormatterEnable</a></td>
+          <td class="jd-descrcol" width="100%"><code>standardFormatterEnable</code> enables the execution
+ of the Standard Formatter during barcode injection.</td>
+      </tr>
+      
     
-    <tr class=" api apilevel-28" >
-        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>&nbsp;</td>
-        <td class="jd-linkcol">SHORT_PULSE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Short time illumination.&nbsp;</td>
-    </tr>
-    
-    
+
+</table>
 
 
 
@@ -660,72 +656,35 @@ Summary:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
 
 
 
 	 
-    <tr class="alt-color api apilevel-28" >
+    <tr class="alt-color api apilevel-38" >
         <td class="jd-typecol"><nobr>
             
             
             
-            static
             
-            <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></nobr>
+            
+            </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html#fromOrdinal(int)">fromOrdinal</a></span>(int n)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/ExtScannerSource.html#ExtScannerSource(com.datalogic.device.configuration.PropertyGetter)">ExtScannerSource</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</nobr>
         
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-28" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            static
-            
-            <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-28" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            static
-            
-            <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime[]</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html#values()">values</a></span>()</nobr>
-        
+        <div class="jd-descrdiv">This is the constructor of ExtScannerSource.</div>
+  
   </td></tr>
 
 
 
 </table>
+
+
+
+
 
 
 
@@ -741,57 +700,43 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Enum-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.device.configuration.PropertyGroup" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-trigger"
           src="../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From class
 
-  java.lang.Enum
+  <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">com.datalogic.device.configuration.PropertyGroup</a>
 
-<div id="inherited-methods-java.lang.Enum">
-  <div id="inherited-methods-java.lang.Enum-list"
+<div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup">
+  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
+  <div id="inherited-methods-com.datalogic.device.configuration.PropertyGroup-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
-            final
             
             
-            Object</nobr>
+            
+            ArrayList&lt;<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a>&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getGroups()">getGroups</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Returns the property groups contained in this group, not in the whole subtree.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(E arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-27" >
         <td class="jd-typecol"><nobr>
             
             
@@ -801,136 +746,212 @@ From class
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(Object arg0)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getId()">getId</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Gets the integer value of the unique identifier <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code> of the group.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol"><nobr>
             
             
-            final
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getName()">getName</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the name of the unique identifier<code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code> of the group.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            ArrayList&lt;<a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getProperties()">getProperties</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the properties contained in this group, not in the whole subtree.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyById(int)">getPropertyById</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></code>, belonging to this group's subtree, whose identifier has the given integer value in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyByName(java.lang.String)">getPropertyByName</a></span>(String name)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/Property.html">Property</a></code>, belonging to this group's subtree, whose identifier has the integer value defined by the given string in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyGroupById(int)">getPropertyGroupById</a></span>(int id)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></code>, belonging to this group's subtree, whose identifier has the given integer value in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#getPropertyGroupByName(java.lang.String)">getPropertyGroupByName</a></span>(String name)</nobr>
+        
+        <div class="jd-descrdiv">Gets the <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html">PropertyGroup</a></code>, belonging to this group's subtree, whose identifier has the integer value defined by the given string in <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroupID.html">PropertyGroupID</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-4" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
             
             
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#isFullySupported()">isFullySupported</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Tells if this property group is completely supported by the underling decoding
+ hardware.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
-            final
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#isSupported()">isSupported</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Tells if this property group is supported by the underling decoding
+ hardware.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#load(com.datalogic.device.configuration.PropertyGetter)">load</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> from)</nobr>
+        
+        <div class="jd-descrdiv">Load the properties values contained by this group from the
+ PropertyGetter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-27" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
             
             
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#setToDefault()">setToDefault</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Resets to the default value all the properties contained in the subtree.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
-            final
             
-            
-            Class&lt;E&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDeclaringClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
             
             
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGroup.html#store(com.datalogic.device.configuration.PropertyEditor, boolean)">store</a></span>(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyEditor.html">PropertyEditor</a> to, boolean persist)</nobr>
         
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">name</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">ordinal</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            static
-            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
-            T</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
-        
+        <div class="jd-descrdiv">Store the properties values contained by this property into the
+ PropertyEditor persistently or not, depending from the <code>persist</code> parameter.</div>
+  
   </td></tr>
 
 
@@ -1142,50 +1163,6 @@ From class
 </td></tr>
 
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Comparable-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  java.lang.Comparable
-
-<div id="inherited-methods-java.lang.Comparable">
-  <div id="inherited-methods-java.lang.Comparable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(T arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -1206,80 +1183,130 @@ From interface
 <!-- Enum Values -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Enum Values</h2>
-
-
-
-
-<A NAME="LONG_PULSE"></A>
-
-<div class="jd-details api apilevel-28"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>
-      </span>
-        LONG_PULSE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Long time illumination.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="SHORT_PULSE"></A>
-
-<div class="jd-details api apilevel-28"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>
-      </span>
-        SHORT_PULSE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Short time illumination.
-</p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Constants -->
 
 
 <!-- Fields -->
 
 
+<!-- ========= FIELD DETAIL ======== -->
+<h2>Fields</h2>
+
+
+
+
+<A NAME="enable"></A>
+
+<div class="jd-details api apilevel-38"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+      </span>
+        enable
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 38</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>enable</code> enables the injection of barcode results from an
+ external scanner to the scanner service.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="standardFormatterEnable"></A>
+
+<div class="jd-details api apilevel-38"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+      </span>
+        standardFormatterEnable
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 38</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>standardFormatterEnable</code> enables the execution
+ of the Standard Formatter during barcode injection.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+
 <!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="ExtScannerSource(com.datalogic.device.configuration.PropertyGetter)"></A>
+
+<div class="jd-details api apilevel-38"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">ExtScannerSource</span>
+      <span class="normal">(<a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a> editor)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 38</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This is the constructor of ExtScannerSource. All options are initialized by
+ editor.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>editor</td>
+          <td>A <code><a href="../../../../../reference/com/datalogic/device/configuration/PropertyGetter.html">PropertyGetter</a></code> used to load the current configuration class.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 
 
 
@@ -1290,101 +1317,6 @@ From interface
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<A NAME="fromOrdinal(int)"></A>
-
-<div class="jd-details api apilevel-28"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>
-      </span>
-      <span class="sympad">fromOrdinal</span>
-      <span class="normal">(int n)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="valueOf(java.lang.String)"></A>
-
-<div class="jd-details api apilevel-28"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime</a>
-      </span>
-      <span class="sympad">valueOf</span>
-      <span class="normal">(String name)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="values()"></A>
-
-<div class="jd-details api apilevel-28"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-         
-         
-        <a href="../../../../../reference/com/datalogic/decode/configuration/IlluminationTime.html">IlluminationTime[]</a>
-      </span>
-      <span class="sympad">values</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 28</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
 
 
 
