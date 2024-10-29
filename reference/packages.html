@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
-<title>Package Index - Datalogic SDK version 1 | Android Add-on</title>
+<title>Package Index - Introduction to the Datalogic Android SDK 1.40 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40' ];
         buildApiLevelSelector();
       </script>
                   
@@ -344,18 +344,138 @@ Distribution</a></li>
 <div class="col-12" id="doc-col">
 
 <div id="jd-header">
-<h1>Package Index - Datalogic SDK version 1</h1>
+<h1>Package Index - Introduction to the Datalogic Android SDK 1.40</h1>
 </div>
 
 <div id="jd-content">
 
 <div class="jd-descr">
-<p>These are the Datalogic SDK v1 APIs. See all <a href="classes.html">API classes</a>. Remember to switch the selected <em>Revision</em> number in accordance with your device firmware and installed Android <em>Datalogic SDK</em> update.
-        <p>In order to use these API <strong>do not forget</strong> to add the following "uses-library" tag to your application manifest.</p>
-		<pre class="prettyprint">
+<p><p>Welcome to the Datalogic Android SDK documentation. This SDK offers a comprehensive set of APIs to help developers fully leverage Datalogic devices in enterprise environments. This guide will help you navigate key functionalities, providing links to specific packages and more detailed descriptions to facilitate your development process. Below is an organized overview of the SDK's key capabilities.</p>
+
+<p>This is particularly useful in enterprise environments where large-scale device fleets need to be managed centrally.</p>
+
+<p>In order to use these API <strong>do not forget</strong> to add the following "uses-library" tag to your application manifest.</p>
+<pre class="prettyprint">
 &lt;uses-library
         android:name="com.datalogic.device"
-        android:required="true" /&gt;</pre></p>
+        android:required="true" /&gt;</pre>
+
+Remember to switch the selected <em>Revision</em> number in accordance with your device firmware and installed Android <em>Datalogic SDK</em> update.
+
+<h2>1. Device Configuration</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/configuration/ConfigurationManager.html">Configuration Manager</a> is a crucial component designed to facilitate the management and customization of device settings on Datalogic devices. This manager provides developers with an interface to access and modify various configuration parameters, allowing for optimized device behavior tailored to specific application requirements. This gives full control over hardware and system settings for optimal performance in enterprise use cases, including scanner settings, advanced networking fine-tuning, power management options, and user interface preferences.</p>
+
+<p>The configurable properties are defined in the <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/configuration/PropertyID.html">PropertyID</a> and cover a wide range of system features.</p>
+
+<p>Package: <code>com.datalogic.device.configuration</code></p>
+
+<h2>2. Configuration Profiles</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/configuration/ProfileManager.html">Profile Manager</a> is designed to facilitate the management and the configuration of Datalogic devices. In particular, a profile is a curated collection of configuration settings that define the operational parameters for a given context. Using the Profile Manager significantly streamlines app development by externalizing configuration settings to the system administrators. This flexibility allows applications to avoid the complexities of device configuration; instead, they can rely on predefined profiles to automatically find the appropriate runtime context, ensuring that the device operates optimally according to specific operational needs.</p>
+
+<p>Additionally, this approach enables system administrators to define a set of profiles and load the appropriate one at runtime based on the app currently in the foreground (or any other desired condition), allowing the device to adapt its behavior to the user’s current operational context.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Profile Management:</strong> The Profile Manager allows for the creation, modification, and deletion of profiles, enabling applications to manage different configurations based on user requirements or operational scenarios.</li>
+    <li><strong>Event-Driven configuration:</strong> Developers can associate profiles with specific events (such as an app entering the foreground or background, battery lower than a threshold, networking coverage, etc.), allowing the device to automatically load or unload profiles. This capability enables the device to adapt its settings to the current usage scenario, thereby modifying its behavior and enhancing performance efficiency.</li>
+</ul>
+
+<h2>3. Application Management</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/app/AppManager.html">App Manager</a> and the <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/app/PackageInstaller.html">Package Installer</a> offer robust administrative control over enterprise applications on Datalogic devices. These functionalities allow system administrators to manage the application lifecycle seamlessly, without requiring user intervention.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Silent Management:</strong> Install, update, or remove applications quietly in the background.</li>
+    <li><strong>Application Control:</strong> Enable or disable specific applications to determine which apps are accessible to users, ensuring adherence to organizational policies.</li>
+    <li><strong>Permission Management:</strong> Grant necessary permissions or revoke those that are not needed.</li>
+    <li><strong>Notification Customization:</strong> Manage notification behavior by customizing notification channels, enabling businesses to prioritize alerts and reduce distractions.</li>
+    <li><strong>Battery Optimization Management:</strong> Prevent certain applications from malfunctioning due to battery optimization settings.</li>
+</ul>
+
+<p>Package: <code>com.datalogic.device.app</code></p>
+
+<h2>4. Barcode Scanning and Data Collection</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/decode/BarcodeManager.html">Barcode Manager</a> provides a comprehensive framework for integrating barcode scanning capabilities into Android applications. This manager facilitates the control and configuration of various barcode scanning functionalities, making it easier for developers to implement efficient scanning solutions.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Barcode Scanning Control:</strong> The Barcode Manager allows developers to initiate and manage barcode scanning sessions programmatically. This includes starting and stopping scans based on application needs.</li>
+    <li><strong>Configuration Options:</strong> Developers can configure scanning parameters, such as the types of barcodes to recognize, scan sensitivity, and decoding options. This flexibility enables tailored scanning experiences for different applications. It supports a wide range of barcode formats, ensuring compatibility with various scanning needs and scenarios.</li>
+    <li><strong>Data Retrieval:</strong> The manager provides several methods to receive scanned data, such as Intent or Java listener interfaces, which allow applications to receive scanned data directly within their code, Wedge and Web Wedge, which enable scanned data to be injected directly into input fields or to be directed to web applications, making it appear as though it was typed in by the user.</li>
+    <li><strong>Profiles:</strong> The Barcode Manager works seamlessly with the Configuration Manager and Profile Manager to allow for advanced configurations and customized behaviors based on specific application contexts in the foreground.</li>
+</ul>
+
+<p>Scanning capability configuration can be configured with both Barcode Manager and Configuration Manager.</p>
+
+<p>Package: <code>com.datalogic.decode</code></p>
+
+<h2>5. Keyboard & Trigger Management</h2>
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/input/KeyboardManager.html">Keyboard Manager</a> provides developers with a set of interfaces for configuring and managing input on Datalogic devices, such as the touchscreen, hardware triggers, and the keyboard. The ability to customize these inputs allows devices to be adapted to specific operational scenarios, particularly in enterprise environments.</p>
+<h3>Key Features Include:</h3>
+<ul>
+    <li><strong>Key Mapping:</strong> Customizing the behavior of keys, allowing developers to redefine the actions associated with specific keys. This is particularly useful in enterprise applications where custom shortcuts or specific workflows are necessary. By remapping keys, developers can streamline user interactions, making the application more intuitive and tailored to specific operational tasks.</li>
+    <li><strong>Trigger Management:</strong> Enabling or disabling specific Datalogic buttons to initiate designated actions or to wake the device from suspend mode.</li>
+    <li><strong>Keyboard Layouts:</strong> Configuring different keyboard layouts to suit various needs.</li>
+</ul>
+
+<h2>6. Battery Management</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/battery/DLBatteryManager.html">Battery Manager</a> provides essential functionalities for managing and monitoring battery-related events on Datalogic devices.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Charging Profile:</strong> This feature allows users to configure and retrieve the charging behavior of the device's battery. It provides insights into the charging status, helping to optimize battery usage and extend battery life.</li>
+    <li><strong>Monitor Battery Metrics:</strong> The DLBatteryManager facilitates real-time monitoring of various battery metrics, including voltage, temperature, and remaining capacity. This functionality empowers developers to integrate analytics into their applications, enabling them to respond effectively to changes in battery status.</li>
+    <li><strong>Manufacturing Info:</strong> The Battery Manager also provides access to detailed manufacturing information about the battery, such as the battery type, model, and serial number. This information can be useful for diagnostics and quality control purposes.</li>
+    <li><strong>Battery Swap Event:</strong> The Battery Manager can detect and handle battery swap events. This is particularly useful in scenarios where batteries are replaceable, ensuring that the system responds appropriately when a new battery is inserted.</li>
+</ul>
+
+<p>Package: <code>com.datalogic.device.battery</code></p>
+
+<h2>7. Cradle Functionalities</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/cradle/DLCradleManager.html">Cradle Manager</a> provides a comprehensive set of tools to manage and interact with Datalogic devices when docked in a Cradle.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Connection:</strong> The Cradle package allows applications to monitor the connection state between the device and the Cradle, providing real-time feedback on whether the device is docked or undocked.</li>
+    <li><strong>Power:</strong> It facilitates power management features, enabling the device to charge efficiently while docked, ensuring that the battery remains optimally charged for continuous use.</li>
+    <li><strong>Locking/Unlocking:</strong> The package provides methods to lock or unlock the device while it is in the Cradle, allowing for secure operation and preventing unauthorized access when docked.</li>
+    <li><strong>Firmware Upgrades:</strong> It offers a straightforward mechanism to perform firmware upgrades programmatically, ensuring that the cradle can be kept up to date with the latest enhancements and bug fixes without manual intervention.</li>
+</ul>
+
+<p>These functionalities allow developers to create robust applications that effectively manage device interactions with the Cradle, ultimately improving operational efficiency and user satisfaction in enterprise settings.</p>
+
+<p>Package: <code>com.datalogic.device.cradle</code></p>
+
+<h2>8. Datalogic Extended Intents</h2>
+
+<p>The Datalogic SDK offers a set of extended Android <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/Intents.html">Intents</a> that enhance application functionality on Datalogic devices. These intents enable developers to leverage specific device capabilities, streamlining the integration of advanced features into their applications.</p>
+
+<h3>Key features include:</h3>
+<ul>
+    <li><strong>Scanning Intents:</strong> Initiate barcode scanning processes, allowing applications to receive scanned data directly through intents.</li>
+    <li><strong>Configuration Intents:</strong> Configure scanner settings, enabling customization of scan parameters such as barcode formats, sensitivity, and decoding options.</li>
+    <li><strong>Battery Management Intents:</strong> Monitor battery status and manage power settings, ensuring efficient battery usage and providing real-time updates on battery metrics.</li>
+    <li><strong>Cradle Intents:</strong> Monitor and manage the Cradle connection state, including notifications for when the device is docked or undocked. Additionally, it allows for locking/unlocking the device in the Cradle and performing firmware upgrades.</li>
+    <li><strong>Firmware Upgrade Intent:</strong> Provides an intent specifically for performing firmware upgrades on the device, offering a simple and programmatic way to update the device efficiently.</li>
+</ul>
+
+<p>These extended intents provide developers with powerful tools to create more responsive and feature-rich applications tailored to the unique capabilities of Datalogic devices.</p>
+
+<h2>9. Device info</h2>
+
+<p>The <a href="https://datalogic.github.io/android-sdk-docs/reference/com/datalogic/device/info/SYSTEM.html">System</a> provides essential information about the device. Specifically, developers can obtain the Device ID, Name, Product and Serial numbers, which uniquely identify the device within a network or system. Additionally, it provides helpful information such as the Hardware revision, Firmware and SDK versions, providing developers and system administrators full control and management of a fleet of Datalogic devices.</p>
+
+<p>Package: <code>com.datalogic.device.info</code></p>
+
+<h2>Packages table</h2>
+
+Below the list of packages. See all <a href="classes.html">API classes</a>.</p>
 </div>
 
 

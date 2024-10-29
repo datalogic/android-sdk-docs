@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>Gs1LabelSetTransmitMode - Datalogic SDK version 1 | Android Add-on</title>
+<title>Gs1LabelSetTransmitMode - Introduction to the Datalogic Android SDK 1.40 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40' ];
         buildApiLevelSelector();
       </script>
                   
@@ -595,16 +595,19 @@ Summary:
  <tr>
  <td>FIRST_LABEL</td>
  <td>Send only the first GS1 label found with a given GTIN.
- The same label can be sent if the double read timeout has expired without decoding it.</td>
+ The same label can be sent if the double read timeout has expired without decoding it.
+ This is known as software Mode 1 by the GS1 specification.</td>
  </tr>
  <tr>
  <td>ALL_LABELS</td>
  <td>Send all the labels found with a given GTIN, adding a prefix to identify the same label set.
- The same label set can be sent if the double read timeout has expired without decoding it.</td>
+ The same label set can be sent if the double read timeout has expired without decoding it.
+ This is known as software Mode 3 by the GS1 specification.</td>
  </tr>
  <tr>
  <td>PRIORITIZE_2D_LABEL</td>
- <td>Send 2D label with a given GTIN if decoded, otherwise send the 1D label if found and if the double read timeout has expired.</td>
+ <td>Send 2D label with a given GTIN if decoded, otherwise send the 1D label if found and if the double read timeout has expired.
+ This is known as software Mode 2 by the GS1 specification.</td>
  </tr>
  </table>
 </p>
@@ -1243,6 +1246,7 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>Send all the labels found with a given GTIN, adding a prefix to identify the same label set.
  The same label set can be sent if the double read timeout has expired without decoding it.
+ This is known as software Mode 3 by the GS1 specification.
 </p></div>
 
     
@@ -1304,6 +1308,7 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>Send only the first GS1 label found with a given GTIN.
  The same label can be sent if the double read timeout has expired without decoding it.
+ This is known as software Mode 1 by the GS1 specification.
 </p></div>
 
     
@@ -1334,6 +1339,7 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Send 2D label with a given GTIN if decoded, otherwise send the 1D label if found and if the double read timeout has expired.
+ This is known as software Mode 2 by the GS1 specification.
 </p></div>
 
     

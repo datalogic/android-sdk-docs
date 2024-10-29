@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>IntentWedge - Datalogic SDK version 1 | Android Add-on</title>
+<title>IntentWedge - Introduction to the Datalogic Android SDK 1.40 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40' ];
         buildApiLevelSelector();
       </script>
                   
@@ -633,7 +633,15 @@ Summary:
 
 
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-40" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_AIM_ID">EXTRA_BARCODE_AIM_ID</a></td>
+        <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label AIM id is dispatched
+ under a specific String extra with the following name, by default.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_DATA">EXTRA_BARCODE_DATA</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label is dispatched
@@ -641,7 +649,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_STRING">EXTRA_BARCODE_STRING</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label is dispatched
@@ -649,10 +657,18 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_TYPE">EXTRA_BARCODE_TYPE</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label type is dispatched
+ under a specific String extra with the following name, by default.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-40" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_USER_ID">EXTRA_BARCODE_USER_ID</a></td>
+        <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label user id is dispatched
  under a specific String extra with the following name, by default.</td>
     </tr>
     
@@ -716,6 +732,28 @@ Summary:
       </tr>
       
     
+      <tr class="alt-color api apilevel-40" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#excludeEmptyValues">excludeEmptyValues</a></td>
+          <td class="jd-descrcol" width="100%"><code>excludeEmptyValues</code> is set to true to exclude the empty strings in the intent wedge fields.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-40" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#extraBarcodeAimId">extraBarcodeAimId</a></td>
+          <td class="jd-descrcol" width="100%"><code>extraBarcodeAimId</code> indicates the corresponding intent extra tag, associated to a string containing the AIM id of the read label.</td>
+      </tr>
+      
+    
       <tr class="alt-color api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
@@ -746,6 +784,17 @@ Summary:
           <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></nobr></td>
           <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#extraBarcodeType">extraBarcodeType</a></td>
           <td class="jd-descrcol" width="100%"><code>extraBarcodeType</code> indicates the corresponding intent extra tag, associated to a string containing the type of read label.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-40" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#extraBarcodeUserId">extraBarcodeUserId</a></td>
+          <td class="jd-descrcol" width="100%"><code>extraBarcodeUserId</code> indicates the corresponding intent extra tag, associated to a string containing the user id of the read label.</td>
       </tr>
       
     
@@ -1294,6 +1343,46 @@ From class
 
 
 
+<A NAME="EXTRA_BARCODE_AIM_ID"></A>
+
+<div class="jd-details api apilevel-40"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_BARCODE_AIM_ID
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 40</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>When the IntentWedge is sent to a listening application, the decoded label AIM id is dispatched
+ under a specific String extra with the following name, by default.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.decode.intentwedge.barcode_aim_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="EXTRA_BARCODE_DATA"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1405,6 +1494,46 @@ From class
         <span>
             
                 "com.datalogic.decode.intentwedge.barcode_type"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="EXTRA_BARCODE_USER_ID"></A>
+
+<div class="jd-details api apilevel-40"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_BARCODE_USER_ID
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 40</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>When the IntentWedge is sent to a listening application, the decoded label user id is dispatched
+ under a specific String extra with the following name, by default.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.decode.intentwedge.barcode_user_id"
             
         </span>
         </div>
@@ -1547,6 +1676,69 @@ From class
 
 
 
+<A NAME="excludeEmptyValues"></A>
+
+<div class="jd-details api apilevel-40"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/BooleanProperty.html">BooleanProperty</a>
+      </span>
+        excludeEmptyValues
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 40</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>excludeEmptyValues</code> is set to true to exclude the empty strings in the intent wedge fields.
+ This considers all extras' names and the category, while the action is always included in the intent.
+ The default value is false.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="extraBarcodeAimId"></A>
+
+<div class="jd-details api apilevel-40"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a>
+      </span>
+        extraBarcodeAimId
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 40</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>extraBarcodeAimId</code> indicates the corresponding intent extra tag, associated to a string containing the AIM id of the read label.
+ The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_AIM_ID">EXTRA_BARCODE_AIM_ID</a></code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="extraBarcodeData"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1632,6 +1824,37 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p><code>extraBarcodeType</code> indicates the corresponding intent extra tag, associated to a string containing the type of read label.
  The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_TYPE">EXTRA_BARCODE_TYPE</a></code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="extraBarcodeUserId"></A>
+
+<div class="jd-details api apilevel-40"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a>
+      </span>
+        extraBarcodeUserId
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 40</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>extraBarcodeUserId</code> indicates the corresponding intent extra tag, associated to a string containing the user id of the read label.
+ The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_USER_ID">EXTRA_BARCODE_USER_ID</a></code>.
 </p></div>
 
     
