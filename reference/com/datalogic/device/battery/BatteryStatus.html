@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>BatteryStatus - Introduction to the Datalogic Android SDK 1.40 | Android Add-on</title>
+<title>BatteryStatus - Introduction to the Datalogic Android SDK 1.41 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41' ];
         buildApiLevelSelector();
       </script>
                   
@@ -639,7 +639,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class="alt-color api apilevel-41" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html#getChargeCycles()">getChargeCycles</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the number of charge cycles.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -652,6 +670,24 @@ Summary:
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html#getDischargeCurrentMax()">getDischargeCurrentMax</a></span>()</nobr>
         
         <div class="jd-descrdiv">Returns the value of the maximum discharge current recorded by the battery.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-41" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html#getRatedCapacity()">getRatedCapacity</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the battery rated capacity.</div>
   
   </td></tr>
 
@@ -729,7 +765,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-13" >
+    <tr class=" api apilevel-41" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/battery/BatteryStatus.html#getTypicalCapacity()">getTypicalCapacity</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the battery typical capacity.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -747,7 +801,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-13" >
+    <tr class=" api apilevel-13" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1203,6 +1257,42 @@ From class
 </div>
 
 
+<A NAME="getChargeCycles()"></A>
+
+<div class="jd-details api apilevel-41"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getChargeCycles</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 41</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the number of charge cycles.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+         The number of charge cycles.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getDischargeCurrentMax()"></A>
 
 <div class="jd-details api apilevel-13"> 
@@ -1232,6 +1322,42 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code>
          The value of the maximum discharge current recorded by the battery in mA.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getRatedCapacity()"></A>
+
+<div class="jd-details api apilevel-41"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getRatedCapacity</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 41</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the battery rated capacity.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+         The battery rated capacity.
 </li></ul>
   </div>
 
@@ -1376,6 +1502,42 @@ From class
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code>
          The total amount of discharge current in 0.1 Ah.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getTypicalCapacity()"></A>
+
+<div class="jd-details api apilevel-41"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getTypicalCapacity</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 41</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the battery typical capacity.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+         The battery typical capacity.
 </li></ul>
   </div>
 
