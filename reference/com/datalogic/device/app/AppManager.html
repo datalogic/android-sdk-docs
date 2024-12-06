@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>AppManager - Introduction to the Datalogic Android SDK 1.41 | Android Add-on</title>
+<title>AppManager - Introduction to the Datalogic Android SDK 1.42 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42' ];
         buildApiLevelSelector();
       </script>
                   
@@ -653,7 +653,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#grantAllPermissions(java.lang.String)">grantAllPermissions</a></span>(String packageName)</nobr>
         
-        <div class="jd-descrdiv">Call this method to grant an application all the permissions declared in its manifest.</div>
+        <div class="jd-descrdiv">Call this method to grant an application all the <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a> declared in its manifest.</div>
   
   </td></tr>
 
@@ -671,7 +671,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#grantPermissions(java.lang.String, java.util.ArrayList<java.lang.String>)">grantPermissions</a></span>(String packageName, ArrayList&lt;String&gt; permissions)</nobr>
         
-        <div class="jd-descrdiv">Call this method to grant an application the specified permissions.</div>
+        <div class="jd-descrdiv">Call this method to grant an application the specified <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a>.</div>
   
   </td></tr>
 
@@ -707,7 +707,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#revokePermissions(java.lang.String, java.util.ArrayList<java.lang.String>)">revokePermissions</a></span>(String packageName, ArrayList&lt;String&gt; permissions)</nobr>
         
-        <div class="jd-descrdiv">Call this method to revoke an application the specified permissions.</div>
+        <div class="jd-descrdiv">Call this method to revoke an application the specified <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a>.</div>
   
   </td></tr>
 
@@ -749,7 +749,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-34" >
+    <tr class="alt-color api apilevel-42" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#setModeAppOps(java.lang.String, java.util.List<java.lang.String>, int)">setModeAppOps</a></span>(String packageName, List&lt;String&gt; permissions, int mode)</nobr>
+        
+        <div class="jd-descrdiv">Call this method to set the mode of the specified <a href="https://developer.android.com/guide/topics/permissions/overview#special">app-ops permissions</a> of a given application.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-34" >
         <td class="jd-typecol"><nobr>
             
             
@@ -767,7 +785,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-31" >
+    <tr class="alt-color api apilevel-31" >
         <td class="jd-typecol"><nobr>
             
             
@@ -785,7 +803,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-25" >
+    <tr class=" api apilevel-25" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1200,17 +1218,17 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Call this method to enable/disable the specified list of <a href="https://developer.android.com/reference/android/app/NotificationChannel">NotificationChannel</a>s of a given application. <br>
  The NotificationChannels are specified using their <a href="https://developer.android.com/reference/android/app/NotificationChannel#getId()">identifier</a>.<br>
  To enable/disable all the NotificationChannels of an app use as value of the parameter notificationChannels the regular expression "^(?:[\\w| ]*)$". <br>
- <b>To disable all the NotificationChannels of the Clock app:
+ <b>To disable all the NotificationChannels of the Clock app:</b>
  <pre>
  AppManager appmanager = new AppManager(this);
  int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:[\\w| ]*)$", false);
  </pre>
- <b>To disable the NotificationChannels Bedtime, Timers, Firing alarms & timers, Missed alarms of the Clock app:
+ <b>To disable the NotificationChannels Bedtime, Timers, Firing alarms & timers, Missed alarms of the Clock app:</b>
  <pre>
  AppManager appmanager = new AppManager(this);
  int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:Bedtime|Timers|Firing|Missed Alarms)$", false);
  </pre>
- The identifier of the NotificationChannels are obtained getting the list of all the NotificationChannels of the app and looking, in the returned list, for their identifier.
+ <b>The identifier of the NotificationChannels are obtained getting the list of all the NotificationChannels of the app and looking, in the returned list, for their identifier.</b>
  <pre>
  AppManager appmanager = new AppManager(this);
  List<NotificationChannel> channels = new ArrayList<NotificationChannel>();
@@ -1402,7 +1420,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application all the permissions declared in its manifest. <br>
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application all the <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a> declared in its manifest. <br>
+ If the application is a system application the method fails and returns the exception <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SECURITY_ERROR">SECURITY_ERROR</a></code> or the corresponding error.
  <br>
  The method works in best effort. If almost one of the requested permissions is not granted an error is returned.
  In case of error to check which permissions are granted use
@@ -1464,7 +1483,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application the specified permissions. <br>
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to grant an application the specified <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a>. <br>
+ If the application is a system application the method fails and returns the exception <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SECURITY_ERROR">SECURITY_ERROR</a></code> or the corresponding error.
  <br>
  The method works in best effort. If almost one of the requested permissions is not granted an error is returned.
  In case of error to check which permissions are granted use
@@ -1586,7 +1606,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Call this method to revoke an application the specified permissions. <br>
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to revoke an application the specified <a href="https://developer.android.com/guide/topics/permissions/overview#runtime">runtime permissions</a>. <br>
+ If the application is a system application the method fails and returns the exception <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SECURITY_ERROR">SECURITY_ERROR</a></code> or the corresponding error.
  <br>
  The method works in best effort. If almost one of the requested permissions is not revoked an error is returned.
  In case of error to check which permissions are revoked use
@@ -1733,6 +1754,75 @@ From class
         <tr>
           <th>hidden</td>
           <td><code>boolean</code> True if the package should be hidden, false if it should be unhidden.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+            <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setModeAppOps(java.lang.String, java.util.List<java.lang.String>, int)"></A>
+
+<div class="jd-details api apilevel-42"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setModeAppOps</span>
+      <span class="normal">(String packageName, List&lt;String&gt; permissions, int mode)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 42</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to set the mode of the specified <a href="https://developer.android.com/guide/topics/permissions/overview#special">app-ops permissions</a> of a given application. <br>
+ If the application is a system application the method fails and returns the exception <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SECURITY_ERROR">SECURITY_ERROR</a></code> or the corresponding error.
+ <br></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>packageName</td>
+          <td><code>String</code>The application to grant permissions to.  If the application is a system application the method fails.</td>
+        </tr>
+        <tr>
+          <th>permissions</td>
+          <td><code>ArrayList<String></code> The list of app-ops permissions to be set.</td>
+        </tr>
+        <tr>
+          <th>mode</td>
+          <td><code>int</code> <br>
+ <a href="https://developer.android.com/reference/android/app/AppOpsManager#MODE_ALLOWED">AppOpsManager.MODE_ALLOWED</a>: the given application is allowed to perform the given operation. <br>
+ <a href="https://developer.android.com/reference/android/app/AppOpsManager#MODE_IGNORED">AppOpsManager.MODE_IGNORED</a>: the given application not allowed to perform the given operation, and the attempt should silently
+ fail (it should not cause the app to crash). <br>
+ <a href="https://developer.android.com/reference/android/app/AppOpsManager#MODE_ERRORED">AppOpsManager.MODE_ERRORED</a>: the given application not allowed to perform the given operation, and the attempt should cause it to have a fatal error. <br></td>
         </tr>
       </table>
   </div>
