@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>QuickSettingsTiles - Introduction to the Datalogic Android SDK 1.42 | Android Add-on</title>
+<title>QuickSettingsTiles - Introduction to the Datalogic Android SDK 1.43 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43' ];
         buildApiLevelSelector();
       </script>
                   
@@ -610,7 +610,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/QuickSettingsTiles.html#getAvailableCustomTiles(android.content.Context)">getAvailableCustomTiles</a></span>(Context context)</nobr>
         
-        <div class="jd-descrdiv">Get a map with all available custom tiles in the format <id,label>.</div>
+        <div class="jd-descrdiv">Retrieves a map of all available custom tiles in the format <id, label>, where:
+ <ul>
+   <li><b>id</b> represents the identifier used by Android to recognize the tile.</div>
   
   </td></tr>
 
@@ -628,7 +630,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/configuration/QuickSettingsTiles.html#getAvailableSystemTiles(android.content.Context)">getAvailableSystemTiles</a></span>(Context context)</nobr>
         
-        <div class="jd-descrdiv">Get a map with all available system tiles in the format <id,label>.</div>
+        <div class="jd-descrdiv">Retrieves a map of all available system tiles in the format <id, label>, where:
+ <ul>
+   <li><b>id</b> represents the identifier used by Android to recognize the tile.</div>
   
   </td></tr>
 
@@ -951,7 +955,13 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Get a map with all available custom tiles in the format <id,label>.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a map of all available custom tiles in the format <id, label>, where:
+ <ul>
+   <li><b>id</b> represents the identifier used by Android to recognize the tile.</li>
+   <li><b>label</b> is the user-facing title displayed in the Quick Settings panel.</li>
+ </ul>
+ 
+ <p>The format of the returned map is identical to that of <code><a href="../../../../../reference/com/datalogic/device/configuration/QuickSettingsTiles.html#getAvailableSystemTiles(android.content.Context)">getAvailableSystemTiles(Context)</a></code>.</p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -996,7 +1006,16 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Get a map with all available system tiles in the format <id,label>.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a map of all available system tiles in the format <id, label>, where:
+ <ul>
+   <li><b>id</b> represents the identifier used by Android to recognize the tile.</li>
+   <li><b>label</b> is the user-facing title displayed in the Quick Settings panel.</li>
+ </ul>
+ 
+ <p>
+ For example, if the available system tiles are "Internet", "Bluetooth", and "Do Not Disturb",
+ the returned map would be: <code>{internet=Internet, bt=Bluetooth, dnd=Do Not Disturb}</code>.
+ </p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
