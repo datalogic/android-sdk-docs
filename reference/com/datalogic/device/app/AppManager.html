@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>AppManager - Introduction to the Datalogic Android SDK 1.43 | Android Add-on</title>
+<title>AppManager - Introduction to the Datalogic Android SDK 1.44 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44' ];
         buildApiLevelSelector();
       </script>
                   
@@ -599,7 +599,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/app/AppManager.html#enableNotificationChannels(java.lang.String, java.lang.String, boolean)">enableNotificationChannels</a></span>(String packageName, String notificationChannels, boolean enabled)</nobr>
         
-        <div class="jd-descrdiv">Call this method to enable/disable the specified list of <a href="https://developer.android.com/reference/android/app/NotificationChannel">NotificationChannel</a>s of a given application.</div>
+        <div class="jd-descrdiv">Enables or disables a <a href="https://developer.android.com/reference/android/app/NotificationChannel">NotificationChannel</a> for a specified application.</div>
   
   </td></tr>
 
@@ -1215,59 +1215,78 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Call this method to enable/disable the specified list of <a href="https://developer.android.com/reference/android/app/NotificationChannel">NotificationChannel</a>s of a given application. <br>
- The NotificationChannels are specified using their <a href="https://developer.android.com/reference/android/app/NotificationChannel#getId()">identifier</a>.<br>
- To enable/disable all the NotificationChannels of an app use as value of the parameter notificationChannels the regular expression "^(?:[\\w| ]*)$". <br>
- <b>To disable all the NotificationChannels of the Clock app:</b>
- <pre>
- AppManager appmanager = new AppManager(this);
- int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:[\\w| ]*)$", false);
- </pre>
- <b>To disable the NotificationChannels Bedtime, Timers, Firing alarms & timers, Missed alarms of the Clock app:</b>
- <pre>
- AppManager appmanager = new AppManager(this);
- int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:Bedtime|Timers|Firing|Missed Alarms)$", false);
- </pre>
- <b>The identifier of the NotificationChannels are obtained getting the list of all the NotificationChannels of the app and looking, in the returned list, for their identifier.</b>
- <pre>
- AppManager appmanager = new AppManager(this);
- List<NotificationChannel> channels = new ArrayList<NotificationChannel>();
- int result = appmanager.getNotificationChannels("com.google.android.deskclock", channels);
- for (NotificationChannel channel : channels) {
-    Log.d(TAG, "channel=" + channel.getId());
- } 
- </pre>
- <br></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Enables or disables a <a href="https://developer.android.com/reference/android/app/NotificationChannel">NotificationChannel</a> for a specified application.
+ <p>
+ The NotificationChannel is identified using its Android <a href="https://developer.android.com/reference/android/app/NotificationChannel#getId()">identifier</a>.
+ </p>
+ <p>
+ Regular expressions can be used to enable or disable multiple notification channels and/or applications in a single call:
+ </p>
+ <ul>
+   <li>To target all notification channels of a specific app, use the regular expression: <code>"^(?:[\\w ]*)$"</code>.</li>
+   <li>To target all installed apps, use the regular expression: <code>"^[a-zA-Z_][\\w]*(\\.[a-zA-Z_][\\w]*)*$"</code>.</li>
+ </ul>
+ <br>
+ <br>
+ <p><b>Examples:</b></p>
+ <ul>
+   <li>Disable all NotificationChannels of the Clock app:
+     <pre>
+     AppManager appManager = new AppManager(this);
+     int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:[\\w ]*)$", false);
+     </pre>
+   </li>
+   <li>Disable specific NotificationChannels (e.g., Bedtime, Timers, Firing alarms & timers, Missed alarms) of the Clock app:
+     <pre>
+     AppManager appManager = new AppManager(this);
+     int result = appManager.enableNotificationChannels("com.google.android.deskclock", "^(?:Bedtime|Timers|Firing|Missed Alarms)$", false);
+     </pre>
+   </li>
+   <li>Retrieve NotificationChannel identifiers for Clock app:
+     <pre>
+     AppManager appManager = new AppManager(this);
+     List<NotificationChannel> channels = new ArrayList<>();
+     int result = appManager.getNotificationChannels("com.google.android.deskclock", channels);
+     for (NotificationChannel channel : channels) {
+         Log.d(TAG, "channel=" + channel.getId());
+     }
+     </pre>
+   </li>
+   <li>Disable all NotificationChannels for all apps:
+     <pre>
+     AppManager appManager = new AppManager(this);
+     int result = appManager.enableNotificationChannels("^[a-zA-Z_][\\w]*(\\.[a-zA-Z_][\\w]*)*$", "^(?:[\\w ]*)$", false);
+     </pre>
+   </li>
+ </ul></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>packageName</td>
-          <td><code>String</code> The package name of the application whose NotificationChannels are to be enabled/disabled.</td>
+          <td><code>String</code> A regular expression matching the package names of the applications whose NotificationChannels are to be enabled/disabled.</td>
         </tr>
         <tr>
           <th>notificationChannels</td>
-          <td><code>String</code> Regular expression that lists the identifiers of the NotificationChannels to be enabled/disabled.</td>
+          <td><code>String</code> A regular expression matching the identifiers of the NotificationChannels to be enabled/disabled.</td>
         </tr>
         <tr>
           <th>enabled</td>
-          <td><code>boolean</code> False to disable the notification channels, true to enable the notification channels with the
-            importance defined when the channel was created.</td>
+          <td><code>boolean</code> Set to <code>false</code> to disable the notification channels, or <code>true</code> to enable them with their original importance.</td>
         </tr>
       </table>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code>
-            <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SUCCESS">SUCCESS</a></code> in case of success,
- otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></code> error constants.</li></ul>
+            <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html#SUCCESS">SUCCESS</a></code> if successful, or an error code matching one of the <code><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></code> constants.</li></ul>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
       <table class="jd-tagtable">  
         <tr>
             <th><a href="../../../../../reference/com/datalogic/device/app/AppManagerException.html">AppManagerException</a></td>
-            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+            <td>if an error occurs and exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
 </td>
         </tr>
       </table>
