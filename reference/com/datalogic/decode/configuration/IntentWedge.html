@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>IntentWedge - Introduction to the Datalogic Android SDK 1.44 | Android Add-on</title>
+<title>IntentWedge - Introduction to the Datalogic Android SDK 1.45 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45' ];
         buildApiLevelSelector();
       </script>
                   
@@ -311,6 +311,7 @@ Distribution</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Code93.html">Code93</a></li>
           <li class="api apilevel-7"><a href="../../../../../reference/com/datalogic/decode/configuration/Composite.html">Composite</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Datamatrix.html">Datamatrix</a></li>
+          <li class="api apilevel-45"><a href="../../../../../reference/com/datalogic/decode/configuration/DecodeResultCrop.html">DecodeResultCrop</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/DecodingNotification.html">DecodingNotification</a></li>
           <li class="api apilevel-5"><a href="../../../../../reference/com/datalogic/decode/configuration/Digimarc.html">Digimarc</a></li>
           <li class="api apilevel-1"><a href="../../../../../reference/com/datalogic/decode/configuration/Discrete25.html">Discrete25</a></li>
@@ -657,7 +658,15 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-45" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_CROP">EXTRA_BARCODE_CROP</a></td>
+        <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label crop is dispatched
+ under a specific byte array extra with the following name, by default.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_DATA">EXTRA_BARCODE_DATA</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label is dispatched
@@ -665,7 +674,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_STRING">EXTRA_BARCODE_STRING</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label is dispatched
@@ -673,7 +682,7 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_TYPE">EXTRA_BARCODE_TYPE</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label type is dispatched
@@ -681,7 +690,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-40" >
+    <tr class=" api apilevel-40" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_USER_ID">EXTRA_BARCODE_USER_ID</a></td>
         <td class="jd-descrcol" width="100%">When the IntentWedge is sent to a listening application, the decoded label user id is dispatched
@@ -770,7 +779,19 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class="alt-color api apilevel-45" >
+          <td class="jd-typecol"><nobr>
+          public
+          
+          
+          <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#extraBarcodeCrop">extraBarcodeCrop</a></td>
+          <td class="jd-descrcol" width="100%"><code>extraBarcodeCrop</code> indicates the corresponding intent extra tag, associated to a byte array containing the
+ crop of the read label in JPEG format.</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -781,7 +802,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-1" >
+      <tr class="alt-color api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -792,7 +813,7 @@ Summary:
       </tr>
       
     
-      <tr class="alt-color api apilevel-1" >
+      <tr class=" api apilevel-1" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -803,7 +824,7 @@ Summary:
       </tr>
       
     
-      <tr class=" api apilevel-40" >
+      <tr class="alt-color api apilevel-40" >
           <td class="jd-typecol"><nobr>
           public
           
@@ -1399,6 +1420,46 @@ From class
 
 
 
+<A NAME="EXTRA_BARCODE_CROP"></A>
+
+<div class="jd-details api apilevel-45"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        EXTRA_BARCODE_CROP
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 45</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>When the IntentWedge is sent to a listening application, the decoded label crop is dispatched
+ under a specific byte array extra with the following name, by default.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.decode.intentwedge.barcode_crop"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="EXTRA_BARCODE_DATA"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1747,6 +1808,39 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p><code>extraBarcodeAimId</code> indicates the corresponding intent extra tag, associated to a string containing the AIM id of the read label.
  The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_AIM_ID">EXTRA_BARCODE_AIM_ID</a></code>.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="extraBarcodeCrop"></A>
+
+<div class="jd-details api apilevel-45"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        <a href="../../../../../reference/com/datalogic/device/configuration/TextProperty.html">TextProperty</a>
+      </span>
+        extraBarcodeCrop
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 45</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><code>extraBarcodeCrop</code> indicates the corresponding intent extra tag, associated to a byte array containing the
+ crop of the read label in JPEG format.
+ The crop must be first enabled in the decoded result with the settings available in the <code><a href="../../../../../reference/com/datalogic/decode/configuration/DecodeResultCrop.html">DecodeResultCrop</a></code> class.
+ The default value is <code><a href="../../../../../reference/com/datalogic/decode/configuration/IntentWedge.html#EXTRA_BARCODE_CROP">EXTRA_BARCODE_CROP</a></code>.
 </p></div>
 
     
