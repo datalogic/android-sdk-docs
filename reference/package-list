@@ -7,6 +7,7 @@ com.datalogic.device.app
 com.datalogic.device.battery
 com.datalogic.device.configuration
 com.datalogic.device.display
+com.datalogic.device.emergency
 com.datalogic.device.info
 com.datalogic.device.input
 com.datalogic.device.location
@@ -14,5 +15,6 @@ com.datalogic.device.nfc
 com.datalogic.device.notification
 com.datalogic.device.power
 com.datalogic.device.wifi
+com.datalogic.itemtracking
 com.datalogic.softspot
 
