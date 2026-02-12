@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>DeviceManager - Introduction to the Datalogic Android SDK 1.46 | Android Add-on</title>
+<title>DeviceManager - Introduction to the Datalogic Android SDK 1.47 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47' ];
         buildApiLevelSelector();
       </script>
                   
@@ -597,7 +597,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-23" >
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/device/DeviceManager.html#lock()">lock</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Locks the device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-23" >
         <td class="jd-typecol"><nobr>
             
             
@@ -611,6 +629,24 @@ Summary:
         
         <div class="jd-descrdiv">Sets the policy required to update the Cradle firmware, when a firmware
  is avalable in the device.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/device/DeviceManager.html#shutdown()">shutdown</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Shuts down the device and powers it off.</div>
   
   </td></tr>
 
@@ -988,6 +1024,38 @@ From class
 </div>
 
 
+<A NAME="lock()"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">lock</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Locks the device. The call is asynchronous, the method returns immediately
+ after requesting the lock.
+</p></div>
+
+    </div>
+</div>
+
+
 <A NAME="setFirmwareUpdatePolicy(com.datalogic.device.FirmwareUpdatePolicy)"></A>
 
 <div class="jd-details api apilevel-23"> 
@@ -1028,6 +1096,38 @@ From class
       <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
 </li></ul>
   </div>
+
+    </div>
+</div>
+
+
+<A NAME="shutdown()"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">shutdown</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Shuts down the device and powers it off. The call is asynchronous, the method
+ returns immediately after requesting the shutdown.
+</p></div>
 
     </div>
 </div>

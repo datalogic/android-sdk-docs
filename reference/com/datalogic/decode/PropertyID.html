@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>PropertyID - Introduction to the Datalogic Android SDK 1.46 | Android Add-on</title>
+<title>PropertyID - Introduction to the Datalogic Android SDK 1.47 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47' ];
         buildApiLevelSelector();
       </script>
                   
@@ -2657,6 +2657,68 @@ Summary:
     </tr>
     
     
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_DECODING">SCANNING_PREVIEW_ACTIVATION_BY_DECODING</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify if the preview will be turned on during decoding.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_INTENT">SCANNING_PREVIEW_ACTIVATION_BY_INTENT</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify if the preview can be turned on using the specific intent actions
+ in a broadcast intent (<code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_START_SCANNING_PREVIEW">ACTION_START_SCANNING_PREVIEW</a></code> and
+ <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_STOP_SCANNING_PREVIEW">ACTION_STOP_SCANNING_PREVIEW</a></code>).</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY">SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify if the preview will be turned on using a ToF range.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_HIGH_THRESHOLD">SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_HIGH_THRESHOLD</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify the high threshold of the ToF range (in mm) when the preview
+ can be turned on by the ToF.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_LOW_THRESHOLD">SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_LOW_THRESHOLD</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify the low threshold of the ToF range (in mm) when the preview
+ can be turned on by the ToF.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ACTIVATION_BY_SDK">SCANNING_PREVIEW_ACTIVATION_BY_SDK</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify if the preview can be turned on using the specific SDK methods
+ (<code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startScanningPreview()">startScanningPreview()</a></code> and <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopScanningPreview()">stopScanningPreview()</a></code>).</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_HIDE_DELAY">SCANNING_PREVIEW_HIDE_DELAY</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify the amount of time (in ms) the preview will be shown after
+ a barcode has been successfully decoded.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_SOURCE">SCANNING_PREVIEW_SOURCE</a></td>
+        <td class="jd-descrcol" width="100%">This parameter allows to specify the source of the preview to be shown.</td>
+    </tr>
+    
+    
     <tr class="alt-color api apilevel-27" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCAN_MODE">SCAN_MODE</a></td>
@@ -3077,21 +3139,28 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-43" >
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#WEDGE_KEYBOARD_IME_ACTION_AFTER">WEDGE_KEYBOARD_IME_ACTION_AFTER</a></td>
+        <td class="jd-descrcol" width="100%">IME action to send after the keyboard wedge has emitted the barcode content.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-43" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#WEDGE_KEYBOARD_NON_PRINTABLE_KEY_EVENT_DELAY">WEDGE_KEYBOARD_NON_PRINTABLE_KEY_EVENT_DELAY</a></td>
         <td class="jd-descrcol" width="100%">Delay applied before and after every non printable character.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#WEDGE_KEYBOARD_ONLY_ON_FOCUS">WEDGE_KEYBOARD_ONLY_ON_FOCUS</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the input of the keystrokes only in input areas with active focus and an IME active, such as a touch keyboard.</td>
     </tr>
     
     
-    <tr class=" api apilevel-7" >
+    <tr class="alt-color api apilevel-7" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#WEDGE_WEB_ENABLE">WEDGE_WEB_ENABLE</a></td>
         <td class="jd-descrcol" width="100%">This parameter enables the Decode Wedge capability for direct web browsing.</td>
@@ -15466,6 +15535,332 @@ From class
 
 
 
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_DECODING"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_DECODING
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify if the preview will be turned on during decoding.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                131
+                (0x00000083)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_INTENT"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_INTENT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify if the preview can be turned on using the specific intent actions
+ in a broadcast intent (<code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_START_SCANNING_PREVIEW">ACTION_START_SCANNING_PREVIEW</a></code> and
+ <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_STOP_SCANNING_PREVIEW">ACTION_STOP_SCANNING_PREVIEW</a></code>).
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                133
+                (0x00000085)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify if the preview will be turned on using a ToF range.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                134
+                (0x00000086)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_HIGH_THRESHOLD"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_HIGH_THRESHOLD
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify the high threshold of the ToF range (in mm) when the preview
+ can be turned on by the ToF.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                136
+                (0x00000088)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_LOW_THRESHOLD"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_PROXIMITY_LOW_THRESHOLD
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify the low threshold of the ToF range (in mm) when the preview
+ can be turned on by the ToF.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                135
+                (0x00000087)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ACTIVATION_BY_SDK"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ACTIVATION_BY_SDK
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify if the preview can be turned on using the specific SDK methods
+ (<code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startScanningPreview()">startScanningPreview()</a></code> and <code><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopScanningPreview()">stopScanningPreview()</a></code>).
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                132
+                (0x00000084)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_HIDE_DELAY"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_HIDE_DELAY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify the amount of time (in ms) the preview will be shown after
+ a barcode has been successfully decoded.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                130
+                (0x00000082)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_SOURCE"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_SOURCE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter allows to specify the source of the preview to be shown.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                128
+                (0x00000080)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="SCAN_MODE"></A>
 
 <div class="jd-details api apilevel-27"> 
@@ -17860,6 +18255,46 @@ From class
             
                 70000
                 (0x00011170)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="WEDGE_KEYBOARD_IME_ACTION_AFTER"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        WEDGE_KEYBOARD_IME_ACTION_AFTER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>IME action to send after the keyboard wedge has emitted the barcode content.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                70005
+                (0x00011175)
             
         </span>
         </div>

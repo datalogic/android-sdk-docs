@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>BarcodeManager - Introduction to the Datalogic Android SDK 1.46 | Android Add-on</title>
+<title>BarcodeManager - Introduction to the Datalogic Android SDK 1.47 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47' ];
         buildApiLevelSelector();
       </script>
                   
@@ -610,10 +610,24 @@ Summary:
     </tr>
     
     
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_START_SCANNING_PREVIEW">ACTION_START_SCANNING_PREVIEW</a></td>
+        <td class="jd-descrcol" width="100%">Intent action used while broadcasting an intent to start the scanning preview.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_STOP_DECODE">ACTION_STOP_DECODE</a></td>
         <td class="jd-descrcol" width="100%">Barcode stop decode intent action.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#ACTION_STOP_SCANNING_PREVIEW">ACTION_STOP_SCANNING_PREVIEW</a></td>
+        <td class="jd-descrcol" width="100%">Intent action used while broadcasting an intent to stop the scanning preview.</td>
     </tr>
     
     
@@ -1420,7 +1434,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#startScanningPreview()">startScanningPreview</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Call this method to start the scanning preview.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1433,6 +1465,24 @@ Summary:
         <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopDecode()">stopDecode</a></span>()</nobr>
         
         <div class="jd-descrdiv">This stops any data acquisition currently in progress.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-47" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/datalogic/decode/BarcodeManager.html#stopScanningPreview()">stopScanningPreview</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Call this method to stop the scanning preview.</div>
   
   </td></tr>
 
@@ -1913,6 +1963,45 @@ From interface
 
 
 
+<A NAME="ACTION_START_SCANNING_PREVIEW"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        ACTION_START_SCANNING_PREVIEW
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Intent action used while broadcasting an intent to start the scanning preview.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.decode.action.START_SCANNING_PREVIEW"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="ACTION_STOP_DECODE"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1950,6 +2039,45 @@ From interface
         <span>
             
                 "com.datalogic.decode.action.STOP_DECODE"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ACTION_STOP_SCANNING_PREVIEW"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        ACTION_STOP_SCANNING_PREVIEW
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Intent action used while broadcasting an intent to stop the scanning preview.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "com.datalogic.decode.action.STOP_SCANNING_PREVIEW"
             
         </span>
         </div>
@@ -4250,6 +4378,51 @@ From interface
 </div>
 
 
+<A NAME="startScanningPreview()"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">startScanningPreview</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to start the scanning preview.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="stopDecode()"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -4281,6 +4454,51 @@ From interface
  <br>
              <code> &nbsp;&nbsp;decoder.stopDecode();</code><br>
              <code>}</code><br></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../reference/com/datalogic/decode/DecodeException.html">DecodeException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="stopScanningPreview()"></A>
+
+<div class="jd-details api apilevel-47"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">stopScanningPreview</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 47</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Call this method to stop the scanning preview.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>int</code> <code><a href="../../../../reference/com/datalogic/decode/DecodeException.html#SUCCESS">SUCCESS</a></code> in case of success,
