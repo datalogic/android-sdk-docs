@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>BTPairingPolicy - Introduction to the Datalogic Android SDK 1.47 | Android Add-on</title>
+<title>BTPairingPolicy - Introduction to the Datalogic Android SDK 1.48 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48' ];
         buildApiLevelSelector();
       </script>
                   
@@ -386,6 +386,7 @@ Distribution</a></li>
           <li class="selected api apilevel-36"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a></li>
           <li class="api apilevel-40"><a href="../../../../../reference/com/datalogic/device/configuration/CaptivePortalPolicy.html">CaptivePortalPolicy</a></li>
           <li class="api apilevel-40"><a href="../../../../../reference/com/datalogic/device/configuration/ClipboardPolicy.html">ClipboardPolicy</a></li>
+          <li class="api apilevel-48"><a href="../../../../../reference/com/datalogic/device/configuration/DesktopModeDisplayResolution.html">DesktopModeDisplayResolution</a></li>
           <li class="api apilevel-40"><a href="../../../../../reference/com/datalogic/device/configuration/DesktopModePolicy.html">DesktopModePolicy</a></li>
           <li class="api apilevel-36"><a href="../../../../../reference/com/datalogic/device/configuration/DeviceNameSuffix.html">DeviceNameSuffix</a></li>
           <li class="api apilevel-40"><a href="../../../../../reference/com/datalogic/device/configuration/DoNotDisturbPolicy.html">DoNotDisturbPolicy</a></li>
@@ -652,28 +653,36 @@ Summary:
 <table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-36" >
+    <tr class="alt-color api apilevel-48" >
+        <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>&nbsp;</td>
+        <td class="jd-linkcol">SECURED&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Block connections from unauthorized peripherals,
+ enhancing both security and operational efficiency by preventing accidental or malicious device pairings.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-36" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>&nbsp;</td>
         <td class="jd-linkcol">SILENT&nbsp;</td>
         <td class="jd-descrcol" width="100%">No user confirmation is required for completing the pairing.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-36" >
+    <tr class="alt-color api apilevel-36" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>&nbsp;</td>
         <td class="jd-linkcol">SIMPLE&nbsp;</td>
         <td class="jd-descrcol" width="100%">Only a single confirmation is required by the user during the pairing.&nbsp;</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-36" >
+    <tr class=" api apilevel-36" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>&nbsp;</td>
         <td class="jd-linkcol">STANDARD&nbsp;</td>
         <td class="jd-descrcol" width="100%">Android standard user experience for bluetooth pairing.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-36" >
+    <tr class="alt-color api apilevel-36" >
         <td class="jd-descrcol"><a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>&nbsp;</td>
         <td class="jd-linkcol">UNKNOWN&nbsp;</td>
         <td class="jd-descrcol" width="100%">Unknown paring policy.&nbsp;</td>
@@ -1256,6 +1265,38 @@ From interface
 <!-- ========= ENUM CONSTANTS DETAIL ======== -->
 <h2>Enum Values</h2>
 
+
+
+
+<A NAME="SECURED"></A>
+
+<div class="jd-details api apilevel-48"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../reference/com/datalogic/device/configuration/BTPairingPolicy.html">BTPairingPolicy</a>
+      </span>
+        SECURED
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 48</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Block connections from unauthorized peripherals,
+ enhancing both security and operational efficiency by preventing accidental or malicious device pairings.
+ Only devices that are either whitelisted (if enabled) or trusted devices (if enabled) are allowed to pair and connect with the mobile device.
+</p></div>
+
+    
+    </div>
+</div>
 
 
 
