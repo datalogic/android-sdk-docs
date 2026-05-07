@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
-<title>PropertyID - Introduction to the Datalogic Android SDK 1.48 | Android Add-on</title>
+<title>PropertyID - Introduction to the Datalogic Android SDK 1.49 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49' ];
         buildApiLevelSelector();
       </script>
                   
@@ -266,6 +266,8 @@ Distribution</a></li>
   <a href="../../../../reference/com/datalogic/decode/utils/package-summary.html">com.datalogic.decode.utils</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/datalogic/device/package-summary.html">com.datalogic.device</a></li>
+    <li class="api apilevel-49">
+  <a href="../../../../reference/com/datalogic/device/account/package-summary.html">com.datalogic.device.account</a></li>
     <li class="api apilevel-25">
   <a href="../../../../reference/com/datalogic/device/app/package-summary.html">com.datalogic.device.app</a></li>
     <li class="api apilevel-13">
@@ -2514,7 +2516,7 @@ Summary:
     <tr class="alt-color api apilevel-33" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X">PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X</a></td>
-        <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
+        <td class="jd-descrcol" width="100%">This parameter indicates the X coordinate of the preview shown
  in case of manual display mode and camera input type, when the
  device is positioned in portrait.</td>
     </tr>
@@ -2704,11 +2706,97 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-47" >
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE">SCANNING_PREVIEW_DISPLAY_MODE</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the display mode in which to show the scanning preview.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the height of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the width of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the X coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the height of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the width of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the X coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y">SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the Y coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-47" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_HIDE_DELAY">SCANNING_PREVIEW_HIDE_DELAY</a></td>
         <td class="jd-descrcol" width="100%">This parameter allows to specify the amount of time (in ms) the preview will be shown after
  a barcode has been successfully decoded.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-49" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/datalogic/decode/PropertyID.html#SCANNING_PREVIEW_ILLUMINATION_SOURCE">SCANNING_PREVIEW_ILLUMINATION_SOURCE</a></td>
+        <td class="jd-descrcol" width="100%">This parameter indicates the illumination source used in the scanning preview.</td>
     </tr>
     
     
@@ -14733,7 +14821,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the Y coordinate of the preview shown
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the X coordinate of the preview shown
  in case of manual display mode and camera input type, when the
  device is positioned in portrait.
 </p></div>
@@ -15780,6 +15868,390 @@ From class
 
 
 
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the display mode in which to show the scanning preview.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                137
+                (0x00000089)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_HEIGHT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the height of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape. The camera frames will retain their
+ original aspect ratio but they will resize in order to fit inside the
+ preview box specified by the width and height parameters.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                145
+                (0x00000091)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_WIDTH
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the width of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape. The camera frames will retain their
+ original aspect ratio but they will resize in order to fit inside the
+ preview box specified by the width and height parameters.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                144
+                (0x00000090)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_X
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the X coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                142
+                (0x0000008e)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_LANDSCAPE_Y
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the Y coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in landscape.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                143
+                (0x0000008f)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_HEIGHT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the height of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait. The camera frames will retain their
+ original aspect ratio but they will resize in order to fit inside the
+ preview box specified by the width and height parameters.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                141
+                (0x0000008d)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_WIDTH
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the width of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait. The camera frames will retain their
+ original aspect ratio but they will resize in order to fit inside the
+ preview box specified by the width and height parameters.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                140
+                (0x0000008c)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_X
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the X coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                138
+                (0x0000008a)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_DISPLAY_MODE_MANUAL_PORTRAIT_Y
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the Y coordinate of the preview shown
+ in case of manual display mode for the scanning preview, when the
+ device is positioned in portrait.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                139
+                (0x0000008b)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="SCANNING_PREVIEW_HIDE_DELAY"></A>
 
 <div class="jd-details api apilevel-47"> 
@@ -15812,6 +16284,48 @@ From class
             
                 130
                 (0x00000082)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SCANNING_PREVIEW_ILLUMINATION_SOURCE"></A>
+
+<div class="jd-details api apilevel-49"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SCANNING_PREVIEW_ILLUMINATION_SOURCE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 49</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>This parameter indicates the illumination source used in the scanning preview.
+ The source selected will be turned on only when the scanning preview is activated during decoding and
+ only if the <code><a href="../../../../reference/com/datalogic/decode/PropertyID.html#ILLUMINATION_ENABLE">ILLUMINATION_ENABLE</a></code> parameter is enabled.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                146
+                (0x00000092)
             
         </span>
         </div>
