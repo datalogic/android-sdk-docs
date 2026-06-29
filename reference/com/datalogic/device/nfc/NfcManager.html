@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
-<title>NfcManager - Introduction to the Datalogic Android SDK 1.49 | Android Add-on</title>
+<title>NfcManager - Introduction to the Datalogic Android SDK 1.50 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic APIs</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50' ];
         buildApiLevelSelector();
       </script>
                   
@@ -567,7 +567,155 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#enableNfcAdapter(boolean)">enableNfcAdapter</a></span>(boolean enable)</nobr>
         
-        <div class="jd-descrdiv">Enables the nfc adapter.</div>
+        <div class="jd-descrdiv"><em>
+      This method was deprecated
+      in revision 50.
+    use <code><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setNfcAdapterEnabled(boolean)">setNfcAdapterEnabled(boolean)</a></code> instead.
+</em></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#getHostCardEmulationEnabled()">getHostCardEmulationEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the current state of the Host Card Emulation (HCE) functionality of the NFC adapter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#getHostListenerTechMask()">getHostListenerTechMask</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the NFC technology flags that the system should listen to.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#getNfcAdapterEnabled()">getNfcAdapterEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the current state of the NFC adapter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#getTagDispatchBlockFlags()">getTagDispatchBlockFlags</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the current NFC categories flags that the system is blocking.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setHostCardEmulationEnabled(boolean)">setHostCardEmulationEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Enable the Host Card Emulation (HCE) functionality of the NFC adapter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setHostListenerTechMask(int)">setHostListenerTechMask</a></span>(int flags)</nobr>
+        
+        <div class="jd-descrdiv">Set the NFC technology flags that the system should listen to.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setNfcAdapterEnabled(boolean)">setNfcAdapterEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Enable the NFC adapter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-50" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setTagDispatchBlockFlags(int)">setTagDispatchBlockFlags</a></span>(int flags)</nobr>
+        
+        <div class="jd-descrdiv">Set the NFC categories flags that the system should block.</div>
   
   </td></tr>
 
@@ -900,14 +1048,384 @@ From class
 
       </div>
     <div class="jd-details-descr">
+      <p>
+  <p class="caution"><strong>
+      This method was deprecated
+      in revision 50.</strong><br/>
+    use <code><a href="../../../../../reference/com/datalogic/device/nfc/NfcManager.html#setNfcAdapterEnabled(boolean)">setNfcAdapterEnabled(boolean)</a></code> instead.
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getHostCardEmulationEnabled()"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">getHostCardEmulationEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Enables the nfc adapter.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Get the current state of the Host Card Emulation (HCE) functionality of the NFC adapter.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> indicating whether the HCE functionality of the NFC adapter is enabled or not.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getHostListenerTechMask()"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getHostListenerTechMask</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the NFC technology flags that the system should listen to.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> indicating the NFC categories that the system is listening to,
+ matching one or more of the <code><a href="../../../../../reference/com/datalogic/device/configuration/NfcHostListenerTechFlags.html">NfcHostListenerTechFlags</a></code> constants.
+ May return -1 in case of error.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getNfcAdapterEnabled()"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">getNfcAdapterEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the current state of the NFC adapter.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> indicating whether the NFC adapter is enabled or not.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getTagDispatchBlockFlags()"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getTagDispatchBlockFlags</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the current NFC categories flags that the system is blocking.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> indicating the NFC categories that the system is blocking,
+ matching one or more of the <code><a href="../../../../../reference/com/datalogic/device/configuration/NfcTagDispatchBlockFlags.html">NfcTagDispatchBlockFlags</a></code> constants.
+ May return -1 in case of error.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setHostCardEmulationEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setHostCardEmulationEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enable the Host Card Emulation (HCE) functionality of the NFC adapter.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>a <code>boolean</code> that indicates whether to enable or to disable the HCE functionality.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setHostListenerTechMask(int)"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setHostListenerTechMask</span>
+      <span class="normal">(int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the NFC technology flags that the system should listen to.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>flags</td>
+          <td>a <code>int</code> of flags representing the NFC protocol type to enable,
+              matching one or more of the <code><a href="../../../../../reference/com/datalogic/device/configuration/NfcHostListenerTechFlags.html">NfcHostListenerTechFlags</a></code> constants.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setNfcAdapterEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setNfcAdapterEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Enable the NFC adapter.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>enable</td>
           <td>a <code>boolean</code> that indicates whether to enable or to disable the nfc adapter.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html#SUCCESS">SUCCESS</a></code> in case of success,
+ otherwise a possible error code, matching one of the <code><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></code> error constants.</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../../reference/com/datalogic/device/DeviceException.html">DeviceException</a></td>
+            <td>in case of error, when exceptions are enabled through the <code><a href="../../../../../reference/com/datalogic/device/ErrorManager.html">ErrorManager</a></code> singleton.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTagDispatchBlockFlags(int)"></A>
+
+<div class="jd-details api apilevel-50"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">setTagDispatchBlockFlags</span>
+      <span class="normal">(int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 50</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the NFC categories flags that the system should block.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>flags</td>
+          <td>a <code>int</code> of flags representing the NFC categories to block, matching one or more of the <code><a href="../../../../../reference/com/datalogic/device/configuration/NfcTagDispatchBlockFlags.html">NfcTagDispatchBlockFlags</a></code> constants.</td>
         </tr>
       </table>
   </div>
