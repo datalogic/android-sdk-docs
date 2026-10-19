@@ -15,7 +15,9 @@ com.datalogic.device.location
 com.datalogic.device.nfc
 com.datalogic.device.notification
 com.datalogic.device.power
+com.datalogic.device.rfid
 com.datalogic.device.wifi
 com.datalogic.itemtracking
+com.datalogic.os.network
 com.datalogic.softspot
 
